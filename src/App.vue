@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <TopNavigation />
-    <router-view />
+    <div class="content">
+      <div class="main">
+        <router-view />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -17,9 +21,20 @@ export default {
 </script>
 
 <style>
-#app {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  padding: 20px;
+body {
+  margin: 0;
+  background-color: #25293c;
+  font-family: "Inter Tight", sans-serif;
+  color: #c1bfd6;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  max-width: 1200px;
 }
 </style>

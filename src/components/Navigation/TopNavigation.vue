@@ -1,8 +1,12 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link>
-    <router-link to="/demos">Demos</router-link>
-    <router-link to="/purchase">Purchase</router-link>
+    <div class="nav-container">
+      <router-link to="/"><h2>WEBSITE</h2></router-link>
+      <div class="nav-links">
+        <router-link to="/demos">Demos</router-link>
+        <router-link to="/purchase">Purchase</router-link>
+      </div>
+    </div>
   </nav>
 </template>
 
@@ -15,20 +19,36 @@ export default {
 <style>
 nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  background: #2e3348;
+  border-bottom: 1px solid rgba(193, 191, 214, 0.5);
+  color: #c1bfd6;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+h2 {
+  font-family: "Unica One", cursive;
+  color: #c1bfd6;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
   gap: 1rem;
-  padding: 10px;
-  background: #f8f9fa;
-  border-bottom: 1px solid #ddd;
 }
 
-nav a {
+a {
   text-decoration: none;
-  color: blue;
   font-weight: 500;
-}
-
-nav a.router-link-exact-active {
-  font-weight: bold;
-  color: red;
+  color: #c1bfd6;
 }
 </style>
