@@ -54,7 +54,7 @@ export default {
   max-width: 100%;
   height: 100%;
   aspect-ratio: 16 / 12;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.6s ease;
   display: block;
   border-radius: 4px;
 }

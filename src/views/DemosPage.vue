@@ -103,7 +103,13 @@ export default {
   margin-top: 10px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
   .dashboard-grid {
     grid-template-columns: repeat(2, 1fr);
   }
