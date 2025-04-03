@@ -1,5 +1,16 @@
 <template>
   <div class="demos-page">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1>Explore Our Dashboard Demos</h1>
+      <p>
+        Browse through our collection of frontend dashboards. Find the one that
+        fits your needs, and download it to integrate with your APIs and data
+        sources.
+      </p>
+    </section>
+
+    <!-- Dashboard Grid -->
     <div class="dashboard-grid">
       <!-- Loop over the dashboards and render DashboardDemoCard -->
       <DashboardDemoCard
@@ -10,6 +21,7 @@
         @open-modal="openModal(demo.name)"
       />
     </div>
+
     <!-- Modal (for demo information) -->
     <div v-if="isModalOpen" class="modal-overlay">
       <div class="modal">
@@ -39,6 +51,13 @@ export default {
           name: "Sales Dashboard",
           image: "/Dashboard_Images/Sales_Dashboard.png",
         },
+        { name: "Healthcare", image: "/Dashboard_Images/Healthcare.png" },
+        {
+          name: "Sales Dashboard",
+          image: "/Dashboard_Images/Sales_Dashboard.png",
+        },
+        { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
+        { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
       ],
       isModalOpen: false,
       selectedDemo: null,
@@ -58,22 +77,39 @@ export default {
 </script>
 
 <style scoped>
+/* Hero Section */
+.hero-section {
+  margin-bottom: 30px;
+}
+
+.hero-section h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Dashboard Grid */
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 @media (max-width: 1200px) {
   .dashboard-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .dashboard-grid {
-    grid-template-columns: 1fr; /* 1 column for small screens */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -99,7 +135,6 @@ export default {
 }
 
 button {
-  background-color: #2e3348;
   color: white;
   border: none;
   padding: 10px 20px;

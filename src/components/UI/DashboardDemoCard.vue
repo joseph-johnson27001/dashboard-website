@@ -27,7 +27,6 @@ export default {
 .dashboard-card {
   cursor: pointer;
   text-align: center;
-  padding: 10px;
   transition: transform 0.3s ease;
 }
 

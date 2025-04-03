@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="nav-container">
-      <router-link to="/"><h2>WEBSITE</h2></router-link>
+      <router-link to="/"><h2>Dashboard Templates</h2></router-link>
       <div class="nav-links">
         <router-link to="/demos">Demos</router-link>
         <router-link to="/purchase">Purchase</router-link>
@@ -32,7 +32,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1800px;
 }
 
 h2 {
