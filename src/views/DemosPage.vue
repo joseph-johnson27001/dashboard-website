@@ -18,6 +18,7 @@
         :key="index"
         :name="demo.name"
         :image="demo.image"
+        :index="index"
         @open-modal="openModal(demo.name)"
       />
     </div>

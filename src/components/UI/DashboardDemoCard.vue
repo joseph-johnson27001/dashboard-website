@@ -1,5 +1,9 @@
 <template>
-  <div class="dashboard-card" @click="openModal">
+  <div
+    class="dashboard-card fade-in"
+    :style="{ animationDelay: index * 0.1 + 's' }"
+    @click="openModal"
+  >
     <div class="image-container">
       <img :src="image" :alt="name" class="dashboard-image" />
       <div class="overlay"></div>
@@ -14,6 +18,7 @@ export default {
   props: {
     name: String,
     image: String,
+    index: Number,
   },
   methods: {
     openModal() {
@@ -28,8 +33,10 @@ export default {
   cursor: pointer;
   text-align: center;
   transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+  animation-delay: var(--delay);
 }
-
 .dashboard-card:hover .image-container .overlay {
   opacity: 0.2;
 }
@@ -72,5 +79,14 @@ export default {
   font-weight: 500;
   font-family: "Unica One", cursive;
   color: rgb(24, 24, 24);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
