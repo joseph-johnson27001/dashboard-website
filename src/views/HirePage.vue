@@ -1,7 +1,7 @@
 <template>
   <div class="hire-page">
     <section class="hero-section">
-      <h1>Hire Me – Get a Custom Dashboard</h1>
+      <h1>Get a Custom Dashboard Built</h1>
       <p>
         I build high-quality Vue.js dashboards tailored to your needs—whether
         from scratch, refreshing an existing one, or integrating with APIs. I

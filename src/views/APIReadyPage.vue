@@ -25,12 +25,12 @@
     </div>
 
     <!-- Modal (for demo information) -->
-    <div v-if="isModalOpen" class="modal-overlay">
-      <div class="modal">
-        <h2>{{ selectedDemo }}</h2>
-        <p>Information about the {{ selectedDemo }} demo...</p>
-        <button @click="closeModal">Close</button>
-      </div>
+  </div>
+  <div v-if="isModalOpen" class="modal-overlay">
+    <div class="modal">
+      <h2>{{ selectedDemo }}</h2>
+      <p>Information about the {{ selectedDemo }} demo...</p>
+      <button @click="closeModal">Close</button>
     </div>
   </div>
 </template>
@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       demos: [
-        { name: "Code Camp", image: "/Dashboard_Images/Code_Camp2.png" },
+        { name: "Code Camp", image: "/Dashboard_Images/Logistics-3.png" },
         { name: "Healthcare", image: "/Dashboard_Images/Healthcare.png" },
         { name: "Logistics", image: "/Dashboard_Images/Logistics.png" },
         {
