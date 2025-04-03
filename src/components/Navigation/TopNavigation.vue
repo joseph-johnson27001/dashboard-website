@@ -2,7 +2,7 @@
   <nav>
     <div class="nav-container">
       <router-link to="/">
-        <i class="fas fa-chart-bar logo-icon"></i>
+        <img src="/dashboard-logo.png" alt="Dashboard Logo" class="logo-img" />
       </router-link>
       <div class="nav-links">
         <router-link to="/single-page-dashboards" active-class="active-link"
@@ -50,9 +50,9 @@ a {
   color: #006ba6;
 }
 
-.logo-icon {
-  font-size: 18px;
-  color: #006ba6;
+.logo-img {
+  height: 25px;
+  width: auto;
 }
 
 .nav-links {

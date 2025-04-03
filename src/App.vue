@@ -31,7 +31,7 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .main {

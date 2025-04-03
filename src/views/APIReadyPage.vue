@@ -46,12 +46,12 @@ export default {
   data() {
     return {
       demos: [
-        { name: "Code Camp", image: "/Dashboard_Images/Logistics-3.png" },
-        { name: "Healthcare", image: "/Dashboard_Images/Healthcare.png" },
+        { name: "Code Camp", image: "/Dashboard_Images/Logistics-4.png" },
+        { name: "Healthcare", image: "/Dashboard_Images/Healthcare-2.png" },
         { name: "Logistics", image: "/Dashboard_Images/Logistics.png" },
         {
           name: "Sales Dashboard",
-          image: "/Dashboard_Images/Sales_Dashboard.png",
+          image: "/Dashboard_Images/Logistics-3.png",
         },
         { name: "Healthcare", image: "/Dashboard_Images/amazon.png" },
         {
