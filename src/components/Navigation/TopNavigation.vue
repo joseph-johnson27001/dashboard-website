@@ -22,9 +22,8 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 15px 20px;
-  background: #2e3348;
   border-bottom: 1px solid rgba(193, 191, 214, 0.5);
-  color: #c1bfd6;
+  color: #006ba6;
 }
 
 .nav-container {
@@ -35,20 +34,21 @@ nav {
   max-width: 1800px;
 }
 
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #006ba6;
+}
+
 h2 {
   font-family: "Unica One", cursive;
-  color: #c1bfd6;
+  color: #006ba6;
   margin: 0;
+  font-weight: 500;
 }
 
 .nav-links {
   display: flex;
   gap: 1rem;
-}
-
-a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #c1bfd6;
 }
 </style>

@@ -39,15 +39,16 @@ export default {
   display: inline-block;
   width: 100%;
   height: auto;
+  border-radius: 4px;
 }
 
 .dashboard-image {
   width: 100%;
-  height: auto;
   max-width: 100%;
+  height: 100%;
   aspect-ratio: 16 / 12;
-  border-radius: 4px;
   transition: opacity 0.2s ease;
+  box-sizing: border-box;
 }
 
 .overlay {
@@ -64,8 +65,11 @@ export default {
 
 .dashboard-name {
   text-align: left;
-  margin-top: 10px;
-  font-size: 15px;
-  font-weight: 600;
+  margin-top: 6px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+  font-family: "Unica One", cursive;
+  color: rgb(24, 24, 24);
 }
 </style>

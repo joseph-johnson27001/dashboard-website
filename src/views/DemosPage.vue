@@ -51,7 +51,7 @@ export default {
           name: "Sales Dashboard",
           image: "/Dashboard_Images/Sales_Dashboard.png",
         },
-        { name: "Healthcare", image: "/Dashboard_Images/Healthcare.png" },
+        { name: "Healthcare", image: "/Dashboard_Images/amazon.png" },
         {
           name: "Sales Dashboard",
           image: "/Dashboard_Images/Sales_Dashboard.png",
@@ -77,18 +77,20 @@ export default {
 </script>
 
 <style scoped>
-/* Hero Section */
 .hero-section {
   margin-bottom: 30px;
 }
 
 .hero-section h1 {
-  font-size: 28px;
+  font-family: "Unica One", cursive;
+  font-size: 24px;
   margin-bottom: 10px;
+  font-weight: 500;
+  color: #006ba6;
 }
 
 .hero-section p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
   font-weight: 300;
 }
@@ -97,7 +99,7 @@ export default {
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 25px;
   margin-top: 10px;
 }
 
