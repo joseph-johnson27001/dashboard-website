@@ -59,6 +59,7 @@ a {
   display: flex;
   font-size: 15px;
   gap: 1rem;
+  align-items: center;
 }
 
 .active-link {

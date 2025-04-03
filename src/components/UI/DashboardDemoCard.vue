@@ -35,8 +35,8 @@ export default {
   transition: transform 0.3s ease;
   opacity: 0;
   animation: fadeIn 0.8s ease-in forwards;
-  animation-delay: var(--delay);
 }
+
 .dashboard-card:hover .image-container .overlay {
   opacity: 0.2;
 }
