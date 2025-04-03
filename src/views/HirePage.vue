@@ -97,6 +97,7 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
+  box-sizing: border-box;
 }
 
 button {

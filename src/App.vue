@@ -24,6 +24,7 @@ export default {
 body {
   margin: 0;
   background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   font-family: "Inter Tight", sans-serif;
   color: rgb(34, 34, 34);
 }
