@@ -1,5 +1,5 @@
 <template>
-  <div class="demos-page">
+  <div class="api-page">
     <!-- Hero Section -->
     <section class="hero-section">
       <h1>API Ready Dashboards</h1>
@@ -78,6 +78,11 @@ export default {
 </script>
 
 <style scoped>
+.api-page {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
 .hero-section {
   margin-bottom: 30px;
 }
@@ -154,5 +159,16 @@ button {
 
 button:hover {
   background-color: #444;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>

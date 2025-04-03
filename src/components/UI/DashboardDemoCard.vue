@@ -1,7 +1,7 @@
 <template>
   <div
     class="dashboard-card fade-in"
-    :style="{ animationDelay: index * 0.1 + 's' }"
+    :style="{ animationDelay: index * 0.08 + 's' }"
     @click="openModal"
   >
     <div class="image-container">

@@ -1,7 +1,9 @@
 <template>
   <nav>
     <div class="nav-container">
-      <router-link to="/"><h2>Template Dashboards</h2></router-link>
+      <router-link to="/">
+        <i class="fas fa-chart-bar logo-icon"></i>
+      </router-link>
       <div class="nav-links">
         <router-link to="/single">Single Page</router-link>
         <router-link to="/multi">Multi-Page</router-link>
@@ -41,15 +43,14 @@ a {
   color: #006ba6;
 }
 
-h2 {
-  font-family: "Unica One", cursive;
+.logo-icon {
+  font-size: 18px;
   color: #006ba6;
-  margin: 0;
-  font-weight: 500;
 }
 
 .nav-links {
   display: flex;
+  font-size: 15px;
   gap: 1rem;
 }
 </style>
