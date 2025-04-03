@@ -48,7 +48,8 @@ export default {
   height: 100%;
   aspect-ratio: 16 / 12;
   transition: opacity 0.2s ease;
-  box-sizing: border-box;
+  display: block;
+  border-radius: 4px;
 }
 
 .overlay {

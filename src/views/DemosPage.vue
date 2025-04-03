@@ -91,7 +91,6 @@ export default {
 
 .hero-section p {
   font-size: 15px;
-  line-height: 1.6;
   font-weight: 300;
 }
 
