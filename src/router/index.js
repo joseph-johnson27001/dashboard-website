@@ -7,10 +7,10 @@ import API from "../views/APIReadyPage.vue";
 
 const routes = [
   { path: "/", component: Home },
-  { path: "/single", component: Single },
-  { path: "/multi", component: Multi },
+  { path: "/single-page-dashboards", component: Single },
+  { path: "/multi-page-dashboards", component: Multi },
   { path: "/hire", component: Hire },
-  { path: "/api-ready", component: API },
+  { path: "/api-ready-dashboards", component: API },
 ];
 
 const router = createRouter({

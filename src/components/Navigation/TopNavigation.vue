@@ -5,13 +5,13 @@
         <i class="fas fa-chart-bar logo-icon"></i>
       </router-link>
       <div class="nav-links">
-        <router-link to="/single" active-class="active-link"
+        <router-link to="/single-page-dashboards" active-class="active-link"
           >Single Page</router-link
         >
-        <router-link to="/multi" active-class="active-link"
+        <router-link to="/multi-page-dashboards" active-class="active-link"
           >Multi-Page</router-link
         >
-        <router-link to="/api-ready" active-class="active-link"
+        <router-link to="/api-ready-dashboards" active-class="active-link"
           >API Ready</router-link
         >
         <router-link to="/hire" active-class="active-link">Hire</router-link>

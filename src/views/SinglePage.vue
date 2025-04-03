@@ -59,7 +59,7 @@ export default {
           image: "/Dashboard_Images/Sales_Dashboard.png",
         },
         { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
-        { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
+        { name: "Logistics", image: "/Dashboard_Images/Logistics.png" },
       ],
       isModalOpen: false,
       selectedDemo: null,

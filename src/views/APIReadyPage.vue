@@ -48,7 +48,7 @@ export default {
       demos: [
         { name: "Code Camp", image: "/Dashboard_Images/Code_Camp2.png" },
         { name: "Healthcare", image: "/Dashboard_Images/Healthcare.png" },
-        { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
+        { name: "Logistics", image: "/Dashboard_Images/Logistics.png" },
         {
           name: "Sales Dashboard",
           image: "/Dashboard_Images/Sales_Dashboard.png",
