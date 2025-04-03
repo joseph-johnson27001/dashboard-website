@@ -1,10 +1,12 @@
 <template>
   <nav>
     <div class="nav-container">
-      <router-link to="/"><h2>Dashboard Templates</h2></router-link>
+      <router-link to="/"><h2>Template Dashboards</h2></router-link>
       <div class="nav-links">
-        <router-link to="/demos">Demos</router-link>
-        <router-link to="/purchase">Purchase</router-link>
+        <router-link to="/single">Single Page</router-link>
+        <router-link to="/multi">Multi-Page</router-link>
+        <router-link to="/api-ready">API Ready</router-link>
+        <router-link to="/hire">Hire</router-link>
       </div>
     </div>
   </nav>
@@ -23,7 +25,6 @@ nav {
   align-items: center;
   padding: 15px 20px;
   border-bottom: 1px solid rgba(193, 191, 214, 0.5);
-  color: #006ba6;
 }
 
 .nav-container {

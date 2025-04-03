@@ -1,12 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/HomePage.vue";
-import Demos from "../views/DemosPage.vue";
-import Purchase from "../views/PurchasesPage.vue";
+import Single from "../views/SinglePage.vue";
+import Multi from "../views/MultiPage.vue";
+import Hire from "..//views/HirePage.vue";
+import API from "../views/APIReadyPage.vue";
 
 const routes = [
   { path: "/", component: Home },
-  { path: "/demos", component: Demos },
-  { path: "/purchase", component: Purchase },
+  { path: "/single", component: Single },
+  { path: "/multi", component: Multi },
+  { path: "/hire", component: Hire },
+  { path: "/api-ready", component: API },
 ];
 
 const router = createRouter({

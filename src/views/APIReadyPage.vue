@@ -2,7 +2,7 @@
   <div class="demos-page">
     <!-- Hero Section -->
     <section class="hero-section">
-      <h1>Explore Our Dashboard Demos</h1>
+      <h1>API Ready Dashboards</h1>
       <p>
         Browse through our collection of frontend dashboards. Find the one that
         fits your needs, and download it to integrate with your APIs and data
@@ -45,7 +45,7 @@ export default {
   data() {
     return {
       demos: [
-        { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
+        { name: "Code Camp", image: "/Dashboard_Images/Code_Camp2.png" },
         { name: "Healthcare", image: "/Dashboard_Images/Healthcare.png" },
         { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
         {
@@ -88,6 +88,7 @@ export default {
   margin-bottom: 10px;
   font-weight: 500;
   color: #006ba6;
+  margin-top: 10px;
 }
 
 .hero-section p {
