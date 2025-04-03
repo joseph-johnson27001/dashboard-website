@@ -4,11 +4,9 @@
     <section class="hero-section">
       <h1>Multi Page Dashboards</h1>
       <p>
-        Explore our multi-page dashboard templates. These dashboards come with
-        fully functional navigation and multiple pages, making them ideal for
-        building larger-scale applications. While API integration is not
-        included, these templates provide a solid foundation to create dynamic,
-        user-friendly experiences.
+        Explore our multi-page dashboard templates with working navigation.
+        These templates offer a solid foundation for building more complex
+        projects, but you'll need to add your own backend and API integration.
       </p>
     </section>
 
