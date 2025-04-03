@@ -1,3 +1,175 @@
 <template>
-  <div>Single Page Demos</div>
+  <div class="single-page">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1>Single Page Dashboards</h1>
+      <p>
+        Browse through our collection of single-page dashboards. These templates
+        provide the basic structure, including a navigation bar, allowing you to
+        focus on building the rest of the features and integrating your content.
+        Perfect for getting started quickly on your projects.
+      </p>
+    </section>
+
+    <!-- Dashboard Grid -->
+    <div class="dashboard-grid">
+      <!-- Loop over the dashboards and render DashboardDemoCard -->
+      <DashboardDemoCard
+        v-for="(demo, index) in demos"
+        :key="index"
+        :name="demo.name"
+        :image="demo.image"
+        :index="index"
+        @open-modal="openModal(demo.name)"
+      />
+    </div>
+
+    <!-- Modal (for demo information) -->
+    <div v-if="isModalOpen" class="modal-overlay">
+      <div class="modal">
+        <h2>{{ selectedDemo }}</h2>
+        <p>Information about the {{ selectedDemo }} demo...</p>
+        <button @click="closeModal">Close</button>
+      </div>
+    </div>
+  </div>
 </template>
+
+<script>
+import DashboardDemoCard from "@/components/UI/DashboardDemoCard.vue";
+
+export default {
+  name: "SinglePage",
+  components: {
+    DashboardDemoCard,
+  },
+  data() {
+    return {
+      demos: [
+        { name: "Code Camp", image: "/Dashboard_Images/Code_Camp2.png" },
+        { name: "Healthcare", image: "/Dashboard_Images/Healthcare.png" },
+        { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
+        {
+          name: "Sales Dashboard",
+          image: "/Dashboard_Images/Sales_Dashboard.png",
+        },
+        { name: "Healthcare", image: "/Dashboard_Images/amazon.png" },
+        {
+          name: "Sales Dashboard",
+          image: "/Dashboard_Images/Sales_Dashboard.png",
+        },
+        { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
+        { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
+      ],
+      isModalOpen: false,
+      selectedDemo: null,
+    };
+  },
+  methods: {
+    openModal(demoName) {
+      this.selectedDemo = demoName;
+      this.isModalOpen = true;
+    },
+    closeModal() {
+      this.isModalOpen = false;
+      this.selectedDemo = null;
+    },
+  },
+};
+</script>
+
+<style scoped>
+.single-page {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.hero-section {
+  margin-bottom: 30px;
+}
+
+.hero-section h1 {
+  font-family: "Unica One", cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #006ba6;
+  margin-top: 10px;
+}
+
+.hero-section p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1400px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>

@@ -4,9 +4,10 @@
     <section class="hero-section">
       <h1>API Ready Dashboards</h1>
       <p>
-        Browse through our collection of frontend dashboards. Find the one that
-        fits your needs, and download it to integrate with your APIs and data
-        sources.
+        Explore our selection of fully functional, API-ready dashboards. These
+        pre-built templates are designed to seamlessly integrate with your data
+        sources and APIs, allowing you to save time and focus on customization
+        and deployment.
       </p>
     </section>
 
@@ -38,7 +39,7 @@
 import DashboardDemoCard from "@/components/UI/DashboardDemoCard.vue";
 
 export default {
-  name: "DemosPage",
+  name: "APIPage",
   components: {
     DashboardDemoCard,
   },
