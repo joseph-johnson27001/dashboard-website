@@ -8,7 +8,10 @@
           Discover sleek, performant dashboards you can plug into your apps or
           use as inspiration. Build fast. Customize easily.
         </p>
-        <router-link to="/hire" class="hire-button">Hire Me</router-link>
+        <div class="button-container">
+          <router-link to="/hire" class="hire-button">Hire Me</router-link>
+          <router-link to="/hire" class="hire-button">Learn More</router-link>
+        </div>
       </div>
     </section>
 
@@ -121,9 +124,8 @@ export default {
   animation: fadeIn 0.5s forwards;
 }
 
-/* Hero Section */
 .hero {
-  padding: 40px 20px;
+  padding: 20px 20px;
   text-align: center;
   border-radius: 8px;
   margin-bottom: 30px;
@@ -140,6 +142,13 @@ export default {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
 }
 
 .hire-button {
