@@ -59,10 +59,6 @@ export default {
   animation: fadeIn 0.5s forwards;
 }
 
-.hero-section {
-  margin-bottom: 30px;
-}
-
 .hero-section h1 {
   font-family: "Unica One", cursive;
   font-size: 24px;
@@ -75,10 +71,6 @@ export default {
 p {
   font-size: 15px;
   font-weight: 300;
-}
-
-.contact-form {
-  margin-top: 30px;
 }
 
 form {
@@ -98,6 +90,11 @@ textarea {
   padding: 10px;
   margin-top: 5px;
   box-sizing: border-box;
+  outline: none;
+}
+
+textarea {
+  height: 300px;
 }
 
 button {
