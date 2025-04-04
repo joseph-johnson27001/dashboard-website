@@ -80,11 +80,9 @@ export default {
     },
     viewDemo() {
       console.log("Viewing demo for:", this.selectedDemo);
-      // Implement demo view action here
     },
     buyNow() {
       console.log("Buying now for:", this.selectedDemo);
-      // Implement buy action here
     },
   },
 };

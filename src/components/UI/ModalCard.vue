@@ -118,14 +118,12 @@ export default {
 /* Dashboard Image */
 .dashboard-image-container {
   text-align: center;
-  margin-top: 20px;
 }
 
 .dashboard-image {
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
 }
 
 /* Modal Buttons */
@@ -133,7 +131,7 @@ export default {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 button {
