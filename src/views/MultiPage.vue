@@ -23,24 +23,26 @@
       />
     </div>
 
-    <!-- Modal (for demo information) -->
-  </div>
-  <div v-if="isModalOpen" class="modal-overlay">
-    <div class="modal">
-      <h2>{{ selectedDemo }}</h2>
-      <p>Information about the {{ selectedDemo }} demo...</p>
-      <button @click="closeModal">Close</button>
-    </div>
+    <!-- ModalCard -->
+    <ModalCard
+      :isOpen="isModalOpen"
+      :title="selectedDemo"
+      @close-modal="closeModal"
+      @view-demo="viewDemo"
+      @buy-now="buyNow"
+    />
   </div>
 </template>
 
 <script>
 import DashboardDemoCard from "@/components/UI/DashboardDemoCard.vue";
+import ModalCard from "@/components/UI/ModalCard.vue";
 
 export default {
   name: "MultiPage",
   components: {
     DashboardDemoCard,
+    ModalCard,
   },
   data() {
     return {
@@ -72,6 +74,14 @@ export default {
     closeModal() {
       this.isModalOpen = false;
       this.selectedDemo = null;
+    },
+    viewDemo() {
+      console.log("Viewing demo for:", this.selectedDemo);
+      // Implement demo view action here
+    },
+    buyNow() {
+      console.log("Buying now for:", this.selectedDemo);
+      // Implement buy action here
     },
   },
 };
@@ -125,40 +135,6 @@ export default {
   .dashboard-grid {
     grid-template-columns: 1fr;
   }
-}
-
-/* Modal styles */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal {
-  background: white;
-  padding: 20px;
-  border-radius: 5px;
-  width: 80%;
-  max-width: 500px;
-}
-
-button {
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #444;
 }
 
 @keyframes fadeIn {
