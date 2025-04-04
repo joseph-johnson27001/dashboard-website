@@ -27,7 +27,7 @@
           :name="demo.name"
           :image="demo.image"
           :index="index"
-          @open-modal="openModal(demo.name)"
+          @open-modal="openModal(demo)"
         />
       </div>
     </section>
@@ -42,7 +42,7 @@
           :name="demo.name"
           :image="demo.image"
           :index="index"
-          @open-modal="openModal(demo.name)"
+          @open-modal="openModal(demo)"
         />
       </div>
     </section>
@@ -57,7 +57,7 @@
           :name="demo.name"
           :image="demo.image"
           :index="index"
-          @open-modal="openModal(demo.name)"
+          @open-modal="openModal(demo)"
         />
       </div>
     </section>
@@ -66,6 +66,7 @@
     <ModalCard
       :isOpen="isModalOpen"
       :title="selectedDemo"
+      :image="selectedDashboardImage"
       @close-modal="closeModal"
       @view-demo="viewDemo"
       @buy-now="buyNow"
@@ -111,8 +112,10 @@ export default {
     };
   },
   methods: {
-    openModal(demoName) {
-      this.selectedDemo = demoName;
+    openModal(demo) {
+      console.log(demo);
+      this.selectedDemo = demo.name;
+      this.selectedDashboardImage = demo.image;
       this.isModalOpen = true;
     },
     closeModal() {

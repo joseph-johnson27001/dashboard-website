@@ -8,6 +8,10 @@
 
       <!-- Title Section -->
       <h2 class="modal-title">{{ title }}</h2>
+      <!-- Display Dashboard Image -->
+      <div class="dashboard-image-container">
+        <img :src="image" alt="Dashboard Image" class="dashboard-image" />
+      </div>
 
       <!-- Modal Buttons -->
       <div class="modal-buttons">
@@ -27,6 +31,10 @@ export default {
       required: true,
     },
     title: {
+      type: String,
+      required: true,
+    },
+    image: {
       type: String,
       required: true,
     },
@@ -105,6 +113,19 @@ export default {
   font-weight: 500;
   color: #006ba6;
   margin-top: 0;
+}
+
+/* Dashboard Image */
+.dashboard-image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dashboard-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 /* Modal Buttons */
