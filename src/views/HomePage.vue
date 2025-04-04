@@ -181,6 +181,7 @@ export default {
   font-family: "Unica One", cursive;
   color: #006ba6;
   margin-bottom: 10px;
+  letter-spacing: -1px;
 }
 
 .hero p {
@@ -217,6 +218,7 @@ export default {
   color: #006ba6;
   margin-bottom: 15px;
   font-family: "Unica One", cursive;
+  letter-spacing: -1px;
 }
 
 /* Dashboard Grid */

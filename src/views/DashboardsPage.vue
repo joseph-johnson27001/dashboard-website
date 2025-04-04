@@ -4,10 +4,10 @@
     <section class="hero-section">
       <h1>Dashboards</h1>
       <p>
-        Explore our selection of fully functional, API-ready dashboards. These
-        pre-built templates are designed to seamlessly integrate with your data
-        sources and APIs, allowing you to save time and focus on customization
-        and deployment.
+        Browse a curated collection of professional dashboards built for
+        performance, flexibility, and fast integration. Whether you're looking
+        for inspiration or a ready-to-go solution, these templates are made to
+        plug into your workflow with ease.
       </p>
     </section>
 
@@ -20,6 +20,7 @@
         :name="demo.name"
         :image="demo.image"
         :index="index"
+        :type="demo.type"
         @open-modal="openModal(demo)"
       />
     </div>
@@ -49,37 +50,90 @@ export default {
   data() {
     return {
       demos: [
-        { name: "Code Camp", image: "/Dashboard_Images/Logistics-4.png" },
-        { name: "Healthcare", image: "/Dashboard_Images/Healthcare-2.png" },
-        { name: "Logistics", image: "/Dashboard_Images/Logistics.png" },
+        {
+          name: "Code Camp",
+          image: "/Dashboard_Images/Logistics-4.png",
+          type: "SP / Vue3 / ApexCharts",
+        },
+        {
+          name: "Healthcare",
+          image: "/Dashboard_Images/Healthcare-2.png",
+          type: "MP",
+        },
+        {
+          name: "Logistics",
+          image: "/Dashboard_Images/Logistics.png",
+          type: "SP",
+        },
         {
           name: "Sales Dashboard",
           image: "/Dashboard_Images/Logistics-3.png",
+          type: "SP",
         },
-        { name: "Healthcare", image: "/Dashboard_Images/amazon.png" },
+        {
+          name: "Healthcare",
+          image: "/Dashboard_Images/amazon.png",
+          type: "MP",
+        },
         {
           name: "Sales Dashboard",
           image: "/Dashboard_Images/Sales_Dashboard.png",
+          type: "SP",
         },
-        { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
-        { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
-        { name: "Code Camp", image: "/Dashboard_Images/Logistics-4.png" },
-        { name: "Healthcare", image: "/Dashboard_Images/Healthcare-2.png" },
-        { name: "Logistics", image: "/Dashboard_Images/Logistics.png" },
+        {
+          name: "Code Camp",
+          image: "/Dashboard_Images/Code_Camp.png",
+          type: "SP",
+        },
+        {
+          name: "Logistics",
+          image: "/Dashboard_Images/Logisitcs.png",
+          type: "SP",
+        },
+        {
+          name: "Code Camp",
+          image: "/Dashboard_Images/Logistics-4.png",
+          type: "SP",
+        },
+        {
+          name: "Healthcare",
+          image: "/Dashboard_Images/Healthcare-2.png",
+          type: "MP",
+        },
+        {
+          name: "Logistics",
+          image: "/Dashboard_Images/Logistics.png",
+          type: "SP",
+        },
         {
           name: "Sales Dashboard",
           image: "/Dashboard_Images/Logistics-3.png",
+          type: "AR",
         },
-        { name: "Healthcare", image: "/Dashboard_Images/amazon.png" },
+        {
+          name: "Healthcare",
+          image: "/Dashboard_Images/amazon.png",
+          type: "SP",
+        },
         {
           name: "Sales Dashboard",
           image: "/Dashboard_Images/Sales_Dashboard.png",
+          type: "AR",
         },
-        { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
-        { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
+        {
+          name: "Code Camp",
+          image: "/Dashboard_Images/Code_Camp.png",
+          type: "SP",
+        },
+        {
+          name: "Logistics",
+          image: "/Dashboard_Images/Logisitcs.png",
+          type: "SP",
+        },
       ],
       isModalOpen: false,
-      selectedDemo: null,
+      selectedDemo: "",
+      selectedDashboardImage: "",
     };
   },
   methods: {
@@ -119,6 +173,7 @@ export default {
   font-weight: 500;
   color: #006ba6;
   margin-top: 10px;
+  letter-spacing: -1px;
 }
 
 .hero-section p {

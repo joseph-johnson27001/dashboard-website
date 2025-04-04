@@ -8,7 +8,10 @@
       <img :src="image" :alt="name" class="dashboard-image" />
       <div class="overlay"></div>
     </div>
-    <div class="dashboard-name">{{ name }}</div>
+    <div class="dashboard-meta">
+      <div class="dashboard-name">{{ name }}</div>
+      <div class="tag">{{ type }}</div>
+    </div>
   </div>
 </template>
 
@@ -19,6 +22,7 @@ export default {
     name: String,
     image: String,
     index: Number,
+    type: String,
   },
   methods: {
     openModal() {
@@ -71,15 +75,30 @@ export default {
   transition: opacity 0.2s ease;
 }
 
-.dashboard-name {
-  text-align: left;
+.dashboard-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 6px;
+}
+
+.dashboard-name {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 500;
   font-family: "Unica One", cursive;
   color: rgb(24, 24, 24);
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 @keyframes fadeIn {
