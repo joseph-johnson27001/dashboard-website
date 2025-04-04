@@ -11,7 +11,7 @@
         <div class="button-container">
           <router-link to="/hire" class="hire-button">Hire Me</router-link>
           <router-link to="/how-it-works" class="hire-button"
-            >Learn More</router-link
+            >How It Works</router-link
           >
         </div>
       </div>
@@ -127,23 +127,21 @@ export default {
 }
 
 .hero {
-  padding: 20px 20px;
+  padding: 60px 20px;
   text-align: center;
-  border-radius: 8px;
-  margin-bottom: 10px;
 }
 
 .hero h1 {
   font-size: 30px;
   font-family: "Unica One", cursive;
   color: #006ba6;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 16px;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .button-container {
