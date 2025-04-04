@@ -130,7 +130,7 @@ export default {
   padding: 20px 20px;
   text-align: center;
   border-radius: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .hero h1 {
