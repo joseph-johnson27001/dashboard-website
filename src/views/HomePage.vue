@@ -9,16 +9,33 @@
           use as inspiration. Build fast. Customize easily.
         </p>
         <div class="button-container">
-          <router-link to="/hire" class="hire-button">Hire Me</router-link>
-          <router-link to="/how-it-works" class="hire-button"
-            >How It Works</router-link
+          <router-link to="/dashboards" class="button"
+            >View All Dashboards</router-link
+          >
+          <router-link to="/hire" class="button"
+            >Request A Custom Dashboard</router-link
           >
         </div>
       </div>
     </section>
 
-    <!-- Latest Single Page Dashboards -->
     <section class="dashboard-section">
+      <h2>Latest Dashboards</h2>
+      <div class="dashboard-grid">
+        <DashboardDemoCard
+          v-for="(demo, index) in demos"
+          :key="'single-' + index"
+          :name="demo.name"
+          :image="demo.image"
+          :index="index"
+          @open-modal="openModal(demo)"
+        />
+      </div>
+    </section>
+
+    <!-- Latest Single Page Dashboards -->
+
+    <!-- <section class="dashboard-section">
       <h2>Latest Single Page Dashboards</h2>
       <div class="dashboard-grid">
         <DashboardDemoCard
@@ -30,10 +47,10 @@
           @open-modal="openModal(demo)"
         />
       </div>
-    </section>
+    </section> -->
 
     <!-- Latest Multi Page Dashboards -->
-    <section class="dashboard-section">
+    <!-- <section class="dashboard-section">
       <h2>Latest Multi Page Dashboards</h2>
       <div class="dashboard-grid">
         <DashboardDemoCard
@@ -45,10 +62,10 @@
           @open-modal="openModal(demo)"
         />
       </div>
-    </section>
+    </section> -->
 
     <!-- Latest API Ready Dashboards -->
-    <section class="dashboard-section">
+    <!-- <section class="dashboard-section">
       <h2>Latest API Ready Dashboards</h2>
       <div class="dashboard-grid">
         <DashboardDemoCard
@@ -60,7 +77,7 @@
           @open-modal="openModal(demo)"
         />
       </div>
-    </section>
+    </section> -->
 
     <!-- ModalCard -->
     <ModalCard
@@ -86,27 +103,40 @@ export default {
   },
   data() {
     return {
-      singlePageDemos: [
+      demos: [
         { name: "Code Camp", image: "/Dashboard_Images/Logistics-4.png" },
         { name: "Healthcare", image: "/Dashboard_Images/Healthcare-2.png" },
         { name: "Logistics", image: "/Dashboard_Images/Logistics.png" },
         { name: "Sales Dashboard", image: "/Dashboard_Images/Logistics-3.png" },
-      ],
-      multiPageDemos: [
-        { name: "Healthcare", image: "/Dashboard_Images/amazon.png" },
         {
           name: "Sales Dashboard",
           image: "/Dashboard_Images/Sales_Dashboard.png",
         },
         { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
         { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
-      ],
-      apiReadyDemos: [
         { name: "Logistics", image: "/Dashboard_Images/Logistics-4.png" },
-        { name: "Healthcare", image: "/Dashboard_Images/Healthcare-2.png" },
-        { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
-        { name: "Amazon", image: "/Dashboard_Images/amazon.png" },
       ],
+      // singlePageDemos: [
+      //   { name: "Code Camp", image: "/Dashboard_Images/Logistics-4.png" },
+      //   { name: "Healthcare", image: "/Dashboard_Images/Healthcare-2.png" },
+      //   { name: "Logistics", image: "/Dashboard_Images/Logistics.png" },
+      //   { name: "Sales Dashboard", image: "/Dashboard_Images/Logistics-3.png" },
+      // ],
+      // multiPageDemos: [
+      //   { name: "Healthcare", image: "/Dashboard_Images/amazon.png" },
+      //   {
+      //     name: "Sales Dashboard",
+      //     image: "/Dashboard_Images/Sales_Dashboard.png",
+      //   },
+      //   { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
+      //   { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
+      // ],
+      // apiReadyDemos: [
+      //   { name: "Logistics", image: "/Dashboard_Images/Logistics-4.png" },
+      //   { name: "Healthcare", image: "/Dashboard_Images/Healthcare-2.png" },
+      //   { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
+      //   { name: "Amazon", image: "/Dashboard_Images/amazon.png" },
+      // ],
       isModalOpen: false,
       selectedDemo: null,
     };
@@ -166,7 +196,7 @@ export default {
   gap: 20px;
 }
 
-.hire-button {
+.button {
   background-color: #006ba6;
   color: white;
   padding: 10px 20px;
@@ -176,7 +206,7 @@ export default {
   transition: background-color 0.3s;
 }
 
-.hire-button:hover {
+.button:hover {
   background-color: #004f7c;
 }
 

@@ -6,6 +6,8 @@ import Hire from "../views/HirePage.vue";
 import HowItWorks from "../views/HowItWorksPage.vue";
 import API from "../views/APIReadyPage.vue";
 
+import Dashboards from "../views/DashboardsPage.vue";
+
 const routes = [
   { path: "/", component: Home, meta: { title: "Home" } },
   {
@@ -28,6 +30,11 @@ const routes = [
     path: "/how-it-works",
     component: HowItWorks,
     meta: { title: "How It Works" },
+  },
+  {
+    path: "/dashboards",
+    component: Dashboards,
+    meta: { title: "Dashboards" },
   },
 ];
 

@@ -8,7 +8,10 @@
         <router-link to="/how-it-works" active-class="active-link"
           >How It Works</router-link
         >
-        <router-link to="/single-page-dashboards" active-class="active-link"
+        <router-link to="/dashboards" active-class="active-link"
+          >Dashboards</router-link
+        >
+        <!-- <router-link to="/single-page-dashboards" active-class="active-link"
           >Single Page</router-link
         >
         <router-link to="/multi-page-dashboards" active-class="active-link"
@@ -16,7 +19,7 @@
         >
         <router-link to="/api-ready-dashboards" active-class="active-link"
           >API Ready</router-link
-        >
+        > -->
 
         <router-link to="/hire" active-class="active-link">Hire</router-link>
       </div>
