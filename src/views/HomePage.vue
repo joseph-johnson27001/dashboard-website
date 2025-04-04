@@ -24,10 +24,11 @@
       <div class="dashboard-grid">
         <DashboardDemoCard
           v-for="(demo, index) in demos"
-          :key="'single-' + index"
+          :key="index"
           :name="demo.name"
           :image="demo.image"
           :index="index"
+          :type="demo.type"
           @open-modal="openModal(demo)"
         />
       </div>
@@ -104,17 +105,46 @@ export default {
   data() {
     return {
       demos: [
-        { name: "Code Camp", image: "/Dashboard_Images/Logistics-4.png" },
-        { name: "Healthcare", image: "/Dashboard_Images/Healthcare-2.png" },
-        { name: "Logistics", image: "/Dashboard_Images/Logistics.png" },
-        { name: "Sales Dashboard", image: "/Dashboard_Images/Logistics-3.png" },
+        {
+          name: "Code Camp",
+          image: "/Dashboard_Images/Logistics-4.png",
+          type: "SP / Vue3 / ApexCharts",
+        },
+        {
+          name: "Healthcare",
+          image: "/Dashboard_Images/Healthcare-2.png",
+          type: "MP / Vue3 / Chart.js",
+        },
+        {
+          name: "Logistics",
+          image: "/Dashboard_Images/Logistics.png",
+          type: "SP / Vue3 / ApexCharts",
+        },
+        {
+          name: "Sales Dashboard",
+          image: "/Dashboard_Images/Logistics-3.png",
+          type: "SP / Vue3 / Chart.js",
+        },
+        {
+          name: "Healthcare",
+          image: "/Dashboard_Images/amazon.png",
+          type: "MP / Vue3 / Chart.js",
+        },
         {
           name: "Sales Dashboard",
           image: "/Dashboard_Images/Sales_Dashboard.png",
+          type: "SP / Vue3 / Chart.js",
         },
-        { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
-        { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
-        { name: "Logistics", image: "/Dashboard_Images/Logistics-4.png" },
+        {
+          name: "HR Dashboard",
+          image: "/Dashboard_Images/Code_Camp.png",
+          type: "AR / Vue3 / ApexCharts",
+        },
+        {
+          name: "Logistics",
+          image: "/Dashboard_Images/Logisitcs.png",
+          type: "SP / Vue3 / ApexCharts",
+        },
       ],
       // singlePageDemos: [
       //   { name: "Code Camp", image: "/Dashboard_Images/Logistics-4.png" },
