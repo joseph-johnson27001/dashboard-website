@@ -56,14 +56,13 @@
         />
       </div>
     </section>
-
-    <!-- Modal (optional) -->
-    <div v-if="isModalOpen" class="modal-overlay">
-      <div class="modal">
-        <h2>{{ selectedDemo }}</h2>
-        <p>Details about {{ selectedDemo }} coming soon...</p>
-        <button @click="closeModal">Close</button>
-      </div>
+  </div>
+  <!-- Modal -->
+  <div v-if="isModalOpen" class="modal-overlay">
+    <div class="modal">
+      <h2>{{ selectedDemo }}</h2>
+      <p>Details about {{ selectedDemo }} coming soon...</p>
+      <button @click="closeModal">Close</button>
     </div>
   </div>
 </template>
@@ -127,7 +126,7 @@ export default {
   padding: 40px 20px;
   text-align: center;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .hero h1 {
@@ -159,7 +158,7 @@ export default {
 
 /* Section Headers */
 .dashboard-section h2 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   color: #006ba6;
   margin-bottom: 15px;
@@ -171,7 +170,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1200px) {
