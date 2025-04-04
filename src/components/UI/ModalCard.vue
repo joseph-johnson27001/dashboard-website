@@ -1,12 +1,19 @@
 <template>
   <div v-if="isOpen" class="modal-overlay" @click="closeModal">
     <div class="modal" @click.stop>
-      <h2>{{ title }}</h2>
+      <!-- Close Button -->
+      <div class="close-btn-container" @click="closeModal">
+        <span class="close-btn">&times;</span>
+      </div>
+
+      <!-- Title Section -->
+      <h2 class="modal-title">{{ title }}</h2>
+
+      <!-- Modal Buttons -->
       <div class="modal-buttons">
         <button @click="viewDemo">View Demo</button>
         <button @click="buyNow">Buy Now</button>
       </div>
-      <button class="close-btn" @click="closeModal">Close</button>
     </div>
   </div>
 </template>
@@ -47,58 +54,99 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
 }
 
 .modal {
-  background: white;
-  padding: 25px;
-  border-radius: 8px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
   width: 90%;
-  max-width: 500px;
-  text-align: center;
+  max-width: 600px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  animation: slideIn 0.3s ease-out;
 }
 
-h2 {
+.close-btn-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn-container:hover {
+  background-color: #e0e0e0;
+}
+
+.close-btn {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Modal Title */
+.modal-title {
+  font-family: "Unica One", cursive;
   font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
   color: #006ba6;
-  margin-bottom: 20px;
+  margin-top: 0;
 }
 
+/* Modal Buttons */
 .modal-buttons {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 button {
   background-color: #006ba6;
   color: white;
-  padding: 10px 16px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 16px;
 }
 
 button:hover {
   background-color: #004f7c;
 }
 
-.close-btn {
-  background-color: #ff6b6b;
-  color: white;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 15px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.close-btn:hover {
-  background-color: #d94f4f;
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 </style>
