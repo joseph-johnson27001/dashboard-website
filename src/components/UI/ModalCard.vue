@@ -83,8 +83,8 @@ export default {
 
 .close-btn-container {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   width: 30px;
   height: 30px;
   display: flex;
@@ -132,7 +132,7 @@ export default {
 .modal-buttons {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 10px;
   margin-top: 20px;
 }
 

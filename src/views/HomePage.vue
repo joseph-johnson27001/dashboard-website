@@ -113,7 +113,6 @@ export default {
   },
   methods: {
     openModal(demo) {
-      console.log(demo);
       this.selectedDemo = demo.name;
       this.selectedDashboardImage = demo.image;
       this.isModalOpen = true;
