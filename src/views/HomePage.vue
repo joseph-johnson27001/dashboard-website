@@ -61,24 +61,27 @@
         />
       </div>
     </section>
-  </div>
-  <!-- Modal -->
-  <div v-if="isModalOpen" class="modal-overlay">
-    <div class="modal">
-      <h2>{{ selectedDemo }}</h2>
-      <p>Details about {{ selectedDemo }} coming soon...</p>
-      <button @click="closeModal">Close</button>
-    </div>
+
+    <!-- ModalCard -->
+    <ModalCard
+      :isOpen="isModalOpen"
+      :title="selectedDemo"
+      @close-modal="closeModal"
+      @view-demo="viewDemo"
+      @buy-now="buyNow"
+    />
   </div>
 </template>
 
 <script>
 import DashboardDemoCard from "@/components/UI/DashboardDemoCard.vue";
+import ModalCard from "@/components/UI/ModalCard.vue";
 
 export default {
   name: "HomePage",
   components: {
     DashboardDemoCard,
+    ModalCard,
   },
   data() {
     return {
@@ -115,6 +118,14 @@ export default {
     closeModal() {
       this.isModalOpen = false;
       this.selectedDemo = null;
+    },
+    viewDemo() {
+      console.log("Viewing demo for:", this.selectedDemo);
+      // Implement demo view action here
+    },
+    buyNow() {
+      console.log("Buying now for:", this.selectedDemo);
+      // Implement buy action here
     },
   },
 };
