@@ -127,21 +127,23 @@ export default {
 }
 
 .hero {
-  padding: 60px 20px;
+  padding: 20px 20px;
   text-align: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .hero h1 {
   font-size: 30px;
   font-family: "Unica One", cursive;
   color: #006ba6;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 16px;
   font-weight: 300;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .button-container {
