@@ -10,7 +10,9 @@
         </p>
         <div class="button-container">
           <router-link to="/hire" class="hire-button">Hire Me</router-link>
-          <router-link to="/hire" class="hire-button">Learn More</router-link>
+          <router-link to="/how-it-works" class="hire-button"
+            >Learn More</router-link
+          >
         </div>
       </div>
     </section>

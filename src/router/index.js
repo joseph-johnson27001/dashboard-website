@@ -3,6 +3,7 @@ import Home from "../views/HomePage.vue";
 import Single from "../views/SinglePage.vue";
 import Multi from "../views/MultiPage.vue";
 import Hire from "../views/HirePage.vue";
+import Learn from "../views/LearnMorePage.vue";
 import API from "../views/APIReadyPage.vue";
 
 const routes = [
@@ -22,6 +23,11 @@ const routes = [
     path: "/api-ready-dashboards",
     component: API,
     meta: { title: "API Ready Dashboards" },
+  },
+  {
+    path: "/how-it-works",
+    component: Learn,
+    meta: { title: "Learn More" },
   },
 ];
 
