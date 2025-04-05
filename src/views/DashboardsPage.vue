@@ -5,7 +5,7 @@
       <div class="hero-header">
         <h1>Dashboards</h1>
         <i
-          class="fas fa-circle-info info-icon"
+          class="far fa-circle-question info-icon"
           @click="showInfo = true"
           title="Learn more about the dashboards"
         ></i>
@@ -41,18 +41,23 @@
       @view-demo="viewDemo"
       @buy-now="buyNow"
     />
+
+    <!-- Information Modal Card -->
+    <InformationModalCard :isOpen="showInfo" @close-modal="showInfo = false" />
   </div>
 </template>
 
 <script>
 import DashboardDemoCard from "@/components/UI/DashboardDemoCard.vue";
 import ModalCard from "@/components/UI/ModalCard.vue";
+import InformationModalCard from "@/components/UI/InformationModalCard.vue";
 
 export default {
   name: "DashboardsPage",
   components: {
     DashboardDemoCard,
     ModalCard,
+    InformationModalCard,
   },
   data() {
     return {
@@ -171,13 +176,13 @@ export default {
 }
 
 .hero-section {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .hero-section h1 {
   font-family: "Unica One", cursive;
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 500;
   color: #006ba6;
   margin-top: 10px;
@@ -187,6 +192,7 @@ export default {
 .hero-section p {
   font-size: 15px;
   margin-top: 5px;
+  margin-bottom: 0px;
   font-weight: 300;
 }
 
@@ -213,7 +219,6 @@ export default {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  margin-top: 10px;
 }
 
 @media (max-width: 1400px) {
