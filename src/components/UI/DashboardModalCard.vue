@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "ModalCard",
+  name: "DashboardModalCard",
   props: {
     isOpen: {
       type: Boolean,

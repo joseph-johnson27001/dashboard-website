@@ -24,8 +24,8 @@
       />
     </div>
 
-    <!-- ModalCard -->
-    <ModalCard
+    <!-- DashboardModalCard -->
+    <DashboardModalCard
       :isOpen="isModalOpen"
       :title="selectedDemo"
       :image="selectedDashboardImage"
@@ -38,13 +38,13 @@
 
 <script>
 import DashboardDemoCard from "@/components/UI/DashboardDemoCard.vue";
-import ModalCard from "@/components/UI/ModalCard.vue";
+import DashboardModalCard from "@/components/UI/DashboardModalCard.vue";
 
 export default {
   name: "SinglePage",
   components: {
     DashboardDemoCard,
-    ModalCard,
+    DashboardModalCard,
   },
   data() {
     return {

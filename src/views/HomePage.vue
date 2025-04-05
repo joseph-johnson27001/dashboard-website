@@ -34,53 +34,7 @@
       </div>
     </section>
 
-    <!-- Latest Single Page Dashboards -->
-
-    <!-- <section class="dashboard-section">
-      <h2>Latest Single Page Dashboards</h2>
-      <div class="dashboard-grid">
-        <DashboardDemoCard
-          v-for="(demo, index) in singlePageDemos"
-          :key="'single-' + index"
-          :name="demo.name"
-          :image="demo.image"
-          :index="index"
-          @open-modal="openModal(demo)"
-        />
-      </div>
-    </section> -->
-
-    <!-- Latest Multi Page Dashboards -->
-    <!-- <section class="dashboard-section">
-      <h2>Latest Multi Page Dashboards</h2>
-      <div class="dashboard-grid">
-        <DashboardDemoCard
-          v-for="(demo, index) in multiPageDemos"
-          :key="'multi-' + index"
-          :name="demo.name"
-          :image="demo.image"
-          :index="index"
-          @open-modal="openModal(demo)"
-        />
-      </div>
-    </section> -->
-
-    <!-- Latest API Ready Dashboards -->
-    <!-- <section class="dashboard-section">
-      <h2>Latest API Ready Dashboards</h2>
-      <div class="dashboard-grid">
-        <DashboardDemoCard
-          v-for="(demo, index) in apiReadyDemos"
-          :key="'api-' + index"
-          :name="demo.name"
-          :image="demo.image"
-          :index="index"
-          @open-modal="openModal(demo)"
-        />
-      </div>
-    </section> -->
-
-    <!-- ModalCard -->
+    <!-- DashboardModalCard -->
     <ModalCard
       :isOpen="isModalOpen"
       :title="selectedDemo"
@@ -94,13 +48,13 @@
 
 <script>
 import DashboardDemoCard from "@/components/UI/DashboardDemoCard.vue";
-import ModalCard from "@/components/UI/ModalCard.vue";
+import DashboardModalCard from "@/components/UI/DashboardModalCard.vue";
 
 export default {
   name: "HomePage",
   components: {
     DashboardDemoCard,
-    ModalCard,
+    DashboardModalCard,
   },
   data() {
     return {
@@ -146,27 +100,6 @@ export default {
           type: "SP / Vue3 / ApexCharts",
         },
       ],
-      // singlePageDemos: [
-      //   { name: "Code Camp", image: "/Dashboard_Images/Logistics-4.png" },
-      //   { name: "Healthcare", image: "/Dashboard_Images/Healthcare-2.png" },
-      //   { name: "Logistics", image: "/Dashboard_Images/Logistics.png" },
-      //   { name: "Sales Dashboard", image: "/Dashboard_Images/Logistics-3.png" },
-      // ],
-      // multiPageDemos: [
-      //   { name: "Healthcare", image: "/Dashboard_Images/amazon.png" },
-      //   {
-      //     name: "Sales Dashboard",
-      //     image: "/Dashboard_Images/Sales_Dashboard.png",
-      //   },
-      //   { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
-      //   { name: "Logistics", image: "/Dashboard_Images/Logisitcs.png" },
-      // ],
-      // apiReadyDemos: [
-      //   { name: "Logistics", image: "/Dashboard_Images/Logistics-4.png" },
-      //   { name: "Healthcare", image: "/Dashboard_Images/Healthcare-2.png" },
-      //   { name: "Code Camp", image: "/Dashboard_Images/Code_Camp.png" },
-      //   { name: "Amazon", image: "/Dashboard_Images/amazon.png" },
-      // ],
       isModalOpen: false,
       selectedDemo: null,
     };

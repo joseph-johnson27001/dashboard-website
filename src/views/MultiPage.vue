@@ -23,7 +23,7 @@
       />
     </div>
 
-    <!-- ModalCard -->
+    <!-- DashboardModalCard -->
     <ModalCard
       :isOpen="isModalOpen"
       :title="selectedDemo"
@@ -37,13 +37,13 @@
 
 <script>
 import DashboardDemoCard from "@/components/UI/DashboardDemoCard.vue";
-import ModalCard from "@/components/UI/ModalCard.vue";
+import DashboardModalCard from "@/components/UI/DashboardModalCard.vue";
 
 export default {
   name: "MultiPage",
   components: {
     DashboardDemoCard,
-    ModalCard,
+    DashboardModalCard,
   },
   data() {
     return {
