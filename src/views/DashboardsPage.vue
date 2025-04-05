@@ -2,7 +2,14 @@
   <div class="dashboard-page">
     <!-- Hero Section -->
     <section class="hero-section">
-      <h1>Dashboards</h1>
+      <div class="hero-header">
+        <h1>Dashboards</h1>
+        <i
+          class="fas fa-circle-info info-icon"
+          @click="showInfo = true"
+          title="Learn more about the dashboards"
+        ></i>
+      </div>
       <p>
         Browse a curated collection of professional dashboards built for
         performance, flexibility, and fast integration. Whether you're looking
@@ -131,6 +138,7 @@ export default {
           type: "SP / Vue3 / ApexCharts",
         },
       ],
+      showInfo: false,
       isModalOpen: false,
       selectedDemo: "",
       selectedDashboardImage: "",
@@ -178,7 +186,26 @@ export default {
 
 .hero-section p {
   font-size: 15px;
+  margin-top: 5px;
   font-weight: 300;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-icon {
+  font-size: 20px;
+  color: #006ba6;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.info-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 /* Dashboard Grid */
