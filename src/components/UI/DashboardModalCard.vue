@@ -113,6 +113,7 @@ export default {
   font-weight: 500;
   color: #006ba6;
   margin-top: 0;
+  letter-spacing: -1px;
 }
 
 /* Dashboard Image */

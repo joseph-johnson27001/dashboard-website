@@ -118,17 +118,17 @@ export default {
 .modal-title {
   font-family: "Unica One", cursive;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-weight: 500;
   color: #006ba6;
-  margin-top: 0;
+  margin-top: 10px;
   letter-spacing: -1px;
 }
 
 .info-content h3 {
   font-size: 18px;
   color: #333;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 

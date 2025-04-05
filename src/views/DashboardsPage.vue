@@ -7,7 +7,7 @@
         <i
           class="far fa-circle-question info-icon"
           @click="showInfo = true"
-          title="Learn more about the dashboards"
+          title="Dashboard Information"
         ></i>
       </div>
       <p>
@@ -207,11 +207,6 @@ export default {
   color: #006ba6;
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.info-icon:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
 }
 
 /* Dashboard Grid */
