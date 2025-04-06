@@ -69,22 +69,22 @@ export default {
         },
         {
           name: "Code Camp",
-          image: "/Dashboard_Images/Logistics-4.png",
+          image: "/Dashboard_Images/Code_Camp.png",
           type: "SP / Vue3 / ApexCharts",
         },
         {
           name: "Finance",
-          image: "/Dashboard_Images/Healthcare-2.png",
+          image: "/Dashboard_Images/Finance.png",
           type: "MP / Vue3 / Chart.js",
         },
         {
           name: "Healthcare",
-          image: "/Dashboard_Images/Logistics-3.png",
+          image: "/Dashboard_Images/Healthcare.png",
           type: "SP / Vue3 / Chart.js",
         },
         {
           name: "HR Dashboard",
-          image: "/Dashboard_Images/Code_Camp.png",
+          image: "/Dashboard_Images/HR-Dashboard.png",
           type: "AR / Vue3 / ApexCharts",
         },
         {
