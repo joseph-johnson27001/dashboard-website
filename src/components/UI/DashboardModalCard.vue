@@ -126,7 +126,7 @@ export default {
 .dashboard-image {
   max-width: 100%;
   border-radius: 10px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Modal Buttons */

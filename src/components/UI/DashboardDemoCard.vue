@@ -61,6 +61,7 @@ export default {
   transition: opacity 0.6s ease;
   display: block;
   border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .overlay {

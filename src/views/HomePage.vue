@@ -145,7 +145,7 @@ export default {
 .hero h1 {
   font-size: 34px;
   font-family: "Unica One", cursive;
-  color: rgb(24, 24, 24);
+  color: #333;
   letter-spacing: -1px;
   margin-bottom: 0px;
   padding-bottom: 0;
