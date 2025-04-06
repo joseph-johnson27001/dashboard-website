@@ -5,7 +5,6 @@ import Multi from "../views/MultiPage.vue";
 import Hire from "../views/HirePage.vue";
 import HowItWorks from "../views/HowItWorksPage.vue";
 import API from "../views/APIReadyPage.vue";
-
 import Dashboards from "../views/DashboardsPage.vue";
 
 const routes = [
@@ -41,6 +40,9 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior() {
+    return { top: 0 };
+  },
 });
 
 router.beforeEach((to, from, next) => {
