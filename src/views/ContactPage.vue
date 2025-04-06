@@ -26,6 +26,7 @@
 
         <label>Dashboard Type</label>
         <select v-model="form.dashboardType" required>
+          <option disabled value="">Please select</option>
           <option value="Single Page Dashboards">Single Page Dashboards</option>
           <option value="Multi Page Dashboards">Multi Page Dashboards</option>
           <option value="API Ready Dashboards">API Ready Dashboards</option>
@@ -42,6 +43,8 @@
 </template>
 
 <script>
+import emailjs from "emailjs-com";
+
 export default {
   name: "ContactPage",
   data() {
@@ -50,16 +53,43 @@ export default {
         name: "",
         email: "",
         company: "",
-        details: "",
         dashboardType: "",
+        details: "",
       },
     };
   },
   methods: {
     submitForm() {
-      alert(
-        `Inquiry submitted for: ${this.form.dashboardType}. A member of our team will get back to you soon!`
-      );
+      const serviceID = "service_1atgpf8";
+      const templateID = "template_00lp41j";
+      const publicKey = "PqLTs_mca__hM55qf";
+
+      const templateParams = {
+        name: this.form.name,
+        email: this.form.email,
+        company: this.form.company || "N/A",
+        dashboardType: this.form.dashboardType,
+        details: this.form.details,
+        time: new Date().toLocaleString(),
+      };
+
+      emailjs
+        .send(serviceID, templateID, templateParams, publicKey)
+        .then(() => {
+          alert("✅ Your inquiry has been sent! We'll be in touch soon.");
+          // Reset form
+          this.form = {
+            name: "",
+            email: "",
+            company: "",
+            dashboardType: "",
+            details: "",
+          };
+        })
+        .catch((error) => {
+          console.error("EmailJS error:", error);
+          alert("❌ Something went wrong. Please try again later.");
+        });
     },
   },
 };
@@ -88,7 +118,7 @@ p {
 }
 
 form {
-  font-family: "Inter tight" sans-serif;
+  font-family: "Inter tight", sans-serif;
   display: flex;
   flex-direction: column;
 }
