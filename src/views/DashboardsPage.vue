@@ -37,6 +37,7 @@
       :isOpen="isModalOpen"
       :title="selectedDemo"
       :image="selectedDashboardImage"
+      :description="selectedDescription"
       @close-modal="closeModal"
       @view-demo="viewDemo"
       @buy-now="buyNow"
@@ -65,37 +66,51 @@ export default {
         {
           name: "Healthcare",
           image: "/Dashboard_Images/Healthcare.png",
-          type: "MP / Vue3 / Chart.js",
+          type: "SP / Vue3 / Chart.js",
+          description:
+            "A dashboard built for modern healthcare analytics with Chart.js.",
         },
         {
           name: "Logistics",
           image: "/Dashboard_Images/Logistics.png",
           type: "SP / Vue3 / ApexCharts",
+          description:
+            "Streamline supply chain insights and logistics performance with rich visuals.",
         },
         {
           name: "Code Camp",
           image: "/Dashboard_Images/Code_Camp.png",
           type: "SP / Vue3 / ApexCharts",
+          description:
+            "Built for dev bootcamps and online learning platforms to track progress and engagement.",
         },
         {
           name: "Finance",
           image: "/Dashboard_Images/Finance.png",
           type: "SP / Vue3 / Chart.js",
+          description:
+            "A robust financial dashboard for visualizing revenue, expenses, and forecasting.",
         },
         {
           name: "HR Dashboard",
           image: "/Dashboard_Images/HR-Dashboard.png",
           type: "AR / Vue3 / ApexCharts",
+          description:
+            "Keep tabs on headcount, performance metrics, and employee engagement at a glance.",
         },
         {
           name: "Sales",
           image: "/Dashboard_Images/Sales.png",
           type: "SP / Vue3 / ApexCharts",
+          description:
+            "Built for sales teams to monitor pipelines, conversion rates, and revenue trends.",
         },
         {
           name: "Worksphere",
           image: "/Dashboard_Images/Worksphere.png",
           type: "MP / Vue3 / ApexCharts",
+          description:
+            "A workplace insights dashboard focusing on productivity, space usage, and activity patterns.",
         },
       ],
       showInfo: false,
@@ -108,6 +123,7 @@ export default {
     openModal(demo) {
       this.selectedDemo = demo.name;
       this.selectedDashboardImage = demo.image;
+      this.selectedDescription = demo.description;
       this.isModalOpen = true;
     },
     closeModal() {

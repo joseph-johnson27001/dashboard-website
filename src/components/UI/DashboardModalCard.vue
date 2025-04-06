@@ -6,9 +6,15 @@
         <span class="close-btn">&times;</span>
       </div>
 
-      <!-- Title Section -->
+      <!-- Title -->
       <h2 class="modal-title">{{ title }}</h2>
-      <!-- Display Dashboard Image -->
+
+      <!-- Description -->
+      <p class="modal-description" v-if="description">
+        {{ description }}
+      </p>
+
+      <!-- Dashboard Image -->
       <div class="dashboard-image-container">
         <img :src="image" alt="Dashboard Image" class="dashboard-image" />
       </div>
@@ -39,6 +45,10 @@ export default {
     image: {
       type: String,
       required: true,
+    },
+    description: {
+      type: String,
+      default: "",
     },
   },
   methods: {
@@ -107,18 +117,25 @@ export default {
   font-weight: bold;
 }
 
-/* Modal Title */
 .modal-title {
   font-family: "Unica One", cursive;
   font-size: 24px;
-  margin-bottom: 10px;
   font-weight: 500;
   color: #006ba6;
   margin-top: 0;
+  margin-bottom: 0;
   letter-spacing: -1px;
 }
 
-/* Dashboard Image */
+.modal-description {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
 .dashboard-image-container {
   text-align: center;
 }
@@ -129,12 +146,11 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* Modal Buttons */
 .modal-buttons {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .demo-button {
