@@ -153,7 +153,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
   box-sizing: border-box;
 }
 
