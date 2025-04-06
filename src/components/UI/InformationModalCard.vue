@@ -19,7 +19,7 @@
         <ul v-if="section.type === 'list'">
           <li v-for="(item, idx) in section.content" :key="idx">
             <strong class="section-label">{{ item.label }}</strong>
-            <span class="section-content"> – {{ item.text }}</span>
+            <span class="section-content">: {{ item.text }}</span>
           </li>
         </ul>
 
@@ -173,14 +173,14 @@ export default {
 .info-content li {
   font-size: 15px;
   line-height: 1.6;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   list-style: none;
   margin-left: -20px;
 }
 
 .section-label {
-  font-weight: bold;
-  color: #222;
+  font-weight: 400;
+  color: #006ba6;
 }
 
 .section-content {
@@ -189,7 +189,7 @@ export default {
 
 .info-content p {
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 /* Animations */

@@ -231,4 +231,16 @@ p {
     opacity: 1;
   }
 }
+
+@media (max-width: 1200px) {
+  .dashboard-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
