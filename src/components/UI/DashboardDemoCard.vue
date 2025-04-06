@@ -71,7 +71,7 @@ export default {
   background: rgba(0, 0, 0, 0.45);
   border-radius: 4px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s linear;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
