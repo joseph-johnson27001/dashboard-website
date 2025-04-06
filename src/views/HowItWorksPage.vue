@@ -96,7 +96,7 @@ export default {
         },
         {
           title: "Multi Page Dashboards",
-          image: "/Dashboard_Images/Code_Camp2.png",
+          image: "/Dashboard_Images/Healthcare.png",
           type: "Advanced",
           descriptionList: [
             "Structured with multiple pages for different sections.",
@@ -107,7 +107,7 @@ export default {
         },
         {
           title: "API Ready Dashboards",
-          image: "/Dashboard_Images/Healthcare-2.png",
+          image: "/Dashboard_Images/HR-Dashboard.png",
           type: "API-Integrated",
           descriptionList: [
             "No pre-filled data, designed for custom API integration.",
