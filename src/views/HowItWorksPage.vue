@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-text">
-        <h1>How It Works</h1>
+        <h1>Dashboard Types</h1>
         <p>
           Learn about the different types of dashboards, the purchase process,
           and how I can create a custom solution tailored to your needs.
@@ -13,79 +13,34 @@
 
     <!-- Dashboards Overview -->
     <section class="dashboards-overview">
-      <div class="dashboard-types">
-        <!-- Single Page Dashboards -->
-        <div class="dashboard-type">
-          <h3>Single Page Dashboards</h3>
-          <p>
-            A single page dashboard is a compact, fast-loading solution
-            displaying all necessary data in one page. Perfect for projects that
-            need speed and simplicity. The data will be stored inside the
-            template's code (in the data object). You'll need to update or
-            modify this data to suit your specific needs.
-          </p>
-        </div>
-
-        <!-- Multi Page Dashboards -->
-        <div class="dashboard-type">
-          <h3>Multi Page Dashboards</h3>
-          <p>
-            Multi-page dashboards provide a more detailed and organized
-            experience with separate pages for each section of the data. Great
-            for large-scale applications that require deeper categorization. The
-            data will also be stored in the template's code, similar to
-            single-page dashboards. Additionally, you'll need to build your own
-            API folder and link it to your dashboard.
-          </p>
-        </div>
-
-        <!-- API Ready Dashboards -->
-        <div class="dashboard-type">
-          <h3>API Ready Dashboards</h3>
-          <p>
-            API-ready dashboards are designed to seamlessly integrate with your
-            data sources. These templates come with no data pre-filled. Instead,
-            they simulate an API call to a back-end folder with JSON data files.
-            Once you purchase an API-ready dashboard, simply update the API
-            calls to your data source and remove the data folder. It’s a
-            straightforward setup to plug into your own data system.
-          </p>
+      <div class="dashboard-container">
+        <div
+          v-for="(dashboard, index) in dashboards"
+          :key="index"
+          class="dashboard-card fade-in"
+          :style="{ animationDelay: index * 0.08 + 's' }"
+        >
+          <div class="image-container">
+            <img
+              :src="dashboard.image"
+              :alt="dashboard.title"
+              class="dashboard-image"
+            />
+          </div>
+          <div class="dashboard-meta">
+            <div class="dashboard-name">{{ dashboard.title }}</div>
+            <div class="tag">{{ dashboard.type }}</div>
+          </div>
+          <!-- Description List (without list style) -->
+          <div class="dashboard-description">
+            <ul>
+              <li v-for="(item, idx) in dashboard.descriptionList" :key="idx">
+                {{ item }}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Purchase & Download Process -->
-    <section class="purchase-process">
-      <h3>Purchase & Download Process</h3>
-      <p>
-        After purchasing a dashboard, you will receive a download link. This
-        link will expire within 24 hours, so be sure to download your dashboard
-        during that time. Inside the package, you will find all the necessary
-        files to get started.
-      </p>
-      <p>
-        - For Single and Multi-Page Dashboards: The data will be inside the
-        template code (in the data object). You can easily modify it to suit
-        your project’s needs.
-      </p>
-      <p>
-        - For API Ready Dashboards: The templates will not have any pre-filled
-        data. They will simulate an API call to a back-end data folder with JSON
-        files. To integrate with your own data, just update the API calls and
-        remove the data folder.
-      </p>
-    </section>
-
-    <!-- Custom Work & Contracting -->
-    <section class="custom-work">
-      <h3>Custom Work & Contracting</h3>
-      <p>
-        If you need a custom dashboard tailored to your project’s unique
-        requirements, I am available for hire. Whether you want me to customize
-        an existing template or work on a full project, I can help. I offer
-        flexible contracting options including day rates and full-time work.
-      </p>
-      <a href="/hire" class="hire-button">Hire Me</a>
     </section>
   </div>
 </template>
@@ -93,6 +48,45 @@
 <script>
 export default {
   name: "HowItWorksPage",
+  data() {
+    return {
+      dashboards: [
+        {
+          title: "Single Page Dashboards",
+          image: "/Dashboard_Images/Code_Camp.png",
+          type: "Basic",
+          descriptionList: [
+            "Compact and fast-loading.",
+            "Displays all data on a single page.",
+            "Ideal for small projects needing simplicity.",
+            "Data stored within the code itself (in the data object).",
+          ],
+        },
+        {
+          title: "Multi Page Dashboards",
+          image: "/Dashboard_Images/Code_Camp2.png",
+          type: "Advanced",
+          descriptionList: [
+            "Organized with multiple pages for each section.",
+            "Great for large-scale applications.",
+            "Data stored in the template code.",
+            "Requires building your own API folder for integration.",
+          ],
+        },
+        {
+          title: "API Ready Dashboards",
+          image: "/Dashboard_Images/Healthcare-2.png",
+          type: "API-Integrated",
+          descriptionList: [
+            "No pre-filled data.",
+            "Simulates API calls to backend data (JSON files).",
+            "Easy to integrate with your own data system.",
+            "Simply update API calls to link with your data.",
+          ],
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -102,89 +96,88 @@ export default {
   animation: fadeIn 0.5s forwards;
 }
 
+/* Hero Section */
 .hero h1 {
   font-family: "Unica One", cursive;
   font-size: 24px;
   margin-bottom: 10px;
-  font-weight: 500;
   color: #006ba6;
   margin-top: 10px;
   letter-spacing: -1px;
+  font-weight: 400;
 }
 
 p {
-  font-size: 15px;
   font-weight: 300;
 }
 
-/* Dashboards Overview */
-.dashboard-types {
+.dashboard-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.dashboard-type h3 {
-  font-family: "Unica One", cursive;
-  color: #006ba6;
-  margin-bottom: 15px;
-  font-size: 22px;
-}
-
-.dashboard-type p {
-  font-size: 16px;
-  font-weight: 300;
-}
-
-/* Purchase Process Section */
-.purchase-process {
-  background: #f7f7f7;
-  margin-bottom: 30px;
-}
-
-.purchase-process h3 {
-  font-family: "Unica One", cursive;
-  color: #006ba6;
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.purchase-process p {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 15px;
-}
-
-.custom-work {
+  gap: 20px;
   margin-top: 30px;
+  box-sizing: border-box;
 }
 
-.custom-work h3 {
-  font-family: "Unica One", cursive;
-  font-size: 22px;
-  color: #006ba6;
-  margin-bottom: 20px;
-  margin-top: 20px;
+.dashboard-card {
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
 }
 
-.custom-work p {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 25px;
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
-.hire-button {
-  background-color: #006ba6;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
+.dashboard-image {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 12;
+  transition: opacity 0.6s ease;
+  display: block;
+  border-radius: 4px;
+}
+
+.dashboard-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.dashboard-name {
+  font-size: 18px;
+  line-height: 1.2;
   font-weight: 500;
-  border-radius: 6px;
-  transition: background-color 0.3s;
+  font-family: "Unica One", cursive;
+  color: #006ba6;
+  letter-spacing: -1px;
 }
 
-.hire-button:hover {
-  background-color: #004f7c;
+.tag {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dashboard-description ul {
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.dashboard-description li {
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
 /* Fade-in Animation */

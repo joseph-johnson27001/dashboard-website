@@ -15,19 +15,15 @@
         v-for="(section, index) in infoSections"
         :key="index"
       >
-        <h3 class="info-heading">
-          <span class="icon-container">
-            <i :class="section.icon" class="icon"></i>
-          </span>
-          {{ section.title }}
-        </h3>
+        <!-- List Section -->
         <ul v-if="section.type === 'list'">
-          <li
-            v-for="(item, idx) in section.content"
-            :key="idx"
-            v-html="item"
-          ></li>
+          <li v-for="(item, idx) in section.content" :key="idx">
+            <strong class="section-label">{{ item.label }}</strong>
+            <span class="section-content"> – {{ item.text }}</span>
+          </li>
         </ul>
+
+        <!-- Paragraph Section -->
         <p v-else-if="section.type === 'paragraph'">
           {{ section.content }}
         </p>
@@ -53,27 +49,19 @@ export default {
           icon: "far fa-folder-open",
           type: "list",
           content: [
-            "<strong>SP</strong> – Single Page Dashboard",
-            "<strong>MP</strong> – Multi Page Dashboard",
-            "<strong>AR</strong> – API Ready Dashboard",
+            {
+              label: "SP",
+              text: "Single Page Dashboard – Includes one completed main page with a styled, non-functional navigation. The layout is fully responsive, providing a solid foundation for expanding into a full site. Great for getting started quickly.",
+            },
+            {
+              label: "MP",
+              text: "Multi Page Dashboard – Every page is built and connected via a fully working, responsive navigation. However, the data is stored locally within each component's data section, and there’s no API structure in place.",
+            },
+            {
+              label: "AR",
+              text: "API Ready Dashboard – Complete, fully built site with a working navigation and data flow. An `api` folder simulates API calls to a `data` folder. Just plug in your actual APIs and remove the mock data to go live.",
+            },
           ],
-        },
-        {
-          title: "Technologies Used",
-          icon: "fas fa-puzzle-piece",
-          type: "list",
-          content: [
-            "<strong>Vue 3</strong> – JavaScript framework for fast & reactive UIs",
-            "<strong>ApexCharts</strong> – Advanced data visualization/charting library",
-            "<strong>Chart.js</strong> – Lightweight chart library with solid defaults",
-          ],
-        },
-        {
-          title: "How to Use",
-          icon: "far fa-lightbulb",
-          type: "paragraph",
-          content:
-            "Each dashboard is structured and styled for easy integration. You can clone, customize, and connect your APIs or mock data directly into the charts and tables. For multi-page setups, routing is already configured.",
         },
       ],
     };
@@ -187,7 +175,16 @@ export default {
   line-height: 1.6;
   margin-bottom: 5px;
   list-style: none;
-  margin-left: -15px;
+  margin-left: -20px;
+}
+
+.section-label {
+  font-weight: bold;
+  color: #222;
+}
+
+.section-content {
+  color: #444;
 }
 
 .info-content p {
