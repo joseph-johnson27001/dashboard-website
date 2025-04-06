@@ -9,37 +9,27 @@
       <!-- Title -->
       <h2 class="modal-title">Dashboard Info Guide</h2>
 
-      <!-- Content -->
-      <div class="info-content">
-        <h3>📁 Project Types</h3>
-        <ul>
-          <li><strong>SP</strong> – Single Page Dashboard</li>
-          <li><strong>MP</strong> – Multi Page Dashboard</li>
-          <li><strong>AR</strong> – API Ready Dashboard</li>
+      <!-- Dynamic Content -->
+      <div
+        class="info-content"
+        v-for="(section, index) in infoSections"
+        :key="index"
+      >
+        <h3 class="info-heading">
+          <span class="icon-container">
+            <i :class="section.icon" class="icon"></i>
+          </span>
+          {{ section.title }}
+        </h3>
+        <ul v-if="section.type === 'list'">
+          <li
+            v-for="(item, idx) in section.content"
+            :key="idx"
+            v-html="item"
+          ></li>
         </ul>
-
-        <h3>🧩 Technologies Used</h3>
-        <ul>
-          <li>
-            <strong>Vue 3</strong> – JavaScript framework for fast & reactive
-            UIs
-          </li>
-          <li>
-            <strong>ApexCharts</strong> – Advanced data visualization/charting
-            library
-          </li>
-          <li>
-            <strong>Chart.js</strong> – Lightweight chart library with solid
-            defaults
-          </li>
-        </ul>
-
-        <h3>💡 How to Use</h3>
-        <p>
-          Each dashboard is structured and styled for easy integration. You can
-          clone, customize, and connect your APIs or mock data directly into the
-          charts and tables. For multi-page setups, routing is already
-          configured.
+        <p v-else-if="section.type === 'paragraph'">
+          {{ section.content }}
         </p>
       </div>
     </div>
@@ -54,6 +44,39 @@ export default {
       type: Boolean,
       required: true,
     },
+  },
+  data() {
+    return {
+      infoSections: [
+        {
+          title: "Project Types",
+          icon: "far fa-folder-open",
+          type: "list",
+          content: [
+            "<strong>SP</strong> – Single Page Dashboard",
+            "<strong>MP</strong> – Multi Page Dashboard",
+            "<strong>AR</strong> – API Ready Dashboard",
+          ],
+        },
+        {
+          title: "Technologies Used",
+          icon: "fas fa-puzzle-piece",
+          type: "list",
+          content: [
+            "<strong>Vue 3</strong> – JavaScript framework for fast & reactive UIs",
+            "<strong>ApexCharts</strong> – Advanced data visualization/charting library",
+            "<strong>Chart.js</strong> – Lightweight chart library with solid defaults",
+          ],
+        },
+        {
+          title: "How to Use",
+          icon: "far fa-lightbulb",
+          type: "paragraph",
+          content:
+            "Each dashboard is structured and styled for easy integration. You can clone, customize, and connect your APIs or mock data directly into the charts and tables. For multi-page setups, routing is already configured.",
+        },
+      ],
+    };
   },
   methods: {
     closeModal() {
@@ -125,11 +148,33 @@ export default {
   letter-spacing: -1px;
 }
 
-.info-content h3 {
-  font-size: 18px;
-  color: #333;
-  margin-top: 15px;
+.info-content {
+  margin-top: 20px;
+}
+
+.info-heading {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Unica One", cursive;
+  color: rgb(24, 24, 24);
+  letter-spacing: -1px;
   margin-bottom: 10px;
+}
+
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #006ba6;
 }
 
 .info-content ul {
@@ -141,6 +186,8 @@ export default {
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 5px;
+  list-style: none;
+  margin-left: -15px;
 }
 
 .info-content p {
