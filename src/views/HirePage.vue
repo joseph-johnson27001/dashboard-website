@@ -23,6 +23,14 @@
         <label>Company (Optional)</label>
         <input type="text" v-model="form.company" />
 
+        <label>Dashboard Type</label>
+        <select v-model="form.dashboardType" required>
+          <option value="Single Page Dashboards">Single Page Dashboards</option>
+          <option value="Multi Page Dashboards">Multi Page Dashboards</option>
+          <option value="API Ready Dashboards">API Ready Dashboards</option>
+          <option value="Custom Build">Custom Build</option>
+        </select>
+
         <label>Project Details</label>
         <textarea v-model="form.details" required></textarea>
 
@@ -42,12 +50,15 @@ export default {
         email: "",
         company: "",
         details: "",
+        dashboardType: "",
       },
     };
   },
   methods: {
     submitForm() {
-      alert("Inquiry submitted. I'll get back to you soon!");
+      alert(
+        `Inquiry submitted for: ${this.form.dashboardType}. I'll get back to you soon!`
+      );
     },
   },
 };
@@ -87,12 +98,19 @@ label {
 }
 
 input,
-textarea {
+textarea,
+select {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
   box-sizing: border-box;
   outline: none;
+}
+
+option {
+  font-family: "Inter Tight", sans-serif;
+  color: #444;
+  font-size: 15px;
 }
 
 textarea {
