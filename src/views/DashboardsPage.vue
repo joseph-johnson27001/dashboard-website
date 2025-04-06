@@ -89,12 +89,12 @@ export default {
         },
         {
           name: "Sales",
-          image: "/Dashboard_Images/Code_Camp.png",
+          image: "/Dashboard_Images/Sales.png",
           type: "AR / Vue3 / ApexCharts",
         },
         {
           name: "Worksphere",
-          image: "/Dashboard_Images/Code_Camp.png",
+          image: "/Dashboard_Images/Worksphere.png",
           type: "AR / Vue3 / ApexCharts",
         },
       ],
