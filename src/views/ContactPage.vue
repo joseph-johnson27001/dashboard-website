@@ -35,7 +35,7 @@
         <label>Project Details</label>
         <textarea v-model="form.details" required></textarea>
 
-        <button type="submit">Submit Inquiry</button>
+        <button type="submit" class="button">Submit Inquiry</button>
       </form>
     </section>
   </div>
@@ -88,6 +88,7 @@ p {
 }
 
 form {
+  font-family: "Inter tight" sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -118,13 +119,25 @@ textarea {
   height: 300px;
 }
 
-button {
-  margin-top: 15px;
-  padding: 10px;
-  background: #006ba6;
+.button {
+  font-family: "Inter Tight", sans-serif;
+  background-color: #006ba6;
   color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-top: 15px;
   border: none;
+  max-width: 200px;
+  font-size: 16px;
+  margin-left: auto;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: #004f7c;
 }
 
 @keyframes fadeIn {

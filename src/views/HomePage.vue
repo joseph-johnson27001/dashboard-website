@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-text">
-        <h1>Template Dashboards for Developers</h1>
+        <h1>Template Dashboards for your Business</h1>
         <p>
           Discover sleek, performant dashboards you can plug into your apps or
           use as inspiration. Build fast. Customize easily.
@@ -15,6 +15,10 @@
           <router-link to="/contact" class="button"
             >Request A Custom Dashboard</router-link
           >
+          <router-link to="/how-it-works" class="button"
+            >How It Works</router-link
+          >
+          <!-- New button -->
         </div>
       </div>
     </section>
@@ -133,7 +137,7 @@ export default {
 }
 
 .hero {
-  padding: 20px 0px;
+  padding: 20px 0px 15px 0px;
   border-radius: 8px;
   margin-bottom: 30px;
 }
@@ -158,7 +162,7 @@ export default {
 .button-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 15px;
 }
 
 .button {
@@ -167,7 +171,7 @@ export default {
   padding: 10px 20px;
   text-decoration: none;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 4px;
   transition: background-color 0.3s;
 }
 
