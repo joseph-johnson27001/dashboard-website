@@ -15,8 +15,10 @@
 
       <!-- Modal Buttons -->
       <div class="modal-buttons">
-        <button @click="viewDemo">View Demo</button>
-        <button @click="buyNow">Buy Now</button>
+        <button @click="viewDemo" class="demo-button">View Demo</button>
+        <button @click="buyNow" disabled class="demo-button disabled">
+          Buy Now
+        </button>
       </div>
     </div>
   </div>
@@ -135,7 +137,7 @@ export default {
   margin-top: 10px;
 }
 
-button {
+.demo-button {
   background-color: #006ba6;
   color: white;
   padding: 12px 20px;
@@ -146,8 +148,13 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+.demo-button:hover {
   background-color: #004f7c;
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 @keyframes fadeIn {
