@@ -64,33 +64,23 @@ export default {
     return {
       demos: [
         {
-          name: "Code Camp",
-          image: "/Dashboard_Images/Logistics-4.png",
-          type: "SP / Vue3 / ApexCharts",
-        },
-        {
-          name: "Healthcare",
-          image: "/Dashboard_Images/Healthcare-2.png",
-          type: "MP / Vue3 / Chart.js",
-        },
-        {
           name: "Logistics",
           image: "/Dashboard_Images/Logistics.png",
           type: "SP / Vue3 / ApexCharts",
         },
         {
-          name: "Sales Dashboard",
-          image: "/Dashboard_Images/Logistics-3.png",
-          type: "SP / Vue3 / Chart.js",
+          name: "Code Camp",
+          image: "/Dashboard_Images/Logistics-4.png",
+          type: "SP / Vue3 / ApexCharts",
         },
         {
-          name: "Healthcare",
-          image: "/Dashboard_Images/amazon.png",
+          name: "Finance",
+          image: "/Dashboard_Images/Healthcare-2.png",
           type: "MP / Vue3 / Chart.js",
         },
         {
-          name: "Sales Dashboard",
-          image: "/Dashboard_Images/Sales_Dashboard.png",
+          name: "Healthcare",
+          image: "/Dashboard_Images/Logistics-3.png",
           type: "SP / Vue3 / Chart.js",
         },
         {
@@ -99,9 +89,14 @@ export default {
           type: "AR / Vue3 / ApexCharts",
         },
         {
-          name: "Logistics",
-          image: "/Dashboard_Images/Logisitcs.png",
-          type: "SP / Vue3 / ApexCharts",
+          name: "Sales",
+          image: "/Dashboard_Images/Code_Camp.png",
+          type: "AR / Vue3 / ApexCharts",
+        },
+        {
+          name: "Worksphere",
+          image: "/Dashboard_Images/Code_Camp.png",
+          type: "AR / Vue3 / ApexCharts",
         },
       ],
       isModalOpen: false,
