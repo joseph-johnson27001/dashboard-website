@@ -39,14 +39,21 @@
         <button type="submit" class="button">Submit Inquiry</button>
       </form>
     </section>
+
+    <!-- ToastAlert Component -->
+    <ToastAlert ref="ToastAlert" />
   </div>
 </template>
 
 <script>
 import emailjs from "emailjs-com";
+import ToastAlert from "../components/Alerts/ToastAlert.vue";
 
 export default {
   name: "ContactPage",
+  components: {
+    ToastAlert,
+  },
   data() {
     return {
       form: {
@@ -70,14 +77,14 @@ export default {
         company: this.form.company || "N/A",
         dashboardType: this.form.dashboardType,
         details: this.form.details,
-        time: new Date().toLocaleString(),
       };
 
       emailjs
         .send(serviceID, templateID, templateParams, publicKey)
         .then(() => {
-          alert("✅ Your inquiry has been sent! We'll be in touch soon.");
-          // Reset form
+          this.$refs.ToastAlert.show(
+            "✅ Your inquiry has been sent! We'll be in touch soon."
+          );
           this.form = {
             name: "",
             email: "",
@@ -88,7 +95,10 @@ export default {
         })
         .catch((error) => {
           console.error("EmailJS error:", error);
-          alert("❌ Something went wrong. Please try again later.");
+          this.$refs.ToastAlert.show(
+            "❌ Something went wrong. Please try again later.",
+            "error"
+          );
         });
     },
   },

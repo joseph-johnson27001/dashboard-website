@@ -25,7 +25,7 @@
     </div>
 
     <!-- DashboardModalCard -->
-    <ModalCard
+    <DashboardModalCard
       :isOpen="isModalOpen"
       :title="selectedDemo"
       :image="selectedDashboardImage"
