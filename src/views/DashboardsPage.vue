@@ -65,7 +65,7 @@ export default {
         {
           name: "Healthcare",
           image: "/Dashboard_Images/Healthcare.png",
-          type: "SP / Vue3 / Chart.js",
+          type: "MP / Vue3 / Chart.js",
         },
         {
           name: "Logistics",
@@ -80,7 +80,7 @@ export default {
         {
           name: "Finance",
           image: "/Dashboard_Images/Finance.png",
-          type: "MP / Vue3 / Chart.js",
+          type: "SP / Vue3 / Chart.js",
         },
         {
           name: "HR Dashboard",
@@ -90,12 +90,12 @@ export default {
         {
           name: "Sales",
           image: "/Dashboard_Images/Sales.png",
-          type: "AR / Vue3 / ApexCharts",
+          type: "SP / Vue3 / ApexCharts",
         },
         {
           name: "Worksphere",
           image: "/Dashboard_Images/Worksphere.png",
-          type: "AR / Vue3 / ApexCharts",
+          type: "MP / Vue3 / ApexCharts",
         },
       ],
       showInfo: false,
