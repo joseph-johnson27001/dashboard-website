@@ -63,6 +63,11 @@ export default {
     return {
       demos: [
         {
+          name: "Healthcare",
+          image: "/Dashboard_Images/Healthcare.png",
+          type: "SP / Vue3 / Chart.js",
+        },
+        {
           name: "Logistics",
           image: "/Dashboard_Images/Logistics.png",
           type: "SP / Vue3 / ApexCharts",
@@ -76,11 +81,6 @@ export default {
           name: "Finance",
           image: "/Dashboard_Images/Finance.png",
           type: "MP / Vue3 / Chart.js",
-        },
-        {
-          name: "Healthcare",
-          image: "/Dashboard_Images/Healthcare.png",
-          type: "SP / Vue3 / Chart.js",
         },
         {
           name: "HR Dashboard",
