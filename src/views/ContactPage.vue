@@ -1,14 +1,15 @@
 <template>
-  <div class="hire-page">
+  <div class="contact-page">
     <section class="hero-section">
-      <h1>Get a Custom Dashboard Built</h1>
+      <h1>Contact Us</h1>
       <p>
-        I build high-quality Vue.js dashboards tailored to your needs—whether
-        from scratch, refreshing an existing one, or integrating with APIs. I
-        ensure fast, responsive, and API-ready solutions. My services include
-        custom dashboard development, UI/UX improvements, and seamless backend
-        integration. Pricing is simple: £500 per day, with most projects
-        completed within 1-5 days. Let’s bring your dashboard to life!
+        Whether you're interested in purchasing a pre-made dashboard or need a
+        custom dashboard built to your specific requirements, we’re here to
+        help. Our pre-made dashboards are ready for purchase, while custom
+        builds can be tailored to your needs, including UI/UX improvements and
+        seamless backend integration. Our pricing is simple: £500 per day, with
+        most projects completed within 1-5 days. Get in touch to discuss how we
+        can bring your dashboard vision to life!
       </p>
     </section>
 
@@ -42,7 +43,7 @@
 
 <script>
 export default {
-  name: "HirePage",
+  name: "ContactPage",
   data() {
     return {
       form: {
@@ -57,7 +58,7 @@ export default {
   methods: {
     submitForm() {
       alert(
-        `Inquiry submitted for: ${this.form.dashboardType}. I'll get back to you soon!`
+        `Inquiry submitted for: ${this.form.dashboardType}. A member of our team will get back to you soon!`
       );
     },
   },
@@ -65,7 +66,7 @@ export default {
 </script>
 
 <style scoped>
-.hire-page {
+.contact-page {
   opacity: 0;
   animation: fadeIn 0.5s forwards;
 }
@@ -129,11 +130,9 @@ button {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    /* transform: translateY(10px); */
   }
   to {
     opacity: 1;
-    /* transform: translateY(0); */
   }
 }
 </style>

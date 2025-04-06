@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/HomePage.vue";
 import Single from "../views/SinglePage.vue";
 import Multi from "../views/MultiPage.vue";
-import Hire from "../views/HirePage.vue";
+import Contact from "../views/ContactPage.vue";
 import HowItWorks from "../views/HowItWorksPage.vue";
 import API from "../views/APIReadyPage.vue";
 import Dashboards from "../views/DashboardsPage.vue";
@@ -19,7 +19,7 @@ const routes = [
     component: Multi,
     meta: { title: "Multi Page Dashboards" },
   },
-  { path: "/hire", component: Hire, meta: { title: "Hire" } },
+  { path: "/contact", component: Contact, meta: { title: "Contact" } },
   {
     path: "/api-ready-dashboards",
     component: API,

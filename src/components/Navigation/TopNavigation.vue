@@ -21,7 +21,9 @@
           >API Ready</router-link
         > -->
 
-        <router-link to="/hire" active-class="active-link">Hire</router-link>
+        <router-link to="/contact" active-class="active-link"
+          >Contact</router-link
+        >
       </div>
     </div>
   </nav>

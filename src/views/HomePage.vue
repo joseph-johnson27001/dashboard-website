@@ -12,7 +12,7 @@
           <router-link to="/dashboards" class="button"
             >View All Dashboards</router-link
           >
-          <router-link to="/hire" class="button"
+          <router-link to="/contact" class="button"
             >Request A Custom Dashboard</router-link
           >
         </div>
