@@ -42,6 +42,38 @@
         </div>
       </div>
     </section>
+
+    <!-- Payment and Contact Section -->
+    <section class="payment-method">
+      <h1>Purchase and Customization</h1>
+      <p>
+        Currently, if you would like to purchase a site, please get in contact
+        with us directly. We’ll guide you through the purchase process and
+        ensure you get exactly what you need.
+      </p>
+      <p>
+        In the future, you'll be able to download directly from the site, but
+        for now, contacting us is the best way to move forward.
+      </p>
+      <p>
+        Rest assured, when you make a purchase, you will receive a fully
+        functional site that is identical to the demo you’ve seen. You can trust
+        that the features and layout will match what you experienced during the
+        demo.
+      </p>
+      <p>
+        Although each dashboard type (e.g., HR Dashboard) is shown with a
+        specific structure and data, you have complete freedom to customize it.
+        You’re not limited to the default setup – everything can be tailored to
+        fit your unique needs.
+      </p>
+      <p>
+        If you have a specific request for custom changes or a completely new
+        dashboard idea in mind, don't hesitate to reach out. We can help bring
+        your vision to life and build something that perfectly aligns with your
+        requirements.
+      </p>
+    </section>
   </div>
 </template>
 
@@ -97,7 +129,7 @@ export default {
 }
 
 /* Hero Section */
-.hero h1 {
+h1 {
   font-family: "Unica One", cursive;
   font-size: 24px;
   margin-bottom: 10px;
@@ -108,8 +140,13 @@ export default {
 }
 
 p {
-  margin-top: 5px;
+  margin-top: 0px;
+  margin-bottom: 8px;
   font-weight: 300;
+}
+
+.hero-text p {
+  margin-top: 5px;
 }
 
 .dashboard-container {
@@ -155,7 +192,7 @@ p {
   line-height: 1.2;
   font-weight: 500;
   font-family: "Unica One", cursive;
-  color: #006ba6;
+  color: rgb(24, 24, 24);
   letter-spacing: -1px;
 }
 
@@ -178,7 +215,11 @@ p {
 
 .dashboard-description li {
   font-weight: 300;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.payment-method {
+  margin-top: 30px;
 }
 
 /* Fade-in Animation */
