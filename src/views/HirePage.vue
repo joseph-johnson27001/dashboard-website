@@ -70,6 +70,7 @@ export default {
 }
 
 p {
+  margin-top: 5px;
   font-size: 15px;
   font-weight: 300;
 }

@@ -5,8 +5,8 @@
       <div class="hero-text">
         <h1>Dashboard Types</h1>
         <p>
-          Learn about the different types of dashboards, the purchase process,
-          and how I can create a custom solution tailored to your needs.
+          Explore the different types of dashboards available, the purchase
+          process, and how tailored solutions can help elevate your business.
         </p>
       </div>
     </section>
@@ -56,10 +56,10 @@ export default {
           image: "/Dashboard_Images/Code_Camp.png",
           type: "Basic",
           descriptionList: [
-            "Compact and fast-loading.",
-            "Displays all data on a single page.",
-            "Ideal for small projects needing simplicity.",
-            "Data stored within the code itself (in the data object).",
+            "Compact and fast-loading for quick visualizations.",
+            "Ideal for inspiration, providing a foundation that can be expanded.",
+            "Reusable components for building and customizing new features.",
+            "Can integrate graphs, charts, and various data visualizations.",
           ],
         },
         {
@@ -67,10 +67,10 @@ export default {
           image: "/Dashboard_Images/Code_Camp2.png",
           type: "Advanced",
           descriptionList: [
-            "Organized with multiple pages for each section.",
-            "Great for large-scale applications.",
-            "Data stored in the template code.",
-            "Requires building your own API folder for integration.",
+            "Structured with multiple pages for different sections.",
+            "Perfect for large-scale applications with complex workflows.",
+            "Flexible framework for building various views and layouts.",
+            "Integrates well with backend services for data-driven insights.",
           ],
         },
         {
@@ -78,10 +78,10 @@ export default {
           image: "/Dashboard_Images/Healthcare-2.png",
           type: "API-Integrated",
           descriptionList: [
-            "No pre-filled data.",
-            "Simulates API calls to backend data (JSON files).",
-            "Easy to integrate with your own data system.",
-            "Simply update API calls to link with your data.",
+            "No pre-filled data, designed for custom API integration.",
+            "Simulates API calls with mock data for backend testing.",
+            "Easy integration with your existing data systems.",
+            "Supports real-time updates and dynamic data fetching.",
           ],
         },
       ],
@@ -108,6 +108,7 @@ export default {
 }
 
 p {
+  margin-top: 5px;
   font-weight: 300;
 }
 
