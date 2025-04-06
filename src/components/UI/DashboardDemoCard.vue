@@ -6,7 +6,9 @@
   >
     <div class="image-container">
       <img :src="image" :alt="name" class="dashboard-image" />
-      <div class="overlay"></div>
+      <div class="overlay">
+        <i class="fas fa-arrow-right overlay-arrow"></i>
+      </div>
     </div>
     <div class="dashboard-meta">
       <div class="dashboard-name">{{ name }}</div>
@@ -41,10 +43,6 @@ export default {
   animation: fadeIn 0.8s ease-in forwards;
 }
 
-.dashboard-card:hover .image-container .overlay {
-  opacity: 0.2;
-}
-
 .image-container {
   position: relative;
   display: inline-block;
@@ -70,10 +68,29 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.45);
   border-radius: 4px;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.dashboard-card:hover .image-container .overlay {
+  opacity: 1;
+}
+
+.overlay-arrow {
+  color: white;
+  font-size: 18px;
+  opacity: 0.85;
+  transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover .overlay-arrow {
+  transform: translateX(4px);
 }
 
 .dashboard-meta {
