@@ -38,6 +38,7 @@
       :title="selectedDemo"
       :image="selectedDashboardImage"
       :description="selectedDescription"
+      :price="selectedPrice"
       @close-modal="closeModal"
       @view-demo="viewDemo"
       @buy-now="buyNow"
@@ -69,6 +70,7 @@ export default {
           type: "SP / Vue3 / Chart.js",
           description:
             "A dashboard built for modern healthcare analytics with Chart.js.",
+          price: "£799",
         },
         {
           name: "Logistics",
@@ -76,6 +78,7 @@ export default {
           type: "SP / Vue3 / ApexCharts",
           description:
             "Streamline supply chain insights and logistics performance with rich visuals.",
+          price: "£399",
         },
         {
           name: "Code Camp",
@@ -83,6 +86,7 @@ export default {
           type: "SP / Vue3 / ApexCharts",
           description:
             "Built for dev bootcamps and online learning platforms to track progress and engagement.",
+          price: "£399",
         },
         {
           name: "Finance",
@@ -90,6 +94,7 @@ export default {
           type: "SP / Vue3 / Chart.js",
           description:
             "A robust financial dashboard for visualizing revenue, expenses, and forecasting.",
+          price: "£399",
         },
         {
           name: "HR Dashboard",
@@ -97,6 +102,7 @@ export default {
           type: "AR / Vue3 / ApexCharts",
           description:
             "Keep tabs on headcount, performance metrics, and employee engagement at a glance.",
+          price: "£999",
         },
         {
           name: "Sales",
@@ -104,6 +110,7 @@ export default {
           type: "SP / Vue3 / ApexCharts",
           description:
             "Built for sales teams to monitor pipelines, conversion rates, and revenue trends.",
+          price: "£399",
         },
         {
           name: "Worksphere",
@@ -111,6 +118,7 @@ export default {
           type: "MP / Vue3 / ApexCharts",
           description:
             "A workplace insights dashboard focusing on productivity, space usage, and activity patterns.",
+          price: "£799",
         },
       ],
       showInfo: false,
@@ -124,6 +132,7 @@ export default {
       this.selectedDemo = demo.name;
       this.selectedDashboardImage = demo.image;
       this.selectedDescription = demo.description;
+      this.selectedPrice = demo.price;
       this.isModalOpen = true;
     },
     closeModal() {

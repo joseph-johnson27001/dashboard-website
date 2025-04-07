@@ -7,7 +7,13 @@
       </div>
 
       <!-- Title -->
-      <h2 class="modal-title">{{ title }}</h2>
+      <div class="top-container">
+        <h2 class="modal-title">{{ title }}</h2>
+        <!-- Price Area -->
+        <div v-if="price" class="price-tag">
+          {{ price }}
+        </div>
+      </div>
 
       <!-- Description -->
       <p class="modal-description" v-if="description">
@@ -47,6 +53,10 @@ export default {
       required: true,
     },
     description: {
+      type: String,
+      default: "",
+    },
+    price: {
       type: String,
       default: "",
     },
@@ -117,14 +127,28 @@ export default {
   font-weight: bold;
 }
 
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
 .modal-title {
   font-family: "Unica One", cursive;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: #006ba6;
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: -1px;
+}
+
+.price-tag {
+  font-size: 20px;
+  font-weight: 600;
+  color: #006ba6;
 }
 
 .modal-description {
