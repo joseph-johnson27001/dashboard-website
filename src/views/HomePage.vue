@@ -87,7 +87,7 @@ export default {
           image: "/Dashboard_Images/Code_Camp.png",
           type: "SP / Vue3 / ApexCharts",
           description:
-            "Built for dev bootcamps and online learning platforms to track progress and engagement.",
+            "A dark-themed single-page dashboard built for online education platforms. Features user information, KPIs and interactive ApexCharts for visualizing user engagement and course progress",
           price: "£399",
         },
         {
