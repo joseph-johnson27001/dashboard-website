@@ -6,10 +6,9 @@
         Whether you're interested in purchasing a pre-made dashboard or need a
         custom dashboard built to your specific requirements, we’re here to
         help. Our pre-made dashboards are ready for purchase, while custom
-        builds can be tailored to your needs, including UI/UX improvements and
-        seamless backend integration. Our pricing is simple: £500 per day, with
-        most projects completed within 1-5 days. Get in touch to discuss how we
-        can bring your dashboard vision to life!
+        builds can be tailored to your needs. We focus on providing high-quality
+        dashboard solutions that integrate smoothly with your existing systems.
+        Get in touch to discuss how we can bring your dashboard vision to life!
       </p>
     </section>
 
