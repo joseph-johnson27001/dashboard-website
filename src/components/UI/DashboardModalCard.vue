@@ -25,12 +25,17 @@
         <img :src="image" alt="Dashboard Image" class="dashboard-image" />
       </div>
 
-      <!-- Modal Buttons -->
-      <div class="modal-buttons">
-        <button @click="viewDemo" class="demo-button">View Demo</button>
-        <button @click="buyNow" disabled class="demo-button disabled">
-          Buy Now
-        </button>
+      <div class="bottom-container">
+        <!-- Type Tag -->
+        <div class="tag">{{ type }}</div>
+
+        <!-- Modal Buttons -->
+        <div class="modal-buttons">
+          <button @click="viewDemo" class="demo-button">View Demo</button>
+          <button @click="buyNow" disabled class="demo-button disabled">
+            Buy Now
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -57,6 +62,10 @@ export default {
       default: "",
     },
     price: {
+      type: String,
+      default: "",
+    },
+    type: {
       type: String,
       default: "",
     },
@@ -135,6 +144,13 @@ export default {
   margin-bottom: 0;
 }
 
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
 .modal-title {
   font-family: "Unica One", cursive;
   font-size: 24px;
@@ -157,7 +173,6 @@ export default {
   color: #222;
   font-weight: 300;
   line-height: 1.4;
-  margin-top: 10px;
 }
 
 .dashboard-image-container {
@@ -170,11 +185,20 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.tag {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .modal-buttons {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-  margin-top: 15px;
 }
 
 .demo-button {

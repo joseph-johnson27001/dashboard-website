@@ -38,6 +38,7 @@
       :title="selectedDemo"
       :image="selectedDashboardImage"
       :description="selectedDescription"
+      :type="selectedType"
       :price="selectedPrice"
       @close-modal="closeModal"
       @view-demo="viewDemo"
@@ -133,6 +134,7 @@ export default {
       this.selectedDashboardImage = demo.image;
       this.selectedDescription = demo.description;
       this.selectedPrice = demo.price;
+      this.selectedType = demo.type;
       this.isModalOpen = true;
     },
     closeModal() {

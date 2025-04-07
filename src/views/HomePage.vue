@@ -45,6 +45,7 @@
       :image="selectedDashboardImage"
       :description="selectedDescription"
       :price="selectedPrice"
+      :type="selectedType"
       @close-modal="closeModal"
       @view-demo="viewDemo"
       @buy-now="buyNow"
@@ -68,7 +69,7 @@ export default {
         {
           name: "Healthcare",
           image: "/Dashboard_Images/Healthcare.png",
-          type: "SP / Vue3 / Chart.js",
+          type: "MP / Vue3 / Chart.js",
           description:
             "A modern, fully responsive, multi-page healthcare dashboard including KPIs, interactive charts, searchable paginated tables, modals for data entry, and built-in layout/navigation.",
           price: "£799",
@@ -132,6 +133,7 @@ export default {
       this.selectedDashboardImage = demo.image;
       this.selectedDescription = demo.description;
       this.selectedPrice = demo.price;
+      this.selectedType = demo.type;
       this.isModalOpen = true;
     },
     closeModal() {
@@ -140,11 +142,9 @@ export default {
     },
     viewDemo() {
       console.log("Viewing demo for:", this.selectedDemo);
-      // Implement demo view action here
     },
     buyNow() {
       console.log("Buying now for:", this.selectedDemo);
-      // Implement buy action here
     },
   },
 };
