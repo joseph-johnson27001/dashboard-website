@@ -31,10 +31,21 @@
 
         <!-- Modal Buttons -->
         <div class="modal-buttons">
-          <button @click="viewDemo" class="demo-button">View Demo</button>
-          <button @click="buyNow" disabled class="demo-button disabled">
+          <!-- View Demo Button -->
+          <router-link to="/#" class="button" @click="viewDemo">
+            View Demo
+          </router-link>
+
+          <!-- Buy Now Button (disabled) -->
+          <router-link
+            to="/#"
+            class="button disabled"
+            :class="{ disabled: true }"
+            @click="buyNow"
+            v-bind:disabled="true"
+          >
             Buy Now
-          </button>
+          </router-link>
         </div>
       </div>
     </div>
@@ -203,8 +214,7 @@ export default {
   gap: 10px;
 }
 
-.demo-button {
-  font-family: "Inter Tight", sans-serif;
+.button {
   background-color: #006ba6;
   color: white;
   padding: 10px 20px;
@@ -212,15 +222,9 @@ export default {
   font-weight: 500;
   border-radius: 4px;
   transition: background-color 0.3s;
-  margin-top: 15px;
-  border: none;
-  max-width: 200px;
-  font-size: 16px;
-  margin-left: auto;
-  cursor: pointer;
 }
 
-.demo-button:hover {
+.button:hover {
   background-color: #004f7c;
 }
 
