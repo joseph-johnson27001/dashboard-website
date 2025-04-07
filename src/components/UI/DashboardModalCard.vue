@@ -204,14 +204,20 @@ export default {
 }
 
 .demo-button {
+  font-family: "Inter Tight", sans-serif;
   background-color: #006ba6;
   color: white;
-  padding: 12px 20px;
-  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 500;
   border-radius: 4px;
-  cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 15px;
+  border: none;
+  max-width: 200px;
   font-size: 16px;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .demo-button:hover {
