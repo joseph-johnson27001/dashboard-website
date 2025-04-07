@@ -163,7 +163,7 @@ export default {
 }
 
 .hero h1 {
-  font-size: 34px;
+  font-size: 38px;
   font-family: "Unica One", cursive;
   color: #333;
   letter-spacing: -1px;
