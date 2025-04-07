@@ -124,6 +124,7 @@ export default {
 p {
   font-size: 17px;
   margin-top: 5px;
+  margin-bottom: 5px;
   color: #222;
   font-weight: 300;
   font-family: "Assistant";
@@ -150,6 +151,8 @@ select {
   margin-top: 5px;
   box-sizing: border-box;
   outline: none;
+  font-family: "Assistant";
+  font-size: 15px;
 }
 
 option {
@@ -174,7 +177,7 @@ textarea {
   margin-top: 15px;
   border: none;
   max-width: 200px;
-  font-size: 16px;
+  font-size: 15px;
   margin-left: auto;
   cursor: pointer;
 }
