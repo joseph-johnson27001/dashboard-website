@@ -233,8 +233,7 @@ p {
   margin-top: 30px;
 }
 
-.dashboard-description li,
-.payment-method p {
+.dashboard-description li {
   font-size: 17px;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -242,6 +241,16 @@ p {
   font-weight: 300;
   line-height: 0.8;
   font-family: "Assistant";
+}
+
+.payment-method p {
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #222;
+  font-weight: 300;
+  font-family: "Assistant";
+  line-height: 1.5;
 }
 
 /* Fade-in Animation */
