@@ -70,7 +70,7 @@ export default {
           image: "/Dashboard_Images/Healthcare.png",
           type: "SP / Vue3 / Chart.js",
           description:
-            "A modern, fully responsive healthcare dashboard with 7 pages, KPIs, interactive charts, searchable paginated tables, modals for data entry, and built-in layout/navigation.",
+            "A modern, fully responsive, multi-page healthcare dashboard including KPIs, interactive charts, searchable paginated tables, modals for data entry, and built-in layout/navigation.",
           price: "£799",
         },
         {

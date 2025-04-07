@@ -97,7 +97,7 @@ export default {
   padding: 30px;
   border-radius: 10px;
   width: 90%;
-  max-width: 600px;
+  max-width: 700px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
   animation: slideIn 0.3s ease-out;
@@ -154,7 +154,7 @@ export default {
 .modal-description {
   font-size: 16px;
   margin-bottom: 20px;
-  color: #333;
+  color: #222;
   font-weight: 300;
   line-height: 1.4;
   margin-top: 10px;
