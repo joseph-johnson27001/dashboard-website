@@ -8,6 +8,11 @@
           Explore the different types of dashboards available, the purchase
           process, and how tailored solutions can help elevate your business.
         </p>
+        <p class="disclaimer">
+          Note: While dashboards are initially tailored to specific industries
+          (like HR or healthcare), all designs are fully customizable and can be
+          adapted to suit any business or use case.
+        </p>
       </div>
     </section>
 
@@ -147,6 +152,14 @@ p {
 
 .hero-text p {
   margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.disclaimer {
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+  margin-top: 20px;
 }
 
 .dashboard-container {

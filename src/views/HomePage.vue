@@ -6,7 +6,8 @@
         <h1>Template Dashboards for your Business</h1>
         <p>
           Discover sleek, performant dashboards you can plug into your apps or
-          use as inspiration. Build fast. Customize easily.
+          use as a launchpad for your own tailored solutions. Build fast.
+          Customize easily.
         </p>
         <div class="button-container">
           <router-link to="/dashboards" class="button"
@@ -18,7 +19,6 @@
           <router-link to="/how-it-works" class="button"
             >How It Works</router-link
           >
-          <!-- New button -->
         </div>
       </div>
     </section>
