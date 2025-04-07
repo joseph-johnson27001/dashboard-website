@@ -5,9 +5,9 @@
       <div class="hero-text">
         <h1>Template Dashboards for your Business</h1>
         <p>
-          Discover sleek, performant dashboards you can plug into your apps or
-          use as a launchpad for your own tailored solutions. Build fast.
-          Customize easily.
+          Discover sleek, performant, front-end dashboards you can plug into
+          your apps or use as a launchpad for your own tailored solutions. Build
+          fast. Customize easily.
         </p>
         <div class="button-container">
           <router-link to="/dashboards" class="button"

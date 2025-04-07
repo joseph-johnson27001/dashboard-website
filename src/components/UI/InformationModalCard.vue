@@ -138,6 +138,7 @@ export default {
 
 .info-content {
   margin-top: 20px;
+  font-size: 17px;
 }
 
 .info-heading {
@@ -167,11 +168,11 @@ export default {
 
 .info-content ul {
   padding-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .info-content li {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.6;
   margin-bottom: 10px;
   list-style: none;
