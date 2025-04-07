@@ -79,7 +79,7 @@ export default {
           image: "/Dashboard_Images/Logistics.png",
           type: "SP / Vue3 / ApexCharts",
           description:
-            "Streamline supply chain insights and logistics performance with rich visuals.",
+            "A clean, responsive single-page dashboard designed for logistics and supply chain insights. Includes key KPIs, dynamic charts powered by ApexCharts, and a styled sidebar.",
           price: "£399",
         },
         {
