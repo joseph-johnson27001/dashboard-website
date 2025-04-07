@@ -163,13 +163,14 @@ export default {
 
 .price-tag {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: #006ba6;
 }
 
 .modal-description {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   color: #222;
   font-weight: 300;
   line-height: 1.4;
