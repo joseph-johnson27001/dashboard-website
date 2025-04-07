@@ -172,10 +172,13 @@ export default {
 }
 
 .hero-section p {
-  font-size: 15px;
-  margin-top: 5px;
-  margin-bottom: 0px;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #222;
   font-weight: 300;
+  line-height: 1.4;
+  font-family: "Assistant";
 }
 
 .hero-header {

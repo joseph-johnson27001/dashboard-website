@@ -157,7 +157,7 @@ export default {
 }
 
 .hero {
-  padding: 20px 0px 15px 0px;
+  padding: 0px;
   border-radius: 8px;
   margin-bottom: 30px;
 }
@@ -173,10 +173,13 @@ export default {
 }
 
 .hero p {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 17px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.4;
+  font-family: "Assistant";
 }
 
 .button-container {

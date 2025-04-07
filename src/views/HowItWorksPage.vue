@@ -40,7 +40,7 @@
           <div class="dashboard-description">
             <ul>
               <li v-for="(item, idx) in dashboard.descriptionList" :key="idx">
-                {{ item }}
+                - {{ item }}
               </li>
             </ul>
           </div>
@@ -145,9 +145,11 @@ h1 {
 }
 
 p {
-  margin-top: 0px;
-  margin-bottom: 8px;
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: #222;
   font-weight: 300;
+  font-family: "Assistant";
 }
 
 .hero-text p {
@@ -227,13 +229,19 @@ p {
   list-style-type: none;
 }
 
-.dashboard-description li {
-  font-weight: 300;
-  margin-bottom: 5px;
-}
-
 .payment-method {
   margin-top: 30px;
+}
+
+.dashboard-description li,
+.payment-method p {
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 0.8;
+  font-family: "Assistant";
 }
 
 /* Fade-in Animation */

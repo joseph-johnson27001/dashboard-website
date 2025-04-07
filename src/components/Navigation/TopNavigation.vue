@@ -43,6 +43,7 @@ nav {
   padding: 15px 20px;
   border-bottom: 1px solid rgba(193, 191, 214, 0.5);
   height: 25px;
+  font-family: "Inter Tight";
 }
 
 .nav-container {

@@ -122,13 +122,16 @@ export default {
 }
 
 p {
+  font-size: 17px;
   margin-top: 5px;
-  font-size: 15px;
+  color: #222;
   font-weight: 300;
+  font-family: "Assistant";
+  line-height: 1.5;
 }
 
 form {
-  font-family: "Inter tight", sans-serif;
+  font-family: "Assistant";
   display: flex;
   flex-direction: column;
 }
@@ -150,8 +153,8 @@ select {
 }
 
 option {
-  font-family: "Inter Tight", sans-serif;
-  color: #444;
+  font-family: "Assistant";
+  color: #222;
   font-size: 15px;
 }
 
