@@ -152,7 +152,7 @@ export default {
 }
 
 .modal-description {
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 20px;
   color: #333;
   font-weight: 300;
