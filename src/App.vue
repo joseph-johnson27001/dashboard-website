@@ -1,10 +1,17 @@
 <template>
   <div id="app">
-    <TopNavigation />
-    <div class="content">
+    <!-- Show TopNavigation and layout only if it's NOT a dashboard route -->
+    <TopNavigation v-if="!isDashboardRoute" />
+
+    <div v-if="!isDashboardRoute" class="content">
       <div class="main">
         <router-view />
       </div>
+    </div>
+
+    <!-- For dashboard routes, show router-view full screen -->
+    <div v-else class="dashboard-view">
+      <router-view />
     </div>
   </div>
 </template>
@@ -16,6 +23,11 @@ export default {
   name: "App",
   components: {
     TopNavigation,
+  },
+  computed: {
+    isDashboardRoute() {
+      return this.$route.path.includes("dashboards");
+    },
   },
 };
 </script>
@@ -37,5 +49,11 @@ body {
 .main {
   width: 100%;
   max-width: 1800px;
+}
+
+.dashboard-view {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 </style>
