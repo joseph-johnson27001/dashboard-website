@@ -26,7 +26,7 @@ export default {
   },
   computed: {
     isDashboardRoute() {
-      return this.$route.path.includes("dashboards");
+      return this.$route.path.includes("dashboard-demo");
     },
   },
 };

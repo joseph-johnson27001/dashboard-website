@@ -6,7 +6,7 @@ import Contact from "../views/ContactPage.vue";
 import HowItWorks from "../views/HowItWorksPage.vue";
 import API from "../views/APIReadyPage.vue";
 import Dashboards from "../views/DashboardsPage.vue";
-import LogisticsDashboard from "@/views/LogisticsDashboard.vue";
+import DashboardViewer from "@/views/DashboardViewer.vue";
 
 const routes = [
   { path: "/", component: Home, meta: { title: "Home" } },
@@ -37,9 +37,9 @@ const routes = [
     meta: { title: "Dashboards" },
   },
   {
-    path: "/dashboards/logistics",
-    name: "LogisticsDashboard",
-    component: LogisticsDashboard,
+    path: "/dashboard-demo/:slug",
+    name: "DashboardViewer",
+    component: DashboardViewer,
   },
 ];
 

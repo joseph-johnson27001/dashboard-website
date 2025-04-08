@@ -32,7 +32,12 @@
         <!-- Modal Buttons -->
         <div class="modal-buttons">
           <!-- View Demo Button -->
-          <router-link to="/#" class="button" @click="viewDemo">
+          <router-link
+            :to="`/dashboard-demo/${title.toLowerCase()}`"
+            class="button"
+            @click="viewDemo"
+            target="_blank"
+          >
             View Demo
           </router-link>
 
