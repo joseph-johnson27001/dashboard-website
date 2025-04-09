@@ -52,8 +52,34 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  document.title = `Template Dashboards - ${to.meta.title || "Loading..."}`;
+  let pageTitle = to.meta.title;
+
+  if (to.name === "DashboardViewer") {
+    const slug = to.params.slug;
+    const dashboardTitles = {
+      healthcare: "Healthcare Dashboard",
+      logistics: "Logistics Dashboard",
+      "code-camp": "Code Camp Dashboard",
+      finance: "Finance Dashboard",
+      "hr-dashboard": "HR Dashboard",
+      sales: "Sales Dashboard",
+      worksphere: "Worksphere Dashboard",
+    };
+    pageTitle = dashboardTitles[slug] || "Dashboard Demo";
+  }
+
+  // Reset favicon manually (needed for iframe views)
+  const favicon = document.querySelector("link[rel='icon']");
+  if (favicon) {
+    favicon.href = "/dashboard-logo.png";
+  } else {
+    const newFavicon = document.createElement("link");
+    newFavicon.rel = "icon";
+    newFavicon.href = "dashboard-logo.png";
+    document.head.appendChild(newFavicon);
+  }
+
+  document.title = `Template Dashboards - ${pageTitle}`;
   next();
 });
-
 export default router;
