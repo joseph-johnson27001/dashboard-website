@@ -13,16 +13,16 @@ export default {
 
       // Map the slug to its corresponding Netlify URL
       const dashboardUrls = {
-        healthcare: "https://your-netlify-link/healthcare",
+        healthcare: "https://joseph-johnson-healthcare-dashboard.netlify.app/",
         logistics: "https://joseph-johnson-logistics-demo.netlify.app/",
-        "code-camp": "https://your-netlify-link/codecamp",
-        finance: "https://your-netlify-link/finance",
-        "hr-dashboard": "https://your-netlify-link/hr",
-        sales: "https://your-netlify-link/sales",
-        worksphere: "https://your-netlify-link/worksphere",
+        "code-camp": "https://joseph-johnson-code-camp.netlify.app/",
+        finance: "https://joseph-johnson-finance-demo.netlify.app/",
+        "hr-dashboard": "https://joseph-johnson-hr-dashboard.netlify.app/",
+        sales: "https://joseph-johnson-dashboard-demo.netlify.app/",
+        worksphere: "https://joseph-johnson-worksphere-dashboard.netlify.app/",
       };
 
-      return dashboardUrls[slug] || "https://your-netlify-link/error";
+      return dashboardUrls[slug];
     },
   },
 };
