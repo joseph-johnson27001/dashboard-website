@@ -40,6 +40,7 @@
       :description="selectedDescription"
       :type="selectedType"
       :price="selectedPrice"
+      :slug="selectedSlug"
       @close-modal="closeModal"
       @view-demo="viewDemo"
       @buy-now="buyNow"
@@ -67,30 +68,34 @@ export default {
       demos: [
         {
           name: "Healthcare",
+          slug: "healthcare",
           image: "/Dashboard_Images/Healthcare.png",
-          type: "SP / Vue3 / Chart.js",
+          type: "MP / Vue3 / Chart.js",
           description:
-            "A dashboard built for modern healthcare analytics with Chart.js.",
+            "A modern, fully responsive, multi-page healthcare dashboard including KPIs, interactive charts, searchable paginated tables, modals for data entry, and built-in layout/navigation.",
           price: "£799",
         },
         {
           name: "Logistics",
+          slug: "logistics",
           image: "/Dashboard_Images/Logistics.png",
           type: "SP / Vue3 / ApexCharts",
           description:
-            "Streamline supply chain insights and logistics performance with rich visuals.",
+            "A clean, responsive single-page dashboard designed for logistics and supply chain insights. Includes key KPIs, dynamic charts powered by ApexCharts, and a styled sidebar.",
           price: "£399",
         },
         {
           name: "Code Camp",
+          slug: "code-camp",
           image: "/Dashboard_Images/Code_Camp.png",
           type: "SP / Vue3 / ApexCharts",
           description:
-            "Built for dev bootcamps and online learning platforms to track progress and engagement.",
+            "A dark-themed single-page dashboard built for online education platforms. Features user information, KPIs and interactive ApexCharts for visualizing user engagement and course progress",
           price: "£399",
         },
         {
           name: "Finance",
+          slug: "finance",
           image: "/Dashboard_Images/Finance.png",
           type: "SP / Vue3 / Chart.js",
           description:
@@ -99,6 +104,7 @@ export default {
         },
         {
           name: "HR Dashboard",
+          slug: "hr-dashboard",
           image: "/Dashboard_Images/HR-Dashboard.png",
           type: "AR / Vue3 / ApexCharts",
           description:
@@ -107,6 +113,7 @@ export default {
         },
         {
           name: "Sales",
+          slug: "sales",
           image: "/Dashboard_Images/Sales.png",
           type: "SP / Vue3 / ApexCharts",
           description:
@@ -115,6 +122,7 @@ export default {
         },
         {
           name: "Worksphere",
+          slug: "worksphere",
           image: "/Dashboard_Images/Worksphere.png",
           type: "MP / Vue3 / ApexCharts",
           description:
@@ -135,6 +143,7 @@ export default {
       this.selectedDescription = demo.description;
       this.selectedPrice = demo.price;
       this.selectedType = demo.type;
+      this.selectedSlug = demo.slug;
       this.isModalOpen = true;
     },
     closeModal() {

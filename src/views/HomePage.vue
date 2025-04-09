@@ -46,6 +46,7 @@
       :description="selectedDescription"
       :price="selectedPrice"
       :type="selectedType"
+      :slug="selectedSlug"
       @close-modal="closeModal"
       @view-demo="viewDemo"
       @buy-now="buyNow"
@@ -68,6 +69,7 @@ export default {
       demos: [
         {
           name: "Healthcare",
+          slug: "healthcare",
           image: "/Dashboard_Images/Healthcare.png",
           type: "MP / Vue3 / Chart.js",
           description:
@@ -76,6 +78,7 @@ export default {
         },
         {
           name: "Logistics",
+          slug: "logistics",
           image: "/Dashboard_Images/Logistics.png",
           type: "SP / Vue3 / ApexCharts",
           description:
@@ -84,6 +87,7 @@ export default {
         },
         {
           name: "Code Camp",
+          slug: "code-camp",
           image: "/Dashboard_Images/Code_Camp.png",
           type: "SP / Vue3 / ApexCharts",
           description:
@@ -92,6 +96,7 @@ export default {
         },
         {
           name: "Finance",
+          slug: "finance",
           image: "/Dashboard_Images/Finance.png",
           type: "SP / Vue3 / Chart.js",
           description:
@@ -100,6 +105,7 @@ export default {
         },
         {
           name: "HR Dashboard",
+          slug: "hr-dashboard",
           image: "/Dashboard_Images/HR-Dashboard.png",
           type: "AR / Vue3 / ApexCharts",
           description:
@@ -108,6 +114,7 @@ export default {
         },
         {
           name: "Sales",
+          slug: "sales",
           image: "/Dashboard_Images/Sales.png",
           type: "SP / Vue3 / ApexCharts",
           description:
@@ -116,6 +123,7 @@ export default {
         },
         {
           name: "Worksphere",
+          slug: "worksphere",
           image: "/Dashboard_Images/Worksphere.png",
           type: "MP / Vue3 / ApexCharts",
           description:
@@ -134,6 +142,7 @@ export default {
       this.selectedDescription = demo.description;
       this.selectedPrice = demo.price;
       this.selectedType = demo.type;
+      this.selectedSlug = demo.slug;
       this.isModalOpen = true;
     },
     closeModal() {

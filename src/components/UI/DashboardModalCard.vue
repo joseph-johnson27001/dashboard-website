@@ -33,7 +33,7 @@
         <div class="modal-buttons">
           <!-- View Demo Button -->
           <router-link
-            :to="`/dashboard-demo/${title.toLowerCase()}`"
+            :to="`/dashboard-demo/${slug}`"
             class="button"
             @click="viewDemo"
             target="_blank"
@@ -82,6 +82,10 @@ export default {
       default: "",
     },
     type: {
+      type: String,
+      default: "",
+    },
+    slug: {
       type: String,
       default: "",
     },
