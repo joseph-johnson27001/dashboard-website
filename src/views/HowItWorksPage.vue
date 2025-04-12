@@ -57,10 +57,6 @@
         ensure you get exactly what you need.
       </p>
       <p>
-        In the future, you'll be able to download directly from the site, but
-        for now, contacting us is the best way to move forward.
-      </p>
-      <p>
         Rest assured, when you make a purchase, you will receive a fully
         functional site that is identical to the demo you’ve seen. You can trust
         that the features and layout will match what you experienced during the
@@ -133,7 +129,6 @@ export default {
   animation: fadeIn 0.5s forwards;
 }
 
-/* Hero Section */
 h1 {
   font-family: "Unica One", cursive;
   font-size: 24px;
