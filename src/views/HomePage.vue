@@ -107,9 +107,9 @@ export default {
           name: "HR Dashboard",
           slug: "hr-dashboard",
           image: "/Dashboard_Images/HR-Dashboard.png",
-          type: "AR / Vue3 / ApexCharts",
+          type: "AR / Vue3 / Chart.js",
           description:
-            "Keep tabs on headcount, performance metrics, and employee engagement at a glance.",
+            "A fully API-ready, multi-page HR dashboard built with Chart.js. Simulated API calls and a structured data folder make it easy to plug in real endpoints—just swap the calls, remove the mock data, and you’re live. Includes working navigation and a clean layout for tracking headcount, performance, and employee satisfcation.",
           price: "£999",
         },
         {
