@@ -11,9 +11,9 @@
         your workflow or industry.
       </p>
       <p class="disclaimer">
-        Note: While dashboards are initially tailored to specific industries
-        (like HR or healthcare), all designs are fully customizable and can be
-        adapted to suit any business or use case.
+        * While dashboards are initially tailored to specific industries (like
+        HR or healthcare), all designs are fully customizable and can be adapted
+        to suit any business or use case.
       </p>
       <div class="dashboard-container">
         <div
