@@ -1,7 +1,7 @@
 <template>
   <div class="contact-page">
     <section class="hero-section">
-      <h1>Contact Us</h1>
+      <h1>Get In Contact</h1>
       <p>
         Whether you're interested in purchasing a pre-made dashboard or need a
         custom dashboard built to your specific requirements, we’re here to

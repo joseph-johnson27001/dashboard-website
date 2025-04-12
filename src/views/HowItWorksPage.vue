@@ -127,7 +127,7 @@ export default {
         {
           title: "API Ready Dashboards",
           image: "/Dashboard_Images/HR-Dashboard.png",
-          type: "API-Integrated",
+          type: "API-Integration Ready",
           descriptionList: [
             "No pre-filled data, designed for custom API integration.",
             "Simulates API calls with mock data for backend testing.",
