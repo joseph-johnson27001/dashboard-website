@@ -2,7 +2,7 @@
   <nav>
     <div class="nav-container">
       <router-link to="/">
-        <img src="/Dashboard-icon.png" alt="Dashboard Logo" class="logo-img" />
+        <img src="/dashboard-logo.png" alt="Dashboard Logo" class="logo-img" />
       </router-link>
       <div class="nav-links">
         <router-link to="/how-it-works" active-class="active-link"

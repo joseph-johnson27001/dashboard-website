@@ -131,6 +131,7 @@ export default {
 .modal {
   background: #fff;
   padding: 30px;
+  margin: 0 10px;
   border-radius: 10px;
   width: 90%;
   max-width: 700px;
