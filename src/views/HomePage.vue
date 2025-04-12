@@ -80,7 +80,7 @@ export default {
           name: "Logistics",
           slug: "logistics",
           image: "/Dashboard_Images/Logistics.png",
-          type: "SP / Vue3 / ApexCharts",
+          type: "SP / Vue3 / Chart.js",
           description:
             "A clean, responsive single-page dashboard designed for logistics and supply chain insights. Includes key KPIs, dynamic charts powered by ApexCharts, and a styled sidebar.",
           price: "£399",
@@ -98,7 +98,7 @@ export default {
           name: "Finance",
           slug: "finance",
           image: "/Dashboard_Images/Finance.png",
-          type: "SP / Vue3 / Chart.js",
+          type: "SP / Vue3 / ApexCharts",
           description:
             "A sleek, single-page financial dashboard built with ApexCharts. Track revenue, expenses, and forecasting with clarity — an ideal starting point for finance teams.",
           price: "£399",
@@ -125,7 +125,7 @@ export default {
           name: "Worksphere",
           slug: "worksphere",
           image: "/Dashboard_Images/Worksphere.png",
-          type: "MP / Vue3 / ApexCharts",
+          type: "MP / Vue3 / Chart.js",
           description:
             "A multi-page HR-style dashboard built with Chart.js, designed for workplace insights. Includes login/logout functionality, branded logos, and views for monitoring productivity, employee information, and team activity.",
           price: "£799",
