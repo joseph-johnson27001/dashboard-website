@@ -100,7 +100,7 @@ export default {
           image: "/Dashboard_Images/Finance.png",
           type: "SP / Vue3 / Chart.js",
           description:
-            "A robust financial dashboard for visualizing revenue, expenses, and forecasting.",
+            "A sleek, single-page financial dashboard built with ApexCharts. Track revenue, expenses, and forecasting with clarity — an ideal starting point for finance teams.",
           price: "£399",
         },
         {
