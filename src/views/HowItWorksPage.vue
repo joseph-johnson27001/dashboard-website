@@ -1,23 +1,20 @@
 <template>
   <div class="how-it-works-page">
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Dashboard Types</h1>
-        <p>
-          Explore the different types of dashboards available, the purchase
-          process, and how tailored solutions can help elevate your business.
-        </p>
-        <p class="disclaimer">
-          Note: While dashboards are initially tailored to specific industries
-          (like HR or healthcare), all designs are fully customizable and can be
-          adapted to suit any business or use case.
-        </p>
-      </div>
-    </section>
-
     <!-- Dashboards Overview -->
     <section class="dashboards-overview">
+      <h1>Dashboard Types</h1>
+      <p>
+        Whether you're looking for a simple layout to get started or a
+        full-featured interface ready to plug into your data, these dashboard
+        types cover a range of use cases. Each template is fully customizable
+        and built with flexibility in mind — making it easy to adapt them to
+        your workflow or industry.
+      </p>
+      <p class="disclaimer">
+        Note: While dashboards are initially tailored to specific industries
+        (like HR or healthcare), all designs are fully customizable and can be
+        adapted to suit any business or use case.
+      </p>
       <div class="dashboard-container">
         <div
           v-for="(dashboard, index) in dashboards"
@@ -36,7 +33,6 @@
             <div class="dashboard-name">{{ dashboard.title }}</div>
             <div class="tag">{{ dashboard.type }}</div>
           </div>
-          <!-- Description List (without list style) -->
           <div class="dashboard-description">
             <ul>
               <li v-for="(item, idx) in dashboard.descriptionList" :key="idx">
@@ -48,31 +44,53 @@
       </div>
     </section>
 
-    <!-- Payment and Contact Section -->
+    <!-- Purchase Section -->
     <section class="payment-method">
-      <h1>Purchase and Customization</h1>
+      <h1>Use a Template — Quick & Easy</h1>
       <p>
-        Currently, if you would like to purchase a site, please get in contact
-        with us directly. We’ll guide you through the purchase process and
-        ensure you get exactly what you need.
+        Dashboards can be purchased directly through the site, giving you
+        instant access to the full source code. Each download includes clear
+        setup instructions to help you get up and running quickly.
       </p>
       <p>
-        Rest assured, when you make a purchase, you will receive a fully
-        functional site that is identical to the demo you’ve seen. You can trust
-        that the features and layout will match what you experienced during the
-        demo.
+        The codebase is fully commented to help you understand how the different
+        pieces fit together. Whether you're adapting a chart, modifying the
+        layout, or integrating new data sources, the structure is designed to be
+        developer-friendly.
       </p>
       <p>
-        Although each dashboard type (e.g., HR Dashboard) is shown with a
-        specific structure and data, you have complete freedom to customize it.
-        You’re not limited to the default setup – everything can be tailored to
-        fit your unique needs.
+        What you see in the demo is exactly what you'll get — a complete,
+        functional dashboard ready to drop into your project or customize as
+        needed.
       </p>
       <p>
-        If you have a specific request for custom changes or a completely new
-        dashboard idea in mind, don't hesitate to reach out. We can help bring
-        your vision to life and build something that perfectly aligns with your
-        requirements.
+        If you need help modifying a template, or you have something more custom
+        in mind, you can always get in touch. Dashboards can be built or
+        extended to meet your specific requirements.
+      </p>
+    </section>
+
+    <!-- Custom Section -->
+    <section class="custom-builds">
+      <h1>Need Something Custom Built?</h1>
+      <p>
+        Need something tailored from the ground up? Custom dashboards can be
+        designed and developed to match your exact specifications, business
+        logic, and branding.
+      </p>
+      <p>
+        Whether you’re starting with a rough concept or have detailed
+        requirements, the build process is structured to be collaborative and
+        efficient—ensuring the end result aligns with your vision.
+      </p>
+      <p>
+        From data structure and layout to performance and maintainability, every
+        aspect is built with flexibility and long-term use in mind.
+      </p>
+      <p>
+        To begin discussing a custom build, just get in touch using the contact
+        form. You'll receive a clear breakdown of timelines, process, and
+        pricing.
       </p>
     </section>
   </div>
@@ -147,16 +165,11 @@ p {
   font-family: "Assistant";
 }
 
-.hero-text p {
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
 .disclaimer {
   font-size: 16px;
   font-style: italic;
   color: #333;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .dashboard-container {
@@ -224,7 +237,8 @@ p {
   list-style-type: none;
 }
 
-.payment-method {
+.payment-method,
+.custom-builds {
   margin-top: 30px;
 }
 
@@ -238,7 +252,7 @@ p {
   font-family: "Assistant";
 }
 
-.payment-method p {
+p {
   font-size: 17px;
   margin-top: 5px;
   margin-bottom: 5px;
