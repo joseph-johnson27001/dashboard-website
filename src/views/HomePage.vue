@@ -47,6 +47,7 @@
       :price="selectedPrice"
       :type="selectedType"
       :slug="selectedSlug"
+      :note="selectedNote"
       @close-modal="closeModal"
       @view-demo="viewDemo"
       @buy-now="buyNow"
@@ -126,6 +127,7 @@ export default {
           slug: "worksphere",
           image: "/Dashboard_Images/Worksphere.png",
           type: "MP / Vue3 / Chart.js",
+          note: "You can use any email and password — they don’t need to be real.",
           description:
             "A multi-page HR-style dashboard built with Chart.js, designed for workplace insights. Includes login/logout functionality, branded logos, and views for monitoring productivity, employee information, and team activity.",
           price: "£799",
@@ -143,6 +145,7 @@ export default {
       this.selectedPrice = demo.price;
       this.selectedType = demo.type;
       this.selectedSlug = demo.slug;
+      this.selectedNote = demo.note;
       this.isModalOpen = true;
     },
     closeModal() {

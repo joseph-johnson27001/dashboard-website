@@ -20,6 +20,9 @@
         {{ description }}
       </p>
 
+      <!-- Note Section -->
+      <p class="modal-note" v-if="note">* {{ note }}</p>
+
       <!-- Dashboard Image -->
       <div class="dashboard-image-container">
         <img :src="image" alt="Dashboard Image" class="dashboard-image" />
@@ -74,6 +77,10 @@ export default {
       required: true,
     },
     description: {
+      type: String,
+      default: "",
+    },
+    note: {
       type: String,
       default: "",
     },
@@ -179,6 +186,15 @@ export default {
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: -1px;
+}
+
+.modal-note {
+  font-size: 15px;
+  font-style: italic;
+  color: #555;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  font-family: "Assistant";
 }
 
 .price-tag {
