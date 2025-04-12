@@ -116,9 +116,9 @@ export default {
           name: "Sales",
           slug: "sales",
           image: "/Dashboard_Images/Sales.png",
-          type: "SP / Vue3 / ApexCharts",
+          type: "SP / Vue3 / Chart.js",
           description:
-            "Built for sales teams to monitor pipelines, conversion rates, and revenue trends.",
+            "A single-page sales dashboard built with Chart.js. Designed for tracking sales, purchases, and customer activity, it includes a styled sidebar for layout structure and future expansion.",
           price: "£399",
         },
         {
@@ -127,7 +127,7 @@ export default {
           image: "/Dashboard_Images/Worksphere.png",
           type: "MP / Vue3 / ApexCharts",
           description:
-            "A workplace insights dashboard focusing on productivity, space usage, and activity patterns.",
+            "A multi-page HR-style dashboard built with Chart.js, designed for workplace insights. Includes login/logout functionality, branded logos, and views for monitoring productivity, employee information, and team activity.",
           price: "£799",
         },
       ],
