@@ -127,7 +127,7 @@ export default {
           slug: "worksphere",
           image: "/Dashboard_Images/Worksphere.png",
           type: "MP / Vue3 / Chart.js",
-          note: "You can use any email and password — they don’t need to be real.",
+          note: "You can use any login email and password — they don’t need to be real and will not be stored anywhere.",
           description:
             "A multi-page HR-style dashboard built with Chart.js, designed for workplace insights. Includes login/logout functionality, branded logos, and views for monitoring productivity, employee information, and team activity.",
           price: "£799",
