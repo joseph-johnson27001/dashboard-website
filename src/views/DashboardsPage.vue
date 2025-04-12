@@ -79,7 +79,7 @@ export default {
           name: "Logistics",
           slug: "logistics",
           image: "/Dashboard_Images/Logistics.png",
-          type: "SP / Vue3 / ApexCharts",
+          type: "SP / Vue3 / Chart.js",
           description:
             "A clean, responsive single-page dashboard designed for logistics and supply chain insights. Includes key KPIs, dynamic charts powered by ApexCharts, and a styled sidebar.",
           price: "£399",
@@ -97,36 +97,36 @@ export default {
           name: "Finance",
           slug: "finance",
           image: "/Dashboard_Images/Finance.png",
-          type: "SP / Vue3 / Chart.js",
+          type: "SP / Vue3 / ApexCharts",
           description:
-            "A robust financial dashboard for visualizing revenue, expenses, and forecasting.",
+            "A sleek, single-page financial dashboard built with ApexCharts. Track revenue, expenses, and forecasting with clarity — an ideal starting point for finance teams.",
           price: "£399",
         },
         {
           name: "HR Dashboard",
           slug: "hr-dashboard",
           image: "/Dashboard_Images/HR-Dashboard.png",
-          type: "AR / Vue3 / ApexCharts",
+          type: "AR / Vue3 / Chart.js",
           description:
-            "Keep tabs on headcount, performance metrics, and employee engagement at a glance.",
+            "A fully API-ready, multi-page HR dashboard built with Chart.js. Simulated API calls and a structured data folder make it easy to plug in real endpoints—just swap the calls, remove the mock data, and you’re live. Includes working navigation and a clean layout for tracking headcount, performance, and employee satisfcation.",
           price: "£999",
         },
         {
           name: "Sales",
           slug: "sales",
           image: "/Dashboard_Images/Sales.png",
-          type: "SP / Vue3 / ApexCharts",
+          type: "SP / Vue3 / Chart.js",
           description:
-            "Built for sales teams to monitor pipelines, conversion rates, and revenue trends.",
+            "A single-page sales dashboard built with Chart.js. Designed for tracking sales, purchases, and customer activity, it includes a styled sidebar for layout structure and future expansion.",
           price: "£399",
         },
         {
           name: "Worksphere",
           slug: "worksphere",
           image: "/Dashboard_Images/Worksphere.png",
-          type: "MP / Vue3 / ApexCharts",
+          type: "MP / Vue3 / Chart.js",
           description:
-            "A workplace insights dashboard focusing on productivity, space usage, and activity patterns.",
+            "A multi-page HR-style dashboard built with Chart.js, designed for workplace insights. Includes login/logout functionality, branded logos, and views for monitoring productivity, employee information, and team activity.",
           price: "£799",
         },
       ],
