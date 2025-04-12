@@ -33,6 +33,10 @@ export default {
 </script>
 
 <style>
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   margin: 0;
   background-color: #f8f8f8;

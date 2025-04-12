@@ -14,7 +14,7 @@
             >View All Dashboards</router-link
           >
           <router-link to="/how-it-works" class="button"
-            >Dashboard Information</router-link
+            >How It Works</router-link
           >
           <router-link to="/contact" class="button"
             >Request A Custom Dashboard</router-link
@@ -69,6 +69,15 @@ export default {
     return {
       demos: [
         {
+          name: "Code Camp",
+          slug: "code-camp",
+          image: "/Dashboard_Images/Code_Camp.png",
+          type: "SP / Vue3 / ApexCharts",
+          description:
+            "A dark-themed single-page dashboard built for online education platforms. Features user information, KPIs and interactive ApexCharts for visualizing user engagement and course progress",
+          price: "£399",
+        },
+        {
           name: "Healthcare",
           slug: "healthcare",
           image: "/Dashboard_Images/Healthcare.png",
@@ -86,15 +95,7 @@ export default {
             "A clean, responsive single-page dashboard designed for logistics and supply chain insights. Includes key KPIs, dynamic charts powered by ApexCharts, and a styled sidebar.",
           price: "£399",
         },
-        {
-          name: "Code Camp",
-          slug: "code-camp",
-          image: "/Dashboard_Images/Code_Camp.png",
-          type: "SP / Vue3 / ApexCharts",
-          description:
-            "A dark-themed single-page dashboard built for online education platforms. Features user information, KPIs and interactive ApexCharts for visualizing user engagement and course progress",
-          price: "£399",
-        },
+
         {
           name: "Finance",
           slug: "finance",
