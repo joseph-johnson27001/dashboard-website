@@ -9,7 +9,11 @@ import Dashboards from "../views/DashboardsPage.vue";
 import DashboardViewer from "@/views/DashboardViewer.vue";
 
 const routes = [
-  { path: "/", component: Home, meta: { title: "Home" } },
+  {
+    path: "/",
+    component: Home,
+    meta: { title: "Prebuilt Frontend Dashboard Templates for Web Apps" },
+  },
   {
     path: "/single-page-dashboards",
     component: Single,
