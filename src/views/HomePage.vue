@@ -135,7 +135,13 @@ export default {
         },
       ],
       isModalOpen: false,
-      selectedDemo: null,
+      selectedDemo: "",
+      selectedDashboardImage: "",
+      selectedDescription: "",
+      selectedPrice: "",
+      selectedType: "",
+      selectedSlug: "",
+      selectedNote: "",
     };
   },
   methods: {

@@ -136,6 +136,11 @@ export default {
       isModalOpen: false,
       selectedDemo: "",
       selectedDashboardImage: "",
+      selectedDescription: "",
+      selectedPrice: "",
+      selectedType: "",
+      selectedSlug: "",
+      selectedNote: "",
     };
   },
   methods: {
