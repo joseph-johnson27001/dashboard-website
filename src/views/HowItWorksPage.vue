@@ -36,7 +36,7 @@
           <div class="dashboard-description">
             <ul>
               <li v-for="(item, idx) in dashboard.descriptionList" :key="idx">
-                - {{ item }}
+                {{ item }}
               </li>
             </ul>
           </div>
@@ -248,7 +248,7 @@ p {
   margin-bottom: 15px;
   color: #222;
   font-weight: 300;
-  line-height: 0.8;
+  line-height: 1.2;
   font-family: "Assistant";
 }
 
