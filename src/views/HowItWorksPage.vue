@@ -45,7 +45,7 @@
     </section>
 
     <!-- Purchase Section -->
-    <section class="payment-method">
+    <!-- <section class="payment-method">
       <h1>Use a Template — Quick & Easy</h1>
       <p>
         Dashboards can be purchased directly through the site, giving you
@@ -68,7 +68,7 @@
         in mind, you can always get in touch. Dashboards can be built or
         extended to meet your specific requirements.
       </p>
-    </section>
+    </section> -->
 
     <!-- Custom Section -->
     <section class="custom-builds">

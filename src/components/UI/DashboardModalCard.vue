@@ -46,9 +46,8 @@
 
           <!-- Buy Now Button (disabled) -->
           <router-link
-            to="/#"
-            class="button disabled"
-            :class="{ disabled: true }"
+            to="/contact"
+            class="button"
             @click="buyNow"
             v-bind:disabled="true"
           >
