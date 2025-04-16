@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://templatedashboards.com/</loc>
+    <image:image>
+      <image:loc>https://templatedashboards.com/dashboard-logo.png</image:loc>
+      <image:title>Template Dashboards Logo</image:title>
+    </image:image>
+  </url>
+
+  <url><loc>https://templatedashboards.com/contact</loc></url>
+  <url><loc>https://templatedashboards.com/how-it-works</loc></url>
+  <url><loc>https://templatedashboards.com/dashboards</loc></url>
+
+  <url><loc>https://templatedashboards.com/dashboard-template/healthcare</loc></url>
+  <url><loc>https://templatedashboards.com/dashboard-template/logistics</loc></url>
+  <url><loc>https://templatedashboards.com/dashboard-template/code-camp</loc></url>
+  <url><loc>https://templatedashboards.com/dashboard-template/finance</loc></url>
+  <url><loc>https://templatedashboards.com/dashboard-template/hr-dashboard</loc></url>
+  <url><loc>https://templatedashboards.com/dashboard-template/sales</loc></url>
+  <url><loc>https://templatedashboards.com/dashboard-template/worksphere</loc></url>
+</urlset>
