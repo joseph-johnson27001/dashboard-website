@@ -51,7 +51,7 @@
             @click="buyNow"
             v-bind:disabled="true"
           >
-            Buy Now
+            Purchase
           </router-link>
         </div>
       </div>
