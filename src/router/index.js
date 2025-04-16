@@ -41,7 +41,7 @@ const routes = [
     meta: { title: "Dashboards" },
   },
   {
-    path: "/dashboard-demo/:slug",
+    path: "/dashboard-template/:slug",
     name: "DashboardViewer",
     component: DashboardViewer,
   },

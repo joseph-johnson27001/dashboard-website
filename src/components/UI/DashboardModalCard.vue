@@ -36,7 +36,7 @@
         <div class="modal-buttons">
           <!-- View Demo Button -->
           <router-link
-            :to="`/dashboard-demo/${slug}`"
+            :to="`/dashboard-template/${slug}`"
             class="button"
             @click="viewDemo"
             target="_blank"
