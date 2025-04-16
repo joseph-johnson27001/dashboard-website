@@ -58,6 +58,7 @@ a {
   text-decoration: none;
   font-weight: 400;
   color: #006ba6;
+  padding-top: 5px;
 }
 
 .logo-img {
