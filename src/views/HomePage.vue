@@ -5,9 +5,9 @@
       <div class="hero-text">
         <h1>Template Dashboards for your Business</h1>
         <p>
-          Professionally developed dashboards built around real business needs.
-          Hire for tailored solutions, or explore ready-made templates for quick
-          integration.
+          Professionally developed dashboard templates built around real
+          business needs. Hire for tailored solutions, or explore ready-made
+          templates for quick integration.
         </p>
         <div class="button-container">
           <router-link to="/dashboards" class="button"
