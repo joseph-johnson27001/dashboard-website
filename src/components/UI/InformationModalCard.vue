@@ -99,6 +99,7 @@ export default {
   position: relative;
   animation: slideIn 0.3s ease-out;
   max-height: 80vh;
+  margin: 10px;
   overflow-y: auto;
 }
 
