@@ -277,4 +277,24 @@ export default {
     opacity: 1;
   }
 }
+
+@media (max-width: 500px) {
+  .modal-buttons {
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .bottom-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .button {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
 </style>
