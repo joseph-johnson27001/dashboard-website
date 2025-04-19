@@ -153,16 +153,12 @@ export default {
       this.selectedSlug = demo.slug;
       this.selectedNote = demo.note;
       this.isModalOpen = true;
+      document.body.style.overflow = "hidden";
     },
     closeModal() {
       this.isModalOpen = false;
       this.selectedDemo = null;
-    },
-    viewDemo() {
-      console.log("Viewing demo for:", this.selectedDemo);
-    },
-    buyNow() {
-      console.log("Buying now for:", this.selectedDemo);
+      document.body.style.overflow = "";
     },
   },
 };
