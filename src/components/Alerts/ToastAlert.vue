@@ -35,7 +35,7 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   max-width: 400px;
-  width: 100%;
+  width: 90%;
   padding: 15px;
   background-color: whitesmoke;
   color: #444;
@@ -48,6 +48,7 @@ export default {
   border: 1px solid;
   box-sizing: border-box;
 }
+
 .ToastAlert p {
   margin: 0;
 }
