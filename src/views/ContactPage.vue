@@ -35,7 +35,9 @@
         <label>Project Details</label>
         <textarea v-model="form.details" required></textarea>
 
-        <button type="submit" class="button">Submit Inquiry</button>
+        <button type="submit" class="button" :disabled="loading">
+          {{ loading ? "Sending..." : "Submit Inquiry" }}
+        </button>
       </form>
     </section>
 
@@ -62,10 +64,13 @@ export default {
         dashboardType: "",
         details: "",
       },
+      loading: false,
     };
   },
   methods: {
     submitForm() {
+      this.loading = true;
+
       const serviceID = "service_1atgpf8";
       const templateID = "template_00lp41j";
       const publicKey = "PqLTs_mca__hM55qf";
@@ -98,6 +103,9 @@ export default {
             "❌ Something went wrong. Please try again later.",
             "error"
           );
+        })
+        .finally(() => {
+          this.loading = false;
         });
     },
   },
@@ -181,7 +189,12 @@ textarea {
   cursor: pointer;
 }
 
-.button:hover {
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
   background-color: #004f7c;
 }
 
