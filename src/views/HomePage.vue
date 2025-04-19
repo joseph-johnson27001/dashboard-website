@@ -251,6 +251,17 @@ export default {
   }
 }
 
+@media (max-width: 630px) {
+  .button-container {
+    flex-direction: column;
+  }
+  .button {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 /* Fade-in Animation */
 @keyframes fadeIn {
   from {
