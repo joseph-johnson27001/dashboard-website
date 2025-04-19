@@ -32,7 +32,6 @@ export default {
 .ToastAlert {
   position: fixed;
   top: 10px;
-  right: 10px;
   padding: 15px;
   background-color: whitesmoke;
   color: #444;
@@ -44,6 +43,8 @@ export default {
   transition: all 0.3s ease;
   border: 1px solid;
   box-sizing: border-box;
+  width: 80vw;
+  max-width: 400px;
 }
 
 .ToastAlert p {
