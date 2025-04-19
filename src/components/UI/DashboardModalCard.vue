@@ -297,4 +297,19 @@ export default {
     box-sizing: border-box;
   }
 }
+
+/* Media query for fixing  */
+
+@media (min-width: 501px) and (max-width: 1024px) {
+  .dashboard-image {
+    object-fit: contain;
+  }
+  .modal-overlay {
+    align-items: flex-start;
+  }
+  .modal {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+}
 </style>
