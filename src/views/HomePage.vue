@@ -24,7 +24,14 @@
     </section>
 
     <section class="dashboard-section">
-      <h2>Latest Dashboards</h2>
+      <div class="latest-header">
+        <h2>Latest Dashboards</h2>
+        <i
+          class="far fa-circle-question info-icon"
+          @click="showInfo = true"
+          title="Dashboard Information"
+        ></i>
+      </div>
       <div class="dashboard-grid">
         <DashboardDemoCard
           v-for="(demo, index) in demos"
@@ -53,20 +60,25 @@
       @buy-now="buyNow"
     />
   </div>
+  <!-- Information Modal Card -->
+  <InformationModalCard :isOpen="showInfo" @close-modal="showInfo = false" />
 </template>
 
 <script>
 import DashboardDemoCard from "@/components/UI/DashboardDemoCard.vue";
 import DashboardModalCard from "@/components/UI/DashboardModalCard.vue";
+import InformationModalCard from "@/components/UI/InformationModalCard.vue";
 
 export default {
   name: "HomePage",
   components: {
     DashboardDemoCard,
     DashboardModalCard,
+    InformationModalCard,
   },
   data() {
     return {
+      showInfo: false,
       demos: [
         {
           name: "Code Camp",
@@ -221,6 +233,13 @@ export default {
   background-color: #004f7c;
 }
 
+.latest-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Section Headers */
 .dashboard-section h2 {
   font-size: 22px;
@@ -237,6 +256,13 @@ export default {
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   margin-bottom: 20px;
+}
+
+.info-icon {
+  font-size: 20px;
+  color: #006ba6;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 @media (max-width: 1200px) {
