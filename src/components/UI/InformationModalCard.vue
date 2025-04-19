@@ -71,6 +71,15 @@ export default {
       this.$emit("close-modal");
     },
   },
+  watch: {
+    isOpen(newVal) {
+      if (newVal) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+    },
+  },
 };
 </script>
 
