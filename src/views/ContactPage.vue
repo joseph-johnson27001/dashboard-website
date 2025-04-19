@@ -176,7 +176,7 @@ textarea {
   font-family: "Inter Tight", sans-serif;
   background-color: #006ba6;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 15px;
   text-decoration: none;
   font-weight: 500;
   border-radius: 4px;

@@ -242,7 +242,7 @@ export default {
 .button {
   background-color: #006ba6;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 15px;
   text-decoration: none;
   font-weight: 500;
   border-radius: 4px;
