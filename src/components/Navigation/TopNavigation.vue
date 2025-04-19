@@ -9,9 +9,9 @@
         />
       </router-link>
       <div class="nav-links">
-        <router-link to="/how-it-works" active-class="active-link"
+        <!-- <router-link to="/how-it-works" active-class="active-link"
           >How It Works</router-link
-        >
+        > -->
         <router-link to="/dashboards" active-class="active-link"
           >Dashboards</router-link
         >

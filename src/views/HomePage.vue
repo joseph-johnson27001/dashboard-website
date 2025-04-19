@@ -13,9 +13,9 @@
           <router-link to="/dashboards" class="button"
             >View All Dashboards</router-link
           >
-          <router-link to="/how-it-works" class="button"
+          <!-- <router-link to="/how-it-works" class="button"
             >How It Works</router-link
-          >
+          > -->
           <router-link to="/contact" class="button"
             >Request A Custom Dashboard</router-link
           >
@@ -251,7 +251,7 @@ export default {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 450px) {
   .button-container {
     flex-direction: column;
   }
