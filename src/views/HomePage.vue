@@ -199,17 +199,6 @@ export default {
   margin-top: 10px;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .hero h1,
-    .dashboard-section h2 {
-      font-feature-settings: "liga" 1;
-      text-rendering: optimizeLegibility;
-      letter-spacing: normal !important;
-    }
-  }
-}
-
 .hero p {
   font-size: 17px;
   margin-top: 10px;
