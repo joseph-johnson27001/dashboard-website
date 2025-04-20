@@ -203,6 +203,8 @@ export default {
   @supports (-webkit-appearance: none) {
     .hero h1,
     .dashboard-section h2 {
+      font-feature-settings: "liga" 1;
+      text-rendering: optimizeLegibility;
       letter-spacing: normal !important;
     }
   }
