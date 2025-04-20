@@ -193,9 +193,19 @@ export default {
   font-size: 38px;
   font-family: "Unica One", cursive;
   color: #333;
+  letter-spacing: -1px;
   margin-bottom: 0px;
   padding-bottom: 0;
   margin-top: 10px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .hero h1,
+    .dashboard-section h2 {
+      letter-spacing: normal !important;
+    }
+  }
 }
 
 .hero p {
