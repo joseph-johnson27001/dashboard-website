@@ -33,13 +33,6 @@ export default {
 </script>
 
 <style>
-/* Global style file — NOT scoped */
-@-moz-document url-prefix() {
-  .hero h1 {
-    letter-spacing: -3px !important;
-  }
-}
-
 body {
   margin: 0;
   background-color: #f8f8f8;
@@ -62,5 +55,19 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+/* Global style file — NOT scoped */
+@-moz-document url-prefix() {
+  .hero h1 {
+    letter-spacing: -3px !important;
+  }
+}
+
+/* Safari-specific override */
+@supports (-webkit-touch-callout: none) {
+  .hero h1 {
+    letter-spacing: -3px !important;
+  }
 }
 </style>

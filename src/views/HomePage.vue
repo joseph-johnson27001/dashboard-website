@@ -193,17 +193,10 @@ export default {
   font-size: 38px;
   font-family: "Unica One", cursive;
   color: #333;
-  letter-spacing: -1px; /* Default for Chrome and Edge */
+  letter-spacing: -1px;
   margin-bottom: 0px;
   padding-bottom: 0;
   margin-top: 10px;
-}
-
-/* Safari-specific override */
-@supports (-webkit-touch-callout: none) {
-  .hero h1 {
-    letter-spacing: -3px !important;
-  }
 }
 
 .hero p {
