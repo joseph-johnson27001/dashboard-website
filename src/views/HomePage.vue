@@ -202,14 +202,7 @@ export default {
 /* Safari-specific override */
 @supports (-webkit-touch-callout: none) {
   .hero h1 {
-    letter-spacing: -3px;
-  }
-}
-
-/* Firefox-specific override */
-@-moz-document url-prefix() {
-  .hero h1 {
-    letter-spacing: -3px;
+    letter-spacing: -3px !important;
   }
 }
 

@@ -33,6 +33,13 @@ export default {
 </script>
 
 <style>
+/* Global style file — NOT scoped */
+@-moz-document url-prefix() {
+  .hero h1 {
+    letter-spacing: -3px !important;
+  }
+}
+
 body {
   margin: 0;
   background-color: #f8f8f8;
