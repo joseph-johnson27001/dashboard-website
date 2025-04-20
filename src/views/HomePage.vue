@@ -189,25 +189,30 @@ export default {
   margin-bottom: 30px;
 }
 
-/* General styling */
 .hero h1 {
   font-size: 38px;
   font-family: "Unica One", cursive;
   color: #333;
-  letter-spacing: -1px;
+  letter-spacing: -1px; /* Default for Chrome and Edge */
   margin-bottom: 0px;
   padding-bottom: 0;
   margin-top: 10px;
 }
 
-/* Safari-specific styles */
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .hero h1 {
-      font-family: "Assistant", sans-serif !important; /* Change font for Safari */
-    }
+/* Safari-specific override */
+@supports (-webkit-touch-callout: none) {
+  .hero h1 {
+    letter-spacing: -3px;
   }
 }
+
+/* Firefox-specific override */
+@-moz-document url-prefix() {
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+}
+
 .hero p {
   font-size: 17px;
   margin-top: 10px;
