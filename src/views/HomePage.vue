@@ -202,7 +202,8 @@ export default {
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
     .hero h1 {
-      letter-spacing: -0.5px;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: -1px;
     }
   }
 }
