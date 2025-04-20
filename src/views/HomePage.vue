@@ -198,6 +198,7 @@ export default {
   padding-bottom: 0;
   margin-top: 10px;
   font-weight: 600;
+  font-synthesis: weight;
 }
 
 .hero p {
