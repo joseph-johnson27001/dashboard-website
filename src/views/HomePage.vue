@@ -247,14 +247,6 @@ export default {
   letter-spacing: -1px;
 }
 
-/* Dashboard Grid */
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-  margin-bottom: 20px;
-}
-
 .info-icon {
   font-size: 20px;
   color: #006ba6;
@@ -262,7 +254,19 @@ export default {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-@media (max-width: 1200px) {
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 1400px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
   .dashboard-grid {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -207,7 +207,6 @@ export default {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Dashboard Grid */
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -235,11 +234,9 @@ export default {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    /* transform: translateY(10px); */
   }
   to {
     opacity: 1;
-    /* transform: translateY(0); */
   }
 }
 </style>
