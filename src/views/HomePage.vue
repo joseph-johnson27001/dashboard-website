@@ -197,8 +197,14 @@ export default {
   margin-bottom: 0px;
   padding-bottom: 0;
   margin-top: 10px;
-  font-weight: 600;
-  font-synthesis: weight;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .hero h1 {
+      letter-spacing: -0.5px;
+    }
+  }
 }
 
 .hero p {
