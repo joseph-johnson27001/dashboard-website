@@ -189,6 +189,7 @@ export default {
   margin-bottom: 30px;
 }
 
+/* General styling */
 .hero h1 {
   font-size: 38px;
   font-family: "Unica One", cursive;
@@ -199,6 +200,14 @@ export default {
   margin-top: 10px;
 }
 
+/* Safari-specific styles */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .hero h1 {
+      font-family: "Assistant", sans-serif !important; /* Change font for Safari */
+    }
+  }
+}
 .hero p {
   font-size: 17px;
   margin-top: 10px;
