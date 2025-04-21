@@ -62,7 +62,6 @@ export default {
 
 .post-container {
   max-width: 800px;
-  padding: 20px 0;
   border-radius: 12px;
 }
 
@@ -70,16 +69,16 @@ export default {
   font-size: 22px;
   font-weight: 500;
   color: #006ba6;
-  margin-bottom: 15px;
-  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 10px;
   font-family: "Unica One", cursive;
   letter-spacing: -1px;
 }
 
 .post-description {
   font-size: 18px;
-  color: #666;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  margin-top: 10px;
   line-height: 1.6;
 }
 
@@ -89,7 +88,6 @@ export default {
   max-height: 400px;
   object-fit: cover;
   border-radius: 4px;
-  margin-bottom: 30px;
 }
 
 .post-content p {
