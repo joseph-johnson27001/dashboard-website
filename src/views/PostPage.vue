@@ -62,7 +62,10 @@ export default {
 
 .post-container {
   max-width: 800px;
-  border-radius: 12px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
 }
 
 .post-title {
@@ -76,10 +79,10 @@ export default {
 }
 
 .post-description {
-  font-size: 18px;
-  margin-bottom: 15px;
-  margin-top: 10px;
-  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.75;
+  margin-bottom: 1.4em;
 }
 
 .post-image {
