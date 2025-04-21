@@ -133,6 +133,18 @@ p {
   color: #666;
 }
 
+@media (max-width: 520px) {
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .button {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+
 /* Fade-in Animation */
 @keyframes fadeIn {
   from {
