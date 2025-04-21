@@ -33,46 +33,11 @@ export default {
     return {
       articles: [
         {
-          title: "What Is a Dashboard?",
-          slug: "what-is-a-dashboard",
+          title: "Introducing Template Dashboards",
+          slug: "introducing-template-dashboards",
           excerpt:
-            "Dashboards are visual interfaces that help users understand data at a glance. They provide quick insights, track key performance indicators, and support better decision-making in business, tech, and analytics.",
+            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
           image: "/Dashboard_Images/Code_Camp.png",
-        },
-        {
-          title: "Single-Page vs Multi-Page Dashboards",
-          slug: "single-vs-multi-page-dashboards",
-          excerpt:
-            "Should your dashboard fit on a single page, or be split into multiple views? Learn how to decide based on the complexity of your data, user roles, and project requirements.",
-          image: "/Dashboard_Images/Finance.png",
-        },
-        {
-          title: "Top Frontend Libraries for Dashboards",
-          slug: "top-frontend-libraries-for-dashboards",
-          excerpt:
-            "Choosing the right frontend stack matters. We break down popular libraries like Vue, React, Chart.js, and ApexCharts to help you pick the best tools for your next dashboard project.",
-          image: "/Dashboard_Images/Logistics.png",
-        },
-        {
-          title: "What Is a Dashboard?",
-          slug: "what-is-a-dashboard",
-          excerpt:
-            "Dashboards are visual interfaces that help users understand data at a glance. They provide quick insights, track key performance indicators, and support better decision-making in business, tech, and analytics.",
-          image: "/Dashboard_Images/Code_Camp.png",
-        },
-        {
-          title: "Single-Page vs Multi-Page Dashboards",
-          slug: "single-vs-multi-page-dashboards",
-          excerpt:
-            "Should your dashboard fit on a single page, or be split into multiple views? Learn how to decide based on the complexity of your data, user roles, and project requirements.",
-          image: "/Dashboard_Images/Finance.png",
-        },
-        {
-          title: "Top Frontend Libraries for Dashboards",
-          slug: "top-frontend-libraries-for-dashboards",
-          excerpt:
-            "Choosing the right frontend stack matters. We break down popular libraries like Vue, React, Chart.js, and ApexCharts to help you pick the best tools for your next dashboard project.",
-          image: "/Dashboard_Images/Logistics.png",
         },
       ],
     };
@@ -125,10 +90,6 @@ h1 {
   border-radius: 4px;
   background-color: #fff;
   transition: background-color 0.2s;
-}
-
-.article-card:hover {
-  background-color: #f5f5f5;
 }
 
 .article-img {
@@ -190,11 +151,21 @@ h1 {
   .article-card {
     flex-direction: column;
     align-items: center;
+    padding: 0px;
+  }
+
+  a {
+    border-radius: 0;
   }
 
   .article-img {
     width: 100%;
     height: auto;
+    border-radius: 0;
+  }
+
+  .article-content {
+    padding: 10px;
   }
 }
 

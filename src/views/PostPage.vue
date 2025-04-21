@@ -2,15 +2,22 @@
   <div v-if="post" class="post-wrapper">
     <article class="post-container">
       <h1 class="post-title">{{ post.title }}</h1>
-
       <p class="post-description">{{ post.description }}</p>
-
       <img :src="post.image" :alt="post.title" class="post-image" />
-
       <div class="post-content">
         <p v-for="(line, i) in post.content.trim().split('\n')" :key="i">
           {{ line }}
         </p>
+      </div>
+
+      <!-- Button Container -->
+      <div class="button-container">
+        <router-link to="/dashboards" class="button"
+          >View All Dashboards</router-link
+        >
+        <router-link to="/contact" class="button"
+          >Request A Custom Dashboard</router-link
+        >
       </div>
     </article>
   </div>
@@ -95,6 +102,28 @@ p {
   font-weight: 300;
   line-height: 1.4;
   font-family: "Assistant";
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #006ba6;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #004f7c;
 }
 
 .not-found {
