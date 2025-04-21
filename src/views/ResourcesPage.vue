@@ -75,7 +75,8 @@ h1 {
 
 .article-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .article-card {
@@ -120,6 +121,33 @@ h1 {
   margin-top: 8px;
   font-size: 13px;
   color: #006ba6;
+}
+
+@media (max-width: 1400px) {
+  .article-list {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .article-img {
+    width: 220px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 650px) {
+  .article-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Fade-in Animation */
