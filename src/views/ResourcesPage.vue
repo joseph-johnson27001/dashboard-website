@@ -15,8 +15,10 @@
       >
         <img :src="article.image" :alt="article.title" class="article-img" />
         <div class="article-content">
-          <h2>{{ article.title }}</h2>
-          <p>{{ article.excerpt }}</p>
+          <div>
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.excerpt }}</p>
+          </div>
           <span class="read-more">Read more →</span>
         </div>
       </router-link>
@@ -122,6 +124,11 @@ h1 {
   margin-bottom: 10px;
   border-radius: 4px;
   background-color: #fff;
+  transition: background-color 0.2s;
+}
+
+.article-card:hover {
+  background-color: #f5f5f5;
 }
 
 .article-img {
@@ -130,6 +137,12 @@ h1 {
   object-fit: cover;
   flex-shrink: 0;
   border-radius: 6px;
+}
+
+.article-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .article-content h2 {
@@ -153,7 +166,7 @@ h1 {
 }
 
 .read-more {
-  margin-top: 8px;
+  align-self: flex-end;
   font-size: 13px;
   color: #006ba6;
 }
