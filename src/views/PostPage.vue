@@ -78,26 +78,23 @@ export default {
   letter-spacing: -1px;
 }
 
-.post-description {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.75;
-  margin-bottom: 1.4em;
-}
-
 .post-image {
   width: 100%;
   height: auto;
   max-height: 400px;
   object-fit: cover;
   border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-.post-content p {
+p {
   font-size: 16px;
-  color: #333;
-  line-height: 1.75;
-  margin-bottom: 1.4em;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.4;
+  font-family: "Assistant";
 }
 
 .not-found {

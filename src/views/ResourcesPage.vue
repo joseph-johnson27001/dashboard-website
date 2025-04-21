@@ -73,6 +73,16 @@ h1 {
   font-weight: 400;
 }
 
+.intro {
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.4;
+  font-family: "Assistant";
+}
+
 .article-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -112,9 +122,13 @@ h1 {
 }
 
 .article-content p {
-  font-size: 17px;
-  color: #555;
-  margin: 0;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.4;
+  font-family: "Assistant";
 }
 
 .read-more {
