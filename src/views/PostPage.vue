@@ -88,8 +88,8 @@ export default {
 }
 
 p {
-  font-size: 16px;
-  margin-top: 5px;
+  font-size: 17px;
+  margin-top: 10px;
   margin-bottom: 15px;
   color: #222;
   font-weight: 300;
