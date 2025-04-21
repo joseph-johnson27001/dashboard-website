@@ -31,7 +31,11 @@ const routes = [
     name: "post",
     component: PostPage,
     props: true,
-    description: "Post",
+    meta: {
+      title: "Resources",
+      description:
+        "Explore guides, comparisons, and tips on dashboards, data visualization, and front-end best practices. Fresh insights for devs and decision-makers.",
+    },
   },
   {
     path: "/contact",

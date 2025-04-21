@@ -58,6 +58,11 @@ export default {
 </script>
 
 <style scoped>
+.resources-page {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
 h1 {
   font-family: "Unica One", cursive;
   font-size: 24px;
@@ -115,5 +120,15 @@ h1 {
   margin-top: 8px;
   font-size: 13px;
   color: #006ba6;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>

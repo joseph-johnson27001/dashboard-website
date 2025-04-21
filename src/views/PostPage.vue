@@ -56,6 +56,8 @@ export default {
 .post-wrapper {
   display: flex;
   justify-content: center;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
 }
 
 .post-container {
@@ -102,5 +104,15 @@ export default {
   padding: 60px 20px;
   font-size: 18px;
   color: #666;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
