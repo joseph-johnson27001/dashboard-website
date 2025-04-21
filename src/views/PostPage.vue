@@ -64,7 +64,7 @@ export default {
   max-width: 800px;
   border-radius: 8px;
   background-color: white;
-  padding: 20px 30px;
+  padding: 20px;
   border: 1px solid #ddd;
 }
 
