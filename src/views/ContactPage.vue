@@ -163,6 +163,7 @@ select {
   outline: none;
   font-family: "Assistant";
   font-size: 15px;
+  background-color: #fff;
 }
 
 option {

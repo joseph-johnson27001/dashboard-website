@@ -3,7 +3,7 @@ export default {
   title: "Introducing Template Dashboards",
   description:
     "An introduction to Template Dashboards — your go-to resource for ready-made, customizable frontend dashboard templates for modern web apps.",
-  image: "/Dashboard_Images/Code_Camp.png",
+  image: "/Dashboard_Images/Logistics.png",
   content: `
 Welcome to Template Dashboards. This site is here to help developers and product teams quickly build beautiful, functional dashboards without starting from scratch.
 
