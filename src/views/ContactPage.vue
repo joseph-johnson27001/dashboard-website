@@ -163,13 +163,15 @@ select {
   outline: none;
   font-family: "Assistant";
   font-size: 15px;
-  background-color: #fff;
+  background-color: white;
+  border: 1px solid #bbb;
 }
 
 option {
-  font-family: "Assistant";
+  font-family: "Arial";
   color: #222;
   font-size: 15px;
+  background-color: white;
 }
 
 textarea {

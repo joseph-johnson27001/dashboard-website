@@ -39,6 +39,41 @@ export default {
             "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
           image: "/Dashboard_Images/Logistics.png",
         },
+        {
+          title: "Introducing Template Dashboards",
+          slug: "introducing-template-dashboards",
+          excerpt:
+            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
+          image: "/Dashboard_Images/Finance.png",
+        },
+        {
+          title: "Introducing Template Dashboards",
+          slug: "introducing-template-dashboards",
+          excerpt:
+            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
+          image: "/Dashboard_Images/Code_Camp.png",
+        },
+        {
+          title: "Introducing Template Dashboards",
+          slug: "introducing-template-dashboards",
+          excerpt:
+            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
+          image: "/Dashboard_Images/Healthcare.png",
+        },
+        {
+          title: "Introducing Template Dashboards",
+          slug: "introducing-template-dashboards",
+          excerpt:
+            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
+          image: "/Dashboard_Images/Sales.png",
+        },
+        {
+          title: "Introducing Template Dashboards",
+          slug: "introducing-template-dashboards",
+          excerpt:
+            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
+          image: "/Dashboard_Images/HR-dashboard.png",
+        },
       ],
     };
   },
