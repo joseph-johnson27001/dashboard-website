@@ -1,10 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/HomePage.vue";
-// import Single from "../views/SinglePage.vue";
-// import Multi from "../views/MultiPage.vue";
 import Contact from "../views/ContactPage.vue";
 import HowItWorks from "../views/HowItWorksPage.vue";
-// import API from "../views/APIReadyPage.vue";
+import Resources from "../views/ResourcesPage.vue";
+import PostPage from "../views/PostPage.vue";
 import Dashboards from "../views/DashboardsPage.vue";
 import DashboardViewer from "@/views/DashboardViewer.vue";
 
@@ -18,16 +17,22 @@ const routes = [
         "Explore prebuilt, fully responsive dashboard templates for web applications. Get customizable and ready-to-use solutions for your data visualization and business needs.",
     },
   },
-  // {
-  //   path: "/single-page-dashboards",
-  //   component: Single,
-  //   meta: { title: "Single Page Dashboards" },
-  // },
-  // {
-  //   path: "/multi-page-dashboards",
-  //   component: Multi,
-  //   meta: { title: "Multi Page Dashboards" },
-  // },
+  {
+    path: "/resources",
+    component: Resources,
+    meta: {
+      title: "Resources",
+      description:
+        "Explore guides, comparisons, and tips on dashboards, data visualization, and front-end best practices. Fresh insights for devs and decision-makers.",
+    },
+  },
+  {
+    path: "/resources/:slug",
+    name: "post",
+    component: PostPage,
+    props: true,
+    description: "Post",
+  },
   {
     path: "/contact",
     component: Contact,
@@ -37,11 +42,6 @@ const routes = [
         "Contact Template Dashboards for support, inquiries, or to learn more about our prebuilt dashboard templates. We're here to help!",
     },
   },
-  // {
-  //   path: "/api-ready-dashboards",
-  //   component: API,
-  //   meta: { title: "API Ready Dashboards" },
-  // },
   {
     path: "/how-it-works",
     component: HowItWorks,
