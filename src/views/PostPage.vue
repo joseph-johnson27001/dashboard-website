@@ -12,9 +12,13 @@
 
       <!-- Button Container -->
       <div class="button-container">
-        <router-link to="/dashboards" class="button"
-          >View All Dashboards</router-link
+        <router-link
+          :to="post.url ? post.url : '/dashboards'"
+          class="button"
+          target="_blank"
         >
+          {{ post.url ? "View Dashboard" : "View All Dashboards" }}
+        </router-link>
         <router-link to="/contact" class="button"
           >Request A Custom Dashboard</router-link
         >
@@ -26,7 +30,9 @@
 <script>
 export default {
   name: "PostPage",
-  props: ["slug"],
+  props: {
+    slug: String,
+  },
   data() {
     return {
       post: null,
@@ -37,10 +43,8 @@ export default {
       const module = await import(`@/resources/posts/${this.slug}.js`);
       this.post = module.default;
 
-      // Set document title
       document.title = `Template Dashboards - ${this.post.title}`;
 
-      // Set meta description
       const metaDescriptionTag = document.querySelector(
         'meta[name="description"]'
       );

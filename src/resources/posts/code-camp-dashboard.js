@@ -1,6 +1,7 @@
 export default {
   slug: "code-camp-dashboard",
   title: "Introducing the Code Camp Dashboard",
+  url: "/dashboard-template/code-camp",
   description:
     "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable.",
   image: "/Dashboard_Images/Code_Camp.png",
