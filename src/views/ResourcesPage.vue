@@ -187,7 +187,6 @@ h1 {
 @media (max-width: 1400px) {
   .article-list {
     grid-template-columns: 1fr;
-    gap: 5px;
     margin-top: 0;
   }
 }
