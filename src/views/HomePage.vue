@@ -166,12 +166,37 @@ export default {
       this.selectedSlug = demo.slug;
       this.selectedNote = demo.note;
       this.isModalOpen = true;
-      document.body.style.overflow = "hidden";
+      // Add event listeners to prevent scrolling and not hide scrollbar - makes page jumpy
+      window.addEventListener("wheel", this.preventScroll, { passive: false });
+      window.addEventListener("touchmove", this.preventScroll, {
+        passive: false,
+      });
+      window.addEventListener("keydown", this.preventKeyDown, {
+        passive: false,
+      });
     },
     closeModal() {
       this.isModalOpen = false;
       this.selectedDemo = null;
-      document.body.style.overflow = "";
+
+      // Remove event listeners to restore scrolling
+      window.removeEventListener("wheel", this.preventScroll);
+      window.removeEventListener("touchmove", this.preventScroll);
+      window.removeEventListener("keydown", this.preventKeyDown);
+    },
+    // Prevent scrolling by using preventDefault
+    preventScroll(event) {
+      event.preventDefault();
+    },
+    preventKeyDown(event) {
+      // Prevent arrow keys and space bar from scrolling
+      if (
+        event.key === "ArrowDown" ||
+        event.key === "ArrowUp" ||
+        event.key === " "
+      ) {
+        event.preventDefault();
+      }
     },
   },
 };

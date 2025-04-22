@@ -70,13 +70,37 @@ export default {
     closeModal() {
       this.$emit("close-modal");
     },
+    preventScroll(event) {
+      event.preventDefault();
+    },
+    preventKeyDown(event) {
+      if (
+        event.key === "ArrowDown" ||
+        event.key === "ArrowUp" ||
+        event.key === " " ||
+        event.key === "PageDown" ||
+        event.key === "PageUp"
+      ) {
+        event.preventDefault();
+      }
+    },
   },
   watch: {
     isOpen(newVal) {
       if (newVal) {
-        document.body.style.overflow = "hidden";
+        window.addEventListener("wheel", this.preventScroll, {
+          passive: false,
+        });
+        window.addEventListener("touchmove", this.preventScroll, {
+          passive: false,
+        });
+        window.addEventListener("keydown", this.preventKeyDown, {
+          passive: false,
+        });
       } else {
-        document.body.style.overflow = "";
+        window.removeEventListener("wheel", this.preventScroll);
+        window.removeEventListener("touchmove", this.preventScroll);
+        window.removeEventListener("keydown", this.preventKeyDown);
       }
     },
   },
