@@ -76,12 +76,11 @@ export default {
 }
 
 .post-title {
-  font-size: 22px;
+  font-size: 18px;
+  margin-bottom: 5px;
   font-weight: 500;
   color: #006ba6;
-  margin-bottom: 0px;
   margin-top: 10px;
-  font-family: "Unica One", cursive;
   letter-spacing: -1px;
 }
 

@@ -142,9 +142,8 @@ h1 {
 }
 
 .article-content h2 {
-  font-family: "Unica One", cursive;
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 5px;
   font-weight: 500;
   color: #006ba6;
   margin-top: 10px;
