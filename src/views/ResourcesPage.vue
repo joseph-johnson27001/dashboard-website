@@ -9,6 +9,7 @@
     <div class="article-list">
       <router-link
         v-for="(article, index) in articles"
+        :style="{ animationDelay: index * 0.08 + 's' }"
         :key="index"
         :to="`/resources/${article.slug}`"
         class="article-card"
@@ -33,24 +34,52 @@ export default {
     return {
       articles: [
         {
-          title: "Introducing Template Dashboards",
-          slug: "introducing-template-dashboards",
+          title: "Logistics Dashboard",
+          slug: "logistics-dashboard",
           excerpt:
-            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
-          image: "/Dashboard_Images/Logistics.png",
+            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+          image: "/Dashboard_Images/logistics.png",
         },
         {
-          title: "Introducing Template Dashboards",
-          slug: "introducing-template-dashboards",
+          title: "Sales Dashboard",
+          slug: "sales-dashboard",
           excerpt:
-            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
-          image: "/Dashboard_Images/Finance.png",
+            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+          image: "/Dashboard_Images/sales.png",
         },
         {
-          title: "Introducing Template Dashboards",
-          slug: "introducing-template-dashboards",
+          title: "Finance Dashboard",
+          slug: "finance-dashboard",
           excerpt:
-            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
+            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+          image: "/Dashboard_Images/finance.png",
+        },
+        {
+          title: "HR Dashboard",
+          slug: "hr-dashboard",
+          excerpt:
+            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+          image: "/Dashboard_Images/hr-dashboard.png",
+        },
+        {
+          title: "Worksphere Dashboard",
+          slug: "worksphere-dashboard",
+          excerpt:
+            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+          image: "/Dashboard_Images/Worksphere.png",
+        },
+        {
+          title: "Healthcare Dashboard",
+          slug: "healthcare-dashboard",
+          excerpt:
+            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+          image: "/Dashboard_Images/Healthcare.png",
+        },
+        {
+          title: "The Code Camp Dashboard",
+          slug: "code-camp-dashboard",
+          excerpt:
+            "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
           image: "/Dashboard_Images/Code_Camp.png",
         },
         {
@@ -58,21 +87,7 @@ export default {
           slug: "introducing-template-dashboards",
           excerpt:
             "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
-          image: "/Dashboard_Images/Healthcare.png",
-        },
-        {
-          title: "Introducing Template Dashboards",
-          slug: "introducing-template-dashboards",
-          excerpt:
-            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
-          image: "/Dashboard_Images/Sales.png",
-        },
-        {
-          title: "Introducing Template Dashboards",
-          slug: "introducing-template-dashboards",
-          excerpt:
-            "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
-          image: "/Dashboard_Images/HR-dashboard.png",
+          image: "/Dashboard_Images/Logistics.png",
         },
       ],
     };
@@ -125,6 +140,7 @@ h1 {
   border-radius: 4px;
   background-color: #fff;
   transition: background-color 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
 }
 
 .article-img {
@@ -132,7 +148,8 @@ h1 {
   height: 240px;
   object-fit: cover;
   flex-shrink: 0;
-  border-radius: 6px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
 }
 
 .article-content {
