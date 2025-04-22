@@ -147,7 +147,7 @@ h1 {
   font-weight: 500;
   color: #006ba6;
   margin-top: 10px;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 
 .article-content p {
