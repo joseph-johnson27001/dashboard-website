@@ -1,18 +1,17 @@
 export default {
-  slug: "code-camp-dashboard",
-  title: "Introducing the Code Camp Dashboard",
+  slug: "finance-dashboard",
+  title: "The Finance Dashboard",
+  url: "/dashboard-template/finance",
   description:
-    "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable.",
-  image: "/Dashboard_Images/Code_Camp.png",
+    "A clean, single-page financial dashboard built with Vue and ApexCharts. Includes KPIs and interactive graphs — perfect for finance teams or product inspiration.",
+  image: "/Dashboard_Images/Finance.png",
   content: `
-We're excited to introduce the Code Camp Dashboard — a sleek, dark-themed single-page dashboard built for online learning and coding education platforms.
+The Finance Dashboard is a focused, single-page template designed for finance teams, product owners, or developers looking to build sleek financial views fast.
 
-This template was designed with developer-focused environments in mind, featuring bold visuals and a clean layout that emphasizes data clarity. It's powered by ApexCharts, giving it rich, interactive charts right out of the box — perfect for tracking user progress, engagement stats, or course metrics.
+At the top, you’ll find clearly defined KPIs — revenue, expenses, growth — laid out for quick reference. Below that, interactive ApexCharts graphs give you real-time visual feedback for trends and forecasting.
 
-Whether you're launching a bootcamp platform, building an LMS, or just want a modern dashboard UI that looks sharp in dark mode, this template is a great starting point. And like all our dashboards, it's fully customizable — swap in your own data, change the theme, or repurpose it for a completely different use case.
+Built with Vue and ApexCharts, this dashboard is clean, responsive, and easy to extend. Whether you're working on a financial analytics tool, an internal business tracker, or just prototyping a product idea, this template offers a great starting point.
 
-As always, the goal here is to save you time, reduce complexity, and help you ship with confidence.
-
-Try it out, make it your own, and stay tuned for more releases soon.
+Quick to deploy, simple to customize, and ready to scale when you are.
   `,
 };
