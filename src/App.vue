@@ -33,6 +33,11 @@ export default {
 </script>
 
 <style>
+/* BELOW: Hack to fix sidebar showing up - delete later */
+#app {
+  min-height: 101vh;
+}
+
 body {
   margin: 0;
   background-color: #f8f8f8;
