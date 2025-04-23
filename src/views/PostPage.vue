@@ -1,35 +1,31 @@
 <template>
-  <div v-if="post" class="post-wrapper">
-    <article class="post-container">
+  <div class="post-wrapper">
+    <article v-if="post" class="post-container">
       <h1 class="post-title">{{ post.title }}</h1>
       <p class="post-description">{{ post.description }}</p>
       <img :src="post.image" :alt="post.title" class="post-image" />
       <div class="post-content">
-        <p v-for="(line, i) in post.content.trim().split('\n')" :key="i">
+        <p v-for="(line, i) in post.content" :key="i">
           {{ line }}
         </p>
       </div>
 
       <!-- Button Container -->
       <div class="button-container">
-        <div class="button-container">
-          <a
-            v-if="post.url"
-            :href="post.url"
-            class="button"
-            target="_blank"
-            rel="noopener"
-          >
-            View Dashboard
-          </a>
-          <router-link to="/dashboards" class="button">
-            View All Dashboards
-          </router-link>
-
-          <router-link to="/contact" class="button">
-            Request A Custom Dashboard
-          </router-link>
-        </div>
+        <a
+          v-if="post.url"
+          :href="post.url"
+          class="button"
+          target="_blank"
+          rel="noopener"
+          >View Dashboard</a
+        >
+        <router-link to="/dashboards" class="button"
+          >View All Dashboards</router-link
+        >
+        <router-link to="/contact" class="button"
+          >Request A Custom Dashboard</router-link
+        >
       </div>
     </article>
   </div>
@@ -48,8 +44,11 @@ export default {
   },
   async created() {
     try {
-      const module = await import(`@/resources/posts/${this.slug}.js`);
-      this.post = module.default;
+      // Fetch the JSON file corresponding to the slug
+      const response = await fetch(`/resources/posts/${this.slug}.json`);
+      const data = await response.json();
+
+      this.post = data;
 
       document.title = `Template Dashboards - ${this.post.title}`;
 

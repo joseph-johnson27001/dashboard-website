@@ -1,0 +1,13 @@
+{
+  "slug": "introducing-template-dashboards",
+  "title": "Introducing Template Dashboards",
+  "description": "An introduction to Template Dashboards — your go-to resource for ready-made, customizable frontend dashboard templates for modern web apps.",
+  "image": "/Dashboard_Images/Logistics.png",
+  "content": [
+    "Welcome to Template Dashboards. This site is here to help developers and product teams quickly build beautiful, functional dashboards without starting from scratch.",
+    "Creating dashboards can be time-consuming, especially if you’re working alone, moving fast, or just trying to get something clean and usable into production. Our goal is to make that easier. We offer ready-made dashboard templates that are responsive, modern, and easy to customize to fit your needs.",
+    "Whether you’re building a SaaS app, an internal tool, or just need something quick for a prototype, these templates are designed to give you a head start. They’re structured with flexibility in mind and can easily be plugged into your existing frontend stack.",
+    "Alongside the templates, you’ll also find useful resources and guides that explain how to get the most out of them. We’ll be adding more content over time, so feel free to check back or reach out if there’s something specific you’re looking for.",
+    "Thanks for visiting Template Dashboards — we’re glad you’re here."
+  ]
+}
