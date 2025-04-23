@@ -16,9 +16,7 @@
       </div>
 
       <!-- Description -->
-      <p class="modal-description" v-if="description">
-        {{ description }}
-      </p>
+      <p v-html="description" class="modal-description"></p>
 
       <!-- Note Section -->
       <p class="modal-note" v-if="note">* {{ note }}</p>

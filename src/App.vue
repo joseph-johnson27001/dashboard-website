@@ -62,6 +62,11 @@ body {
   overflow: hidden;
 }
 
+.highlight-blue {
+  color: #006ba6 !important;
+  font-weight: 500 !important;
+}
+
 /* Global style file — NOT scoped */
 @-moz-document url-prefix() {
   .hero h1 {

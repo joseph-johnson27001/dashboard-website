@@ -86,7 +86,7 @@ export default {
           image: "/Dashboard_Images/Code_Camp.png",
           type: "SP / Vue / ApexCharts",
           description:
-            "A dark-themed single-page dashboard built for online education platforms. Features user information, KPIs and interactive ApexCharts for visualizing user engagement and course progress",
+            'A dark-themed <span class="highlight-blue">single-page</span> dashboard built for online education platforms. Features user information, KPIs and interactive ApexCharts for visualizing user engagement and course progress',
           price: "£399",
         },
         {
@@ -95,7 +95,7 @@ export default {
           image: "/Dashboard_Images/Healthcare.png",
           type: "MP / Vue / Apexcharts",
           description:
-            "A modern, fully responsive, multi-page healthcare dashboard including KPIs, interactive charts, searchable paginated tables, modals for data entry, and built-in layout/navigation.",
+            'A modern, fully responsive, <span class="highlight-blue">multi-page</span> healthcare dashboard including KPIs, interactive charts, searchable paginated tables, modals for data entry, and built-in layout/navigation.',
           price: "£799",
         },
         {
@@ -104,17 +104,16 @@ export default {
           image: "/Dashboard_Images/Logistics.png",
           type: "SP / Vue / Chart.js",
           description:
-            "A clean, responsive single-page dashboard designed for logistics and supply chain insights. Includes key KPIs, dynamic charts powered by ApexCharts, and a styled sidebar.",
+            'A clean, responsive <span class="highlight-blue">single-page</span> dashboard designed for logistics and supply chain insights. Includes key KPIs, dynamic charts powered by ApexCharts, and a styled sidebar.',
           price: "£399",
         },
-
         {
           name: "Finance",
           slug: "finance",
           image: "/Dashboard_Images/Finance.png",
           type: "SP / Vue / ApexCharts",
           description:
-            "A sleek, single-page financial dashboard built with ApexCharts. Track revenue, expenses, and forecasting with clarity — an ideal starting point for finance teams.",
+            'A sleek, <span class="highlight-blue">single-page</span> financial dashboard built with ApexCharts. Track revenue, expenses, and forecasting with clarity — an ideal starting point for finance teams.',
           price: "£399",
         },
         {
@@ -123,7 +122,7 @@ export default {
           image: "/Dashboard_Images/HR-Dashboard.png",
           type: "AR / Vue / Chart.js",
           description:
-            "A fully API-ready, multi-page HR dashboard built with Chart.js. Simulated API calls and a structured data folder make it easy to plug in real endpoints—just swap the calls, remove the mock data, and you’re live. Includes working navigation and a clean layout for tracking headcount, performance, and employee satisfcation.",
+            'A fully <span class="highlight-blue">API-ready</span>, <span class="highlight-blue">multi-page</span> HR dashboard built with Chart.js. Simulated API calls and a structured data folder make it easy to plug in real endpoints—just swap the calls, remove the mock data, and you’re live. Includes working navigation and a clean layout for tracking headcount, performance, and employee satisfaction.',
           price: "£999",
         },
         {
@@ -132,7 +131,7 @@ export default {
           image: "/Dashboard_Images/Sales.png",
           type: "SP / Vue / Chart.js",
           description:
-            "A single-page sales dashboard built with Chart.js. Designed for tracking sales, purchases, and customer activity, it includes a styled sidebar for layout structure and future expansion.",
+            'A <span class="highlight-blue">single-page</span> sales dashboard built with Chart.js. Designed for tracking sales, purchases, and customer activity, it includes a styled sidebar for layout structure and future expansion.',
           price: "£399",
         },
         {
@@ -142,7 +141,7 @@ export default {
           type: "MP / Vue / Chart.js",
           note: "You can use any login email and password — they don’t need to be real and will not be stored anywhere.",
           description:
-            "A multi-page HR-style dashboard built with Chart.js, designed for workplace insights. Includes login/logout functionality, branded logos, and views for monitoring productivity, employee information, and team activity.",
+            'A <span class="highlight-blue">multi-page</span> HR-style dashboard built with Chart.js, designed for workplace insights. Includes login/logout functionality, branded logos, and views for monitoring productivity, employee information, and team activity.',
           price: "£799",
         },
       ],
