@@ -44,8 +44,7 @@ export default {
   },
   async created() {
     try {
-      // Fetch the JSON file corresponding to the slug
-      const response = await fetch(`/resources/posts/${this.slug}.json`);
+      const response = await fetch(`/Resources/posts/${this.slug}.json`);
       const data = await response.json();
 
       this.post = data;
