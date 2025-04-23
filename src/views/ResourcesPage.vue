@@ -136,7 +136,7 @@ h1 {
   border: 1px solid #ddd;
   padding: 15px;
   transition: box-shadow 0.2s;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #fff;
   transition: background-color 0.2s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;

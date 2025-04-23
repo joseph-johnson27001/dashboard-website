@@ -10,7 +10,6 @@
         </p>
       </div>
 
-      <!-- Button Container -->
       <div class="button-container">
         <a
           v-if="post.url"
