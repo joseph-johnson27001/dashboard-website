@@ -197,10 +197,13 @@ export default {
   font-family: "Assistant";
 }
 
+/* BRING THE PRICE TAG BACK FOR PHASE 2 */
+
 .price-tag {
   font-size: 20px;
   font-weight: 500;
   color: #006ba6;
+  display: none;
 }
 
 .modal-description {
