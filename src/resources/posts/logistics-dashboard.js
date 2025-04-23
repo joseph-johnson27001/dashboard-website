@@ -1,18 +1,15 @@
 export default {
-  slug: "code-camp-dashboard",
-  title: "Introducing the Code Camp Dashboard",
+  slug: "logistics-dashboard",
+  title: "The Logistics Dashboard",
+  url: "/dashboard-template/logistics",
   description:
-    "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable.",
-  image: "/Dashboard_Images/Code_Camp.png",
+    "A single-page logistics dashboard built with Vue and Chart.js. Track orders, shipments, and delivery performance with real-time visual insights.",
+  image: "/Dashboard_Images/Logistics.png",
   content: `
-We're excited to introduce the Code Camp Dashboard — a sleek, dark-themed single-page dashboard built for online learning and coding education platforms.
+The Logistics Dashboard is a clean, single-page dashboard template designed to monitor orders, track shipments, and evaluate delivery performance in real time.
 
-This template was designed with developer-focused environments in mind, featuring bold visuals and a clean layout that emphasizes data clarity. It's powered by ApexCharts, giving it rich, interactive charts right out of the box — perfect for tracking user progress, engagement stats, or course metrics.
+Built with Vue and Chart.js, it includes responsive layout components, interactive graphs, and essential KPIs that help visualize supply chain efficiency at a glance. Whether you're overseeing warehouse operations or managing a delivery service, this dashboard offers a fast way to get operational insights in front of your team.
 
-Whether you're launching a bootcamp platform, building an LMS, or just want a modern dashboard UI that looks sharp in dark mode, this template is a great starting point. And like all our dashboards, it's fully customizable — swap in your own data, change the theme, or repurpose it for a completely different use case.
-
-As always, the goal here is to save you time, reduce complexity, and help you ship with confidence.
-
-Try it out, make it your own, and stay tuned for more releases soon.
+It’s flexible, easy to adapt, and works great as a starting point for internal logistics tools or customer-facing reporting interfaces.
   `,
 };
