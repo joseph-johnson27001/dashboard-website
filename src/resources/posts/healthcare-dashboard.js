@@ -1,18 +1,16 @@
 export default {
-  slug: "code-camp-dashboard",
-  title: "Introducing the Code Camp Dashboard",
+  slug: "healthcare-dashboard",
+  title: "The Healthcare Dashboard",
+  url: "/dashboard-template/healthcare",
   description:
-    "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable.",
-  image: "/Dashboard_Images/Code_Camp.png",
+    "A multi-page healthcare dashboard built with Vue and ApexCharts. Designed for teams needing real-time insights into patient data, operations, and performance.",
+  image: "/Dashboard_Images/Healthcare.png",
   content: `
-We're excited to introduce the Code Camp Dashboard — a sleek, dark-themed single-page dashboard built for online learning and coding education platforms.
+The Healthcare Dashboard is a flexible, multi-page dashboard designed for health-focused platforms, clinics, or data teams who need a clear view of operations and performance.
 
-This template was designed with developer-focused environments in mind, featuring bold visuals and a clean layout that emphasizes data clarity. It's powered by ApexCharts, giving it rich, interactive charts right out of the box — perfect for tracking user progress, engagement stats, or course metrics.
+Built with Vue and ApexCharts, this template provides responsive, production-ready components out of the box — no setup stress required. It's structured with reusability and clarity in mind, making it a great fit for applications that track patient data, staffing, scheduling, or clinical outcomes.
 
-Whether you're launching a bootcamp platform, building an LMS, or just want a modern dashboard UI that looks sharp in dark mode, this template is a great starting point. And like all our dashboards, it's fully customizable — swap in your own data, change the theme, or repurpose it for a completely different use case.
+The layout is clean, professional, and optimized for insight. Whether you're building internal tools for healthcare teams or launching a new analytics product, this dashboard can save hours of UI work and help you move fast.
 
-As always, the goal here is to save you time, reduce complexity, and help you ship with confidence.
-
-Try it out, make it your own, and stay tuned for more releases soon.
   `,
 };
