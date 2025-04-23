@@ -1,18 +1,15 @@
 export default {
-  slug: "code-camp-dashboard",
-  title: "Introducing the Code Camp Dashboard",
+  slug: "sales-dashboard",
+  title: "The Sales Dashboard",
+  url: "/dashboard-template/sales",
   description:
-    "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable.",
-  image: "/Dashboard_Images/Code_Camp.png",
+    "A single-page sales dashboard built with Vue and Chart.js. Track KPIs, orders, and product performance with responsive tables and dynamic charts.",
+  image: "/Dashboard_Images/Sales.png",
   content: `
-We're excited to introduce the Code Camp Dashboard — a sleek, dark-themed single-page dashboard built for online learning and coding education platforms.
+The Sales Dashboard is a streamlined, single-page template built for tracking sales performance, customer activity, and product trends — perfect for ecommerce platforms, sales teams, or internal business tools.
 
-This template was designed with developer-focused environments in mind, featuring bold visuals and a clean layout that emphasizes data clarity. It's powered by ApexCharts, giving it rich, interactive charts right out of the box — perfect for tracking user progress, engagement stats, or course metrics.
+Built with Vue and Chart.js, it features top-level KPIs to highlight key metrics, interactive charts for trend analysis, and tables to display recent orders and most sold products.
 
-Whether you're launching a bootcamp platform, building an LMS, or just want a modern dashboard UI that looks sharp in dark mode, this template is a great starting point. And like all our dashboards, it's fully customizable — swap in your own data, change the theme, or repurpose it for a completely different use case.
-
-As always, the goal here is to save you time, reduce complexity, and help you ship with confidence.
-
-Try it out, make it your own, and stay tuned for more releases soon.
+It's responsive, easy to customize, and designed to give you a clear overview of how your business is performing. Whether you're integrating it into an existing product or using it as a prototype, this dashboard provides a solid foundation for data-driven insights.
   `,
 };
