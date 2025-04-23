@@ -93,7 +93,7 @@ export default {
           name: "Healthcare",
           slug: "healthcare",
           image: "/Dashboard_Images/Healthcare.png",
-          type: "MP / Vue3 / Chart.js",
+          type: "MP / Vue3 / Apexcharts",
           description:
             "A modern, fully responsive, multi-page healthcare dashboard including KPIs, interactive charts, searchable paginated tables, modals for data entry, and built-in layout/navigation.",
           price: "£799",
