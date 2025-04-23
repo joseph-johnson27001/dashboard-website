@@ -1,18 +1,17 @@
 export default {
-  slug: "code-camp-dashboard",
-  title: "Introducing the Code Camp Dashboard",
+  slug: "hr-dashboard",
+  title: "The HR Dashboard",
+  url: "/dashboard-template/hr-dashboard",
   description:
-    "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable.",
-  image: "/Dashboard_Images/Code_Camp.png",
+    "A multi-page, API-ready HR dashboard built with Vue and Chart.js. Designed for quick integration — just swap the mock data calls with your real endpoints.",
+  image: "/Dashboard_Images/HR-Dashboard.png",
   content: `
-We're excited to introduce the Code Camp Dashboard — a sleek, dark-themed single-page dashboard built for online learning and coding education platforms.
+The HR Dashboard is a clean, multi-page dashboard built with Vue and Chart.js — designed specifically for developers who want to move fast with minimal setup.
 
-This template was designed with developer-focused environments in mind, featuring bold visuals and a clean layout that emphasizes data clarity. It's powered by ApexCharts, giving it rich, interactive charts right out of the box — perfect for tracking user progress, engagement stats, or course metrics.
+What sets this one apart is that it's API-ready from the start. It comes with a pre-structured \`/data\` folder and simulated API calls throughout the dashboard. This means you can easily swap out those calls for your real database endpoints, delete the mock data, and you’re live.
 
-Whether you're launching a bootcamp platform, building an LMS, or just want a modern dashboard UI that looks sharp in dark mode, this template is a great starting point. And like all our dashboards, it's fully customizable — swap in your own data, change the theme, or repurpose it for a completely different use case.
+It’s perfect for internal HR tools or production apps that track headcount, employee performance, satisfaction, and more. The layout is clean, the components are flexible, and everything’s wired up to work — you just need to plug in your data.
 
-As always, the goal here is to save you time, reduce complexity, and help you ship with confidence.
-
-Try it out, make it your own, and stay tuned for more releases soon.
+Whether you're prototyping or productionizing, this dashboard will save you serious time.
   `,
 };
