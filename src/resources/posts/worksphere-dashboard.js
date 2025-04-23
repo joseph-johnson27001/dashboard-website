@@ -1,18 +1,17 @@
 export default {
-  slug: "code-camp-dashboard",
-  title: "Introducing the Code Camp Dashboard",
+  slug: "worksphere-dashboard",
+  title: "The Worksphere Dashboard",
+  url: "/dashboard-template/worksphere",
   description:
-    "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable.",
-  image: "/Dashboard_Images/Code_Camp.png",
+    "A multi-page HR dashboard built with Vue and Chart.js. Includes login/logout flow, team performance views, and space for your branding.",
+  image: "/Dashboard_Images/Worksphere.png",
   content: `
-We're excited to introduce the Code Camp Dashboard — a sleek, dark-themed single-page dashboard built for online learning and coding education platforms.
+The Worksphere Dashboard is a modern HR dashboard designed for workplace visibility and team management. It’s built with Vue and Chart.js, and comes ready with a multi-page layout tailored for tracking productivity, employee data, and team activity.
 
-This template was designed with developer-focused environments in mind, featuring bold visuals and a clean layout that emphasizes data clarity. It's powered by ApexCharts, giving it rich, interactive charts right out of the box — perfect for tracking user progress, engagement stats, or course metrics.
+This template includes a functional login/logout flow (no backend needed — any valid email format will work for demo purposes), making it easy to prototype authentication workflows or demo a gated UI experience.
 
-Whether you're launching a bootcamp platform, building an LMS, or just want a modern dashboard UI that looks sharp in dark mode, this template is a great starting point. And like all our dashboards, it's fully customizable — swap in your own data, change the theme, or repurpose it for a completely different use case.
+It also features space for your own company branding, including logo placement and color customization.
 
-As always, the goal here is to save you time, reduce complexity, and help you ship with confidence.
-
-Try it out, make it your own, and stay tuned for more releases soon.
+Whether you're building internal tooling, HR software, or need a dashboard for showcasing employee data, Worksphere gives you a flexible and polished starting point.
   `,
 };
