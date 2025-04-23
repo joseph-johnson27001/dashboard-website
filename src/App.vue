@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-bind:class="{ 'app-not-dashboard': !isDashboardRoute }">
     <!-- Show TopNavigation and layout only if it's NOT a dashboard route -->
     <TopNavigation v-if="!isDashboardRoute" />
 
@@ -33,8 +33,8 @@ export default {
 </script>
 
 <style>
-/* BELOW: Hack to fix sidebar showing up - delete later */
-#app {
+/* Hacky fix to stop scroller disappearing - delete when no longer needed */
+.app-not-dashboard {
   min-height: 101vh;
 }
 
