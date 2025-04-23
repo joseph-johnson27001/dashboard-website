@@ -37,35 +37,35 @@ export default {
           title: "Logistics Dashboard",
           slug: "logistics-dashboard",
           excerpt:
-            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+            "A single-page logistics dashboard built with Vue and Chart.js. Track orders, shipments, and delivery performance with real-time visual insights.",
           image: "/Dashboard_Images/logistics.png",
         },
         {
           title: "Sales Dashboard",
           slug: "sales-dashboard",
           excerpt:
-            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+            "A single-page sales dashboard built with Vue and Chart.js. Track KPIs, orders, and product performance with responsive tables and dynamic charts.",
           image: "/Dashboard_Images/sales.png",
         },
         {
           title: "Finance Dashboard",
           slug: "finance-dashboard",
           excerpt:
-            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+            "A clean, single-page financial dashboard built with Vue and ApexCharts. Includes KPIs and interactive graphs — perfect for finance teams or product inspiration.",
           image: "/Dashboard_Images/finance.png",
         },
         {
           title: "HR Dashboard",
           slug: "hr-dashboard",
           excerpt:
-            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+            "A multi-page, API-ready HR dashboard built with Vue and Chart.js. Designed for quick integration — just swap the mock data calls with your real endpoints.",
           image: "/Dashboard_Images/hr-dashboard.png",
         },
         {
           title: "Worksphere Dashboard",
           slug: "worksphere-dashboard",
           excerpt:
-            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+            "A multi-page HR dashboard built with Vue and Chart.js. Includes login/logout flow, team performance views, and space for your branding.",
           image: "/Dashboard_Images/Worksphere.png",
         },
         {
