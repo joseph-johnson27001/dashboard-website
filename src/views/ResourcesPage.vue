@@ -1,5 +1,5 @@
 <template>
-  <div class="resources-page">
+  <div class="resources-page" :class="{ fadeOut: fading }">
     <h1>Resources</h1>
     <p class="intro">
       Insights, tutorials, and tips on dashboards, frontend development, and
@@ -103,7 +103,6 @@ export default {
             "A single-page sales dashboard built with Vue and Chart.js. Track KPIs, orders, and product performance with responsive tables and dynamic charts.",
           image: "/Dashboard_Images/sales.png",
         },
-
         {
           title: "Introducing Template Dashboards",
           slug: "introducing-template-dashboards",
@@ -114,16 +113,15 @@ export default {
       ],
       currentPage: 1,
       itemsPerPage: 6,
+      fading: false,
     };
   },
   computed: {
-    // Paginate the articles based on current page and items per page
     paginatedArticles() {
       const start = (this.currentPage - 1) * this.itemsPerPage;
       const end = start + this.itemsPerPage;
       return this.allArticles.slice(start, end);
     },
-    // Calculate the total number of pages based on the total articles
     totalPages() {
       return Math.ceil(this.allArticles.length / this.itemsPerPage);
     },
@@ -134,8 +132,12 @@ export default {
     },
     changePage(page) {
       if (this.currentPage !== page) {
-        this.currentPage = page;
-        window.scrollTo(0, 0);
+        this.fading = true;
+        setTimeout(() => {
+          this.currentPage = page;
+          window.scrollTo(0, 0);
+          this.fading = false;
+        }, 300);
       }
     },
   },
@@ -144,8 +146,12 @@ export default {
 
 <style scoped>
 .resources-page {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.resources-page.fadeOut {
   opacity: 0;
-  animation: fadeIn 0.5s forwards;
 }
 
 h1 {
@@ -231,7 +237,6 @@ h1 {
   color: #006ba6;
 }
 
-/* Pagination styles */
 .pagination {
   position: relative;
   z-index: 10;
@@ -255,18 +260,15 @@ h1 {
 
 .page-button.active {
   background-color: #004d73;
-  animation: fadeIn 0.8s forwards;
 }
 
 .page-button:hover {
   background-color: #005c8f;
-  animation: fadeIn 0.8s forwards;
 }
 
 @media (max-width: 1400px) {
   .article-list {
     grid-template-columns: 1fr;
-    margin-top: 0;
   }
 }
 
@@ -299,7 +301,6 @@ h1 {
   }
 }
 
-/* Fade-in Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
