@@ -237,6 +237,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
+  opacity: 1;
 }
 
 .page-button {
