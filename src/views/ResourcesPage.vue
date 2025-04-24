@@ -76,7 +76,7 @@ export default {
           image: "/Dashboard_Images/Healthcare.png",
         },
         {
-          title: "The Code Camp Dashboard",
+          title: "Code Camp Dashboard",
           slug: "code-camp-dashboard",
           excerpt:
             "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
