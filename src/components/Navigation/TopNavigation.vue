@@ -8,18 +8,20 @@
           class="logo-img"
         />
       </router-link>
-      <div class="nav-links">
-        <!-- <router-link to="/how-it-works" active-class="active-link"
-          >How It Works</router-link
-        > -->
 
+      <button class="hamburger" @click="isMenuOpen = !isMenuOpen">
+        <span :class="{ open: isMenuOpen }"></span>
+        <span :class="{ open: isMenuOpen }"></span>
+        <span :class="{ open: isMenuOpen }"></span>
+      </button>
+
+      <div class="nav-links" :class="{ 'show-menu': isMenuOpen }">
         <router-link to="/dashboards" active-class="active-link"
           >Dashboards</router-link
         >
         <router-link to="/resources" active-class="active-link"
           >Resources</router-link
         >
-
         <router-link to="/contact" active-class="active-link"
           >Contact</router-link
         >
@@ -31,6 +33,11 @@
 <script>
 export default {
   name: "TopNavigation",
+  data() {
+    return {
+      isMenuOpen: false,
+    };
+  },
 };
 </script>
 
@@ -41,8 +48,8 @@ nav {
   align-items: center;
   padding: 15px 20px;
   border-bottom: 1px solid rgba(193, 191, 214, 0.5);
-  height: 25px;
   font-family: "Inter Tight";
+  position: relative;
 }
 
 .nav-container {
@@ -53,16 +60,38 @@ nav {
   max-width: 1800px;
 }
 
-a {
-  text-decoration: none;
-  font-weight: 400;
-  color: #006ba6;
-  padding-top: 5px;
-}
-
 .logo-img {
   height: 30px;
   width: auto;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #006ba6;
+  transition: 0.3s;
+}
+
+.hamburger span.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger span.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger span.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .nav-links {
@@ -72,11 +101,46 @@ a {
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #006ba6;
+  padding-top: 5px;
+}
+
 .active-link {
   color: #006ba6;
   font-weight: 500;
   border-bottom: 2px solid #006ba6;
   padding-bottom: 3px;
   box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (max-width: 450px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(193, 191, 214, 0.5);
+    padding: 10px;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: flex-start;
+  }
+
+  .nav-links.show-menu {
+    display: flex;
+  }
 }
 </style>
