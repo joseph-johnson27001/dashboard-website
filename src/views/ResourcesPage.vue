@@ -12,7 +12,6 @@
         :key="index"
         :to="`/resources/${article.slug}`"
         class="article-card"
-        @mouseover="preloadPost(article.slug)"
         :style="{ animationDelay: index * 0.08 + 's' }"
       >
         <img
@@ -140,6 +139,14 @@ export default {
         }, 300);
       }
     },
+  },
+  mounted() {
+    // Preload articles on current page after mount (for mobile users)
+    setTimeout(() => {
+      this.paginatedArticles.forEach((article) => {
+        this.preloadPost(article.slug);
+      });
+    }, 500);
   },
 };
 </script>
