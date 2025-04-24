@@ -1,6 +1,6 @@
 {
   "slug": "hr-dashboard",
-  "title": "The HR Dashboard",
+  "title": "HR Dashboard",
   "url": "/dashboard-template/hr-dashboard",
   "description": "A multi-page, API-ready HR dashboard built with Vue and Chart.js. Designed for quick integration — just swap the mock data calls with your real endpoints.",
   "image": "/Dashboard_Images/HR-Dashboard.png",
