@@ -8,14 +8,19 @@
 
     <div class="article-list">
       <router-link
-        v-for="(article, index) in articles"
+        v-for="(article, index) in paginatedArticles"
         :key="index"
         :to="`/resources/${article.slug}`"
         class="article-card"
         @mouseover="preloadPost(article.slug)"
         :style="{ animationDelay: index * 0.08 + 's' }"
       >
-        <img :src="article.image" :alt="article.title" class="article-img" />
+        <img
+          :src="article.image"
+          :alt="article.title"
+          class="article-img"
+          loading="lazy"
+        />
         <div class="article-content">
           <div>
             <h2>{{ article.title }}</h2>
@@ -24,6 +29,19 @@
           <span class="read-more">Read more →</span>
         </div>
       </router-link>
+    </div>
+
+    <!-- Pagination buttons -->
+    <div v-if="totalPages > 1" class="pagination">
+      <button
+        v-for="page in totalPages"
+        :key="page"
+        @click="changePage(page)"
+        :class="{ active: currentPage === page }"
+        class="page-button"
+      >
+        {{ page }}
+      </button>
     </div>
   </div>
 </template>
@@ -35,7 +53,7 @@ export default {
   name: "ResourcesPage",
   data() {
     return {
-      articles: [
+      allArticles: [
         {
           title: "Logistics Dashboard",
           slug: "logistics-dashboard",
@@ -93,11 +111,29 @@ export default {
           image: "/Dashboard_Images/Logistics.png",
         },
       ],
+      currentPage: 1,
+      itemsPerPage: 6,
     };
+  },
+  computed: {
+    // Paginate the articles based on current page and items per page
+    paginatedArticles() {
+      const start = (this.currentPage - 1) * this.itemsPerPage;
+      const end = start + this.itemsPerPage;
+      return this.allArticles.slice(start, end);
+    },
+    // Calculate the total number of pages based on the total articles
+    totalPages() {
+      return Math.ceil(this.allArticles.length / this.itemsPerPage);
+    },
   },
   methods: {
     preloadPost(slug) {
       preloadPost(slug);
+    },
+    changePage(page) {
+      this.currentPage = page;
+      window.scrollTo(0, 0);
     },
   },
 };
@@ -190,6 +226,31 @@ h1 {
   align-self: flex-end;
   font-size: 13px;
   color: #006ba6;
+}
+
+/* Pagination styles */
+.pagination {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.page-button {
+  background-color: #006ba6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.page-button.active {
+  background-color: #004d73;
+}
+
+.page-button:hover {
+  background-color: #005c8f;
 }
 
 @media (max-width: 1400px) {
