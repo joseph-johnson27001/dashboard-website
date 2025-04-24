@@ -16,15 +16,27 @@
       </button>
 
       <div class="nav-links" :class="{ 'show-menu': isMenuOpen }">
-        <router-link to="/dashboards" active-class="active-link"
-          >Dashboards</router-link
+        <router-link
+          to="/dashboards"
+          active-class="active-link"
+          @click="isMenuOpen = false"
         >
-        <router-link to="/resources" active-class="active-link"
-          >Resources</router-link
+          Dashboards
+        </router-link>
+        <router-link
+          to="/resources"
+          active-class="active-link"
+          @click="isMenuOpen = false"
         >
-        <router-link to="/contact" active-class="active-link"
-          >Contact</router-link
+          Resources
+        </router-link>
+        <router-link
+          to="/contact"
+          active-class="active-link"
+          @click="isMenuOpen = false"
         >
+          Contact
+        </router-link>
       </div>
     </div>
   </nav>
