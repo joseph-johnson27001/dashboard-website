@@ -32,7 +32,7 @@
     </div>
 
     <!-- Pagination buttons -->
-    <div v-if="totalPages > 1" class="pagination">
+    <div class="pagination">
       <button
         v-for="page in totalPages"
         :key="page"
@@ -232,7 +232,10 @@ h1 {
 
 /* Pagination styles */
 .pagination {
-  text-align: right;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
   margin-top: 20px;
 }
 
