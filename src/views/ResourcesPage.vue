@@ -132,8 +132,10 @@ export default {
       preloadPost(slug);
     },
     changePage(page) {
-      this.currentPage = page;
-      window.scrollTo(0, 0);
+      if (this.currentPage !== page) {
+        this.currentPage = page;
+        window.scrollTo(0, 0);
+      }
     },
   },
 };
