@@ -30,38 +30,45 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
-import { useRoute } from "vue-router";
+<script>
+import { getPost } from "@/utils/postCache";
 
-const route = useRoute();
-const post = ref(null);
+export default {
+  name: "PostPage",
+  props: {
+    slug: String,
+  },
+  data() {
+    return {
+      post: null,
+    };
+  },
+  async created() {
+    let data = getPost(this.slug);
+    if (!data) {
+      try {
+        const response = await fetch(`/Resources/posts/${this.slug}.json`);
+        data = await response.json();
+      } catch (err) {
+        console.error("Post not found:", this.slug);
+        return;
+      }
+    }
 
-const fetchPost = async (slug) => {
-  const res = await fetch(`/Resources/posts/${slug}.json`);
-  return await res.json();
-};
+    this.post = data;
 
-// Load post immediately on setup to increase load speed
-fetchPost(route.params.slug)
-  .then((data) => {
-    post.value = data;
-
-    document.title = `Template Dashboards - ${data.title}`;
-
+    document.title = `Template Dashboards - ${this.post.title}`;
     const metaTag = document.querySelector('meta[name="description"]');
     if (metaTag) {
-      metaTag.setAttribute("content", data.description);
+      metaTag.setAttribute("content", this.post.description);
     } else {
       const newMetaTag = document.createElement("meta");
       newMetaTag.setAttribute("name", "description");
-      newMetaTag.setAttribute("content", data.description);
+      newMetaTag.setAttribute("content", this.post.description);
       document.head.appendChild(newMetaTag);
     }
-  })
-  .catch(() => {
-    console.error("Post not found:", route.params.slug);
-  });
+  },
+};
 </script>
 
 <style scoped>

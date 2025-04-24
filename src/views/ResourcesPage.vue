@@ -9,10 +9,11 @@
     <div class="article-list">
       <router-link
         v-for="(article, index) in articles"
-        :style="{ animationDelay: index * 0.08 + 's' }"
         :key="index"
         :to="`/resources/${article.slug}`"
         class="article-card"
+        @mouseover="preloadPost(article.slug)"
+        :style="{ animationDelay: index * 0.08 + 's' }"
       >
         <img :src="article.image" :alt="article.title" class="article-img" />
         <div class="article-content">
@@ -28,6 +29,8 @@
 </template>
 
 <script>
+import { preloadPost } from "@/utils/postCache";
+
 export default {
   name: "ResourcesPage",
   data() {
@@ -91,6 +94,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    preloadPost(slug) {
+      preloadPost(slug);
+    },
   },
 };
 </script>
