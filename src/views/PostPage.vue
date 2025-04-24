@@ -30,42 +30,38 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "PostPage",
-  props: {
-    slug: String,
-  },
-  data() {
-    return {
-      post: null,
-    };
-  },
-  async created() {
-    try {
-      const response = await fetch(`/Resources/posts/${this.slug}.json`);
-      const data = await response.json();
+<script setup>
+import { ref } from "vue";
+import { useRoute } from "vue-router";
 
-      this.post = data;
+const route = useRoute();
+const post = ref(null);
 
-      document.title = `Template Dashboards - ${this.post.title}`;
-
-      const metaDescriptionTag = document.querySelector(
-        'meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.setAttribute("content", this.post.description);
-      } else {
-        const newMetaTag = document.createElement("meta");
-        newMetaTag.setAttribute("name", "description");
-        newMetaTag.setAttribute("content", this.post.description);
-        document.head.appendChild(newMetaTag);
-      }
-    } catch (err) {
-      console.error("Post not found:", this.slug);
-    }
-  },
+const fetchPost = async (slug) => {
+  const res = await fetch(`/Resources/posts/${slug}.json`);
+  return await res.json();
 };
+
+// Load post immediately on setup to increase load speed
+fetchPost(route.params.slug)
+  .then((data) => {
+    post.value = data;
+
+    document.title = `Template Dashboards - ${data.title}`;
+
+    const metaTag = document.querySelector('meta[name="description"]');
+    if (metaTag) {
+      metaTag.setAttribute("content", data.description);
+    } else {
+      const newMetaTag = document.createElement("meta");
+      newMetaTag.setAttribute("name", "description");
+      newMetaTag.setAttribute("content", data.description);
+      document.head.appendChild(newMetaTag);
+    }
+  })
+  .catch(() => {
+    console.error("Post not found:", route.params.slug);
+  });
 </script>
 
 <style scoped>
