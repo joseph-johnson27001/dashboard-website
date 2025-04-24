@@ -237,26 +237,27 @@ h1 {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .page-button {
-  background-color: #006ba6;
-  color: white;
+  background-color: #006ba6 !important;
+  color: white !important;
   border: none;
-  padding: 8px 12px;
-  margin: 0 5px;
+  padding: 8px 12px !important;
+  margin: 0 5px !important;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 4px !important;
   font-size: 14px;
+  opacity: 1 !important;
 }
 
 .page-button.active {
-  background-color: #004d73;
+  background-color: #004d73 !important;
 }
 
 .page-button:hover {
-  background-color: #005c8f;
+  background-color: #005c8f !important;
 }
 
 @media (max-width: 1400px) {
