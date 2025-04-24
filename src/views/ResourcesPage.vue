@@ -62,11 +62,18 @@ export default {
           image: "/Dashboard_Images/logistics.png",
         },
         {
-          title: "Sales Dashboard",
-          slug: "sales-dashboard",
+          title: "Healthcare Dashboard",
+          slug: "healthcare-dashboard",
           excerpt:
-            "A single-page sales dashboard built with Vue and Chart.js. Track KPIs, orders, and product performance with responsive tables and dynamic charts.",
-          image: "/Dashboard_Images/sales.png",
+            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+          image: "/Dashboard_Images/Healthcare.png",
+        },
+        {
+          title: "Code Camp Dashboard",
+          slug: "code-camp-dashboard",
+          excerpt:
+            "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
+          image: "/Dashboard_Images/Code_Camp.png",
         },
         {
           title: "Finance Dashboard",
@@ -90,19 +97,13 @@ export default {
           image: "/Dashboard_Images/Worksphere.png",
         },
         {
-          title: "Healthcare Dashboard",
-          slug: "healthcare-dashboard",
+          title: "Sales Dashboard",
+          slug: "sales-dashboard",
           excerpt:
-            "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
-          image: "/Dashboard_Images/Healthcare.png",
+            "A single-page sales dashboard built with Vue and Chart.js. Track KPIs, orders, and product performance with responsive tables and dynamic charts.",
+          image: "/Dashboard_Images/sales.png",
         },
-        {
-          title: "Code Camp Dashboard",
-          slug: "code-camp-dashboard",
-          excerpt:
-            "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
-          image: "/Dashboard_Images/Code_Camp.png",
-        },
+
         {
           title: "Introducing Template Dashboards",
           slug: "introducing-template-dashboards",
