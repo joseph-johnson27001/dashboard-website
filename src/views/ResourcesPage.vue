@@ -154,7 +154,7 @@ export default {
 <style scoped>
 .resources-page {
   opacity: 1;
-  transition: opacity 0.5s ease;
+  animation: fadeIn 0.5s forwards;
 }
 
 .resources-page.fadeOut {
