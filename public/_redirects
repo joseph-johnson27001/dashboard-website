@@ -1,1 +1,6 @@
+# Allow direct access to static post JSON files
+/resources/posts/*   /resources/posts/:splat   200
+
+# Let Vue Router handle all other SPA routes (history mode)
+# This must come LAST
 /*    /index.html   200

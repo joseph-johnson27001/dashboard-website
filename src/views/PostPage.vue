@@ -47,7 +47,7 @@ export default {
     let data = getPost(this.slug);
     if (!data) {
       try {
-        const response = await fetch(`/Resources/posts/${this.slug}.json`);
+        const response = await fetch(`/resources/posts/${this.slug}.json`);
         data = await response.json();
       } catch (err) {
         console.error("Post not found:", this.slug);
