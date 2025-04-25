@@ -71,7 +71,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-bottom: 1px solid rgba(193, 191, 214, 0.5);
   font-family: "Inter Tight";
   position: relative;
@@ -153,7 +153,7 @@ a {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0px;
     background-color: #fff;
     border-bottom: 1px solid rgba(193, 191, 214, 0.5);
