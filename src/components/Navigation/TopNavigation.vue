@@ -50,6 +50,19 @@ export default {
       isMenuOpen: false,
     };
   },
+  mounted() {
+    document.addEventListener("click", this.handleClickOutside);
+  },
+  beforeUnmount() {
+    document.removeEventListener("click", this.handleClickOutside);
+  },
+  methods: {
+    handleClickOutside(event) {
+      if (this.isMenuOpen && !this.$el.contains(event.target)) {
+        this.isMenuOpen = false;
+      }
+    },
+  },
 };
 </script>
 
