@@ -6,7 +6,7 @@
       design.
     </p>
 
-    <div class="article-list">
+    <div v-if="!this.fading" class="article-list">
       <router-link
         v-for="(article, index) in paginatedArticles"
         :key="index"
@@ -31,7 +31,7 @@
     </div>
 
     <!-- Pagination buttons -->
-    <div class="pagination">
+    <div v-if="!this.fading" class="pagination">
       <button
         v-for="page in totalPages"
         :key="page"
@@ -132,16 +132,15 @@ export default {
     changePage(page) {
       if (this.currentPage !== page) {
         this.fading = true;
+        window.scrollTo(0, 0);
         setTimeout(() => {
           this.currentPage = page;
-          window.scrollTo(0, 0);
           this.fading = false;
-        }, 300);
+        }, 100);
       }
     },
   },
   mounted() {
-    // Preload articles on current page after mount (for mobile users)
     setTimeout(() => {
       this.paginatedArticles.forEach((article) => {
         this.preloadPost(article.slug);
