@@ -153,14 +153,14 @@ a {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 57px;
+    top: 55px;
     left: 0px;
     background-color: #fff;
     border-bottom: 1px solid rgba(193, 191, 214, 0.8);
+    border-top: 1px solid rgba(193, 191, 214, 0.8);
     padding: 10px;
     gap: 20px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    z-index: 10;
+    z-index: 1000;
     width: 100%;
     box-sizing: border-box;
     text-align: flex-start;

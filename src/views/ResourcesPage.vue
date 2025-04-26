@@ -209,7 +209,6 @@ h1 {
   object-fit: cover;
   flex-shrink: 0;
   border-radius: 4px;
-  border: 1px solid #ddd;
 }
 
 .article-content {
