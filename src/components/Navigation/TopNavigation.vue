@@ -3,7 +3,7 @@
     <div class="nav-container">
       <router-link to="/">
         <img
-          src="/dashboard-logo.png"
+          src="/template_dashboards_logo_small.png"
           alt="Template Dashboards logo"
           class="logo-img"
         />
@@ -71,7 +71,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-bottom: 1px solid rgba(193, 191, 214, 0.5);
   font-family: "Inter Tight";
   position: relative;
@@ -88,7 +88,7 @@ nav {
 }
 
 .logo-img {
-  height: 30px;
+  height: 37px;
   width: auto;
 }
 
@@ -153,10 +153,10 @@ a {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 57px;
     left: 0px;
     background-color: #fff;
-    border-bottom: 1px solid rgba(193, 191, 214, 0.5);
+    border-bottom: 1px solid rgba(193, 191, 214, 0.8);
     padding: 10px;
     gap: 20px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
