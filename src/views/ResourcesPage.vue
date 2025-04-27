@@ -141,11 +141,25 @@ export default {
     },
   },
   mounted() {
+    // Preload post content for all articles
     setTimeout(() => {
       this.allArticles.forEach((article) => {
         this.preloadPost(article.slug);
       });
-    }, 300);
+    }, 500);
+
+    // Preload images for articles beyond the initial paginated set
+    setTimeout(() => {
+      const initialArticles = this.paginatedArticles.map((a) => a.slug);
+      const remainingArticles = this.allArticles.filter(
+        (article) => !initialArticles.includes(article.slug)
+      );
+
+      remainingArticles.forEach((article) => {
+        const img = new Image();
+        img.src = article.image;
+      });
+    }, 1000); // Delay to ensure initial images are prioritized
   },
 };
 </script>

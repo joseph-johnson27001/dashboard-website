@@ -56,8 +56,6 @@
       :slug="selectedSlug"
       :note="selectedNote"
       @close-modal="closeModal"
-      @view-demo="viewDemo"
-      @buy-now="buyNow"
     />
   </div>
   <!-- Information Modal Card -->

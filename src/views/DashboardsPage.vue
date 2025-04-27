@@ -43,8 +43,6 @@
       :price="selectedPrice"
       :slug="selectedSlug"
       @close-modal="closeModal"
-      @view-demo="viewDemo"
-      @buy-now="buyNow"
     />
 
     <!-- Information Modal Card -->
