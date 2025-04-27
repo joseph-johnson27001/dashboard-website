@@ -136,7 +136,7 @@ export default {
         setTimeout(() => {
           this.currentPage = page;
           this.fading = false;
-        }, 100);
+        }, 50);
       }
     },
   },
