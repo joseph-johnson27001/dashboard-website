@@ -142,10 +142,10 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      this.paginatedArticles.forEach((article) => {
+      this.allArticles.forEach((article) => {
         this.preloadPost(article.slug);
       });
-    }, 500);
+    }, 300);
   },
 };
 </script>
