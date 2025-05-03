@@ -17,7 +17,7 @@
             >How It Works</router-link
           > -->
           <router-link to="/contact" class="button"
-            >Request A Custom Dashboard</router-link
+            >Hire For Custom Work</router-link
           >
         </div>
       </div>

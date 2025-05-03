@@ -26,13 +26,13 @@
         <label>Company (Optional)</label>
         <input type="text" v-model="form.company" />
 
-        <label>Dashboard Type</label>
-        <select v-model="form.dashboardType" required>
+        <label>Enquiry Type</label>
+        <select v-model="form.enquiryType" required>
           <option disabled value="">Please select</option>
           <option value="Single Page Dashboards">Single Page Dashboards</option>
           <option value="Multi Page Dashboards">Multi Page Dashboards</option>
           <option value="API Ready Dashboards">API Ready Dashboards</option>
-          <option value="Custom Build">Custom Build</option>
+          <option value="Custom Build">Custom Work</option>
         </select>
 
         <label>Project Details</label>
@@ -64,7 +64,7 @@ export default {
         name: "",
         email: "",
         company: "",
-        dashboardType: "",
+        enquiryType: "",
         details: "",
       },
       loading: false,
@@ -82,7 +82,7 @@ export default {
         name: this.form.name,
         email: this.form.email,
         company: this.form.company || "N/A",
-        dashboardType: this.form.dashboardType,
+        enquiryType: this.form.enquiryType,
         details: this.form.details,
       };
 
@@ -96,7 +96,7 @@ export default {
             name: "",
             email: "",
             company: "",
-            dashboardType: "",
+            enquiryType: "",
             details: "",
           };
         })
