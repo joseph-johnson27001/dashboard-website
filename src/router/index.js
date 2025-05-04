@@ -5,7 +5,6 @@ import HowItWorks from "../views/HowItWorksPage.vue";
 import Resources from "../views/ResourcesPage.vue";
 import PostPage from "../views/PostPage.vue";
 import Dashboards from "../views/DashboardsPage.vue";
-import DashboardViewer from "@/views/DashboardViewer.vue";
 
 const routes = [
   {
@@ -64,15 +63,6 @@ const routes = [
         "Browse a wide range of professional dashboard templates for your business or project. Customize and implement prebuilt dashboards for your web app with ease.",
     },
   },
-  {
-    path: "/dashboard-template/:slug",
-    name: "DashboardViewer",
-    component: DashboardViewer,
-    meta: {
-      description:
-        "View and customize a variety of professional dashboard templates tailored to your business needs.",
-    },
-  },
 ];
 
 const router = createRouter({
@@ -88,21 +78,6 @@ router.beforeEach((to, from, next) => {
   let pageDescription =
     to.meta.description || "Default description for Template Dashboards page.";
 
-  if (to.name === "DashboardViewer") {
-    const slug = to.params.slug;
-    const dashboardTitles = {
-      healthcare: "Healthcare Dashboard",
-      logistics: "Logistics Dashboard",
-      "code-camp": "Code Camp Dashboard",
-      finance: "Finance Dashboard",
-      "hr-dashboard": "HR Dashboard",
-      sales: "Sales Dashboard",
-      worksphere: "Worksphere Dashboard",
-    };
-    pageTitle = dashboardTitles[slug] || `Custom Dashboard - ${slug}`;
-    pageDescription = `Explore and customize the ${pageTitle} template for your web application.`;
-  }
-
   // Set meta description dynamically
   const metaDescriptionTag = document.querySelector('meta[name="description"]');
   if (metaDescriptionTag) {
@@ -114,7 +89,7 @@ router.beforeEach((to, from, next) => {
     document.head.appendChild(newMetaDescriptionTag);
   }
 
-  // Reset favicon manually (needed for iframe views)
+  // Reset favicon manually
   const favicon = document.querySelector("link[rel='icon']");
   if (favicon) {
     favicon.href = "/dashboard-logo.png";

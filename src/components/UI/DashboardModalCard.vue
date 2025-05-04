@@ -33,14 +33,15 @@
         <!-- Modal Buttons -->
         <div class="modal-buttons">
           <!-- View Demo Button -->
-          <router-link
-            :to="`/dashboard-template/${slug}`"
+          <a
+            :href="`https://${slug}.templatedashboards.com`"
             class="button"
             @click="viewDemo"
             target="_blank"
+            rel="noopener"
           >
             View Demo
-          </router-link>
+          </a>
 
           <!-- Buy Now Button (disabled) -->
           <router-link
