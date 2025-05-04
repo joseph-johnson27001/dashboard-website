@@ -8,11 +8,6 @@
         <router-view />
       </div>
     </div>
-
-    <!-- For dashboard routes, show router-view full screen -->
-    <div v-else class="dashboard-view">
-      <router-view />
-    </div>
   </div>
 </template>
 
@@ -23,11 +18,6 @@ export default {
   name: "App",
   components: {
     TopNavigation,
-  },
-  computed: {
-    isDashboardRoute() {
-      return this.$route.path.includes("dashboard-template");
-    },
   },
 };
 </script>
@@ -54,12 +44,6 @@ body {
 .main {
   width: 100%;
   max-width: 1800px;
-}
-
-.dashboard-view {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .highlight-blue {
