@@ -16,11 +16,12 @@
   <url><loc>https://templatedashboards.com/dashboards</loc></url>
   <url><loc>https://templatedashboards.com/resources</loc></url>
 
-  <url><loc>https://templatedashboards.com/dashboard-template/healthcare</loc></url>
-  <url><loc>https://templatedashboards.com/dashboard-template/logistics</loc></url>
-  <url><loc>https://templatedashboards.com/dashboard-template/code-camp</loc></url>
-  <url><loc>https://templatedashboards.com/dashboard-template/finance</loc></url>
-  <url><loc>https://templatedashboards.com/dashboard-template/hr-dashboard</loc></url>
-  <url><loc>https://templatedashboards.com/dashboard-template/sales</loc></url>
-  <url><loc>https://templatedashboards.com/dashboard-template/worksphere</loc></url>
+  <!-- New subdomain-based dashboard URLs -->
+  <url><loc>https://logistics.templatedashboards.com/</loc></url>
+  <url><loc>https://healthcare.templatedashboards.com/</loc></url>
+  <url><loc>https://code-camp.templatedashboards.com/</loc></url>
+  <url><loc>https://finance.templatedashboards.com/</loc></url>
+  <url><loc>https://hr.templatedashboards.com/</loc></url>
+  <url><loc>https://sales.templatedashboards.com/</loc></url>
+  <url><loc>https://worksphere.templatedashboards.com/</loc></url>
 </urlset>
