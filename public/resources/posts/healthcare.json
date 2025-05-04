@@ -1,5 +1,5 @@
 {
-  "slug": "healthcare-dashboard",
+  "slug": "healthcare",
   "title": "Healthcare Dashboard",
   "url": "/dashboard-template/healthcare",
   "description": "A multi-page healthcare dashboard built with Vue and ApexCharts. Designed for teams needing real-time insights into patient data, operations, and performance.",

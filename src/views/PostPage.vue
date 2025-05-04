@@ -12,13 +12,14 @@
 
       <div class="button-container">
         <a
-          v-if="post.url"
-          :href="post.url"
+          v-if="post.slug"
+          :href="`https://${post.slug}.templatedashboards.com`"
           class="button"
           target="_blank"
           rel="noopener"
-          >View Dashboard</a
         >
+          View Dashboard
+        </a>
         <router-link to="/dashboards" class="button"
           >View All Dashboards</router-link
         >

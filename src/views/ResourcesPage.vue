@@ -55,28 +55,28 @@ export default {
       allArticles: [
         {
           title: "Logistics Dashboard",
-          slug: "logistics-dashboard",
+          slug: "logistics",
           excerpt:
             "A single-page logistics dashboard built with Vue and Chart.js. Track orders, shipments, and delivery performance with real-time visual insights.",
           image: "/Dashboard_Images/logistics.png",
         },
         {
           title: "Healthcare Dashboard",
-          slug: "healthcare-dashboard",
+          slug: "healthcare",
           excerpt:
             "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
           image: "/Dashboard_Images/Healthcare.png",
         },
         {
           title: "Code Camp Dashboard",
-          slug: "code-camp-dashboard",
+          slug: "code-camp",
           excerpt:
             "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
           image: "/Dashboard_Images/Code_Camp.png",
         },
         {
           title: "Finance Dashboard",
-          slug: "finance-dashboard",
+          slug: "finance",
           excerpt:
             "A clean, single-page financial dashboard built with Vue and ApexCharts. Includes KPIs and interactive graphs — perfect for finance teams or product inspiration.",
           image: "/Dashboard_Images/finance.png",
@@ -90,14 +90,14 @@ export default {
         },
         {
           title: "Worksphere Dashboard",
-          slug: "worksphere-dashboard",
+          slug: "worksphere",
           excerpt:
             "A multi-page HR dashboard built with Vue and Chart.js. Includes login/logout flow, team performance views, and space for your branding.",
           image: "/Dashboard_Images/Worksphere.png",
         },
         {
           title: "Sales Dashboard",
-          slug: "sales-dashboard",
+          slug: "sales",
           excerpt:
             "A single-page sales dashboard built with Vue and Chart.js. Track KPIs, orders, and product performance with responsive tables and dynamic charts.",
           image: "/Dashboard_Images/sales.png",
