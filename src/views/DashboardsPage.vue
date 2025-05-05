@@ -66,6 +66,14 @@ export default {
     return {
       demos: [
         {
+          name: "Crypto Exchange",
+          slug: "crypto-exchange",
+          image: "/Dashboard_Images/Crypto_Exchange.png",
+          type: "SP / Vue / ApexCharts",
+          description: `A dark-themed <span class="highlight-blue">single-page</span> crypto dashboard built with Vue and FontAwesome. Features intuitive sidebar and mobile navigation, a clean layout for tracking markets, portfolios, and activities.`,
+          price: "£399",
+        },
+        {
           name: "Code Camp",
           slug: "code-camp",
           image: "/Dashboard_Images/Code_Camp.png",
