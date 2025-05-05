@@ -73,15 +73,7 @@ export default {
           description: `A dark-themed <span class="highlight-blue">single-page</span> crypto dashboard built with Vue and FontAwesome. Features intuitive sidebar and mobile navigation, a clean layout for tracking markets, portfolios, and activities.`,
           price: "£399",
         },
-        {
-          name: "Code Camp",
-          slug: "code-camp",
-          image: "/Dashboard_Images/Code_Camp.png",
-          type: "SP / Vue / ApexCharts",
-          description:
-            'A dark-themed <span class="highlight-blue">single-page</span> dashboard built for online education platforms. Features user information, KPIs and interactive ApexCharts for visualizing user engagement and course progress',
-          price: "£399",
-        },
+
         {
           name: "Healthcare",
           slug: "healthcare",
@@ -90,6 +82,15 @@ export default {
           description:
             'A modern, fully responsive, <span class="highlight-blue">multi-page</span> healthcare dashboard including KPIs, interactive charts, searchable paginated tables, modals for data entry, and built-in layout/navigation.',
           price: "£799",
+        },
+        {
+          name: "Code Camp",
+          slug: "code-camp",
+          image: "/Dashboard_Images/Code_Camp.png",
+          type: "SP / Vue / ApexCharts",
+          description:
+            'A dark-themed <span class="highlight-blue">single-page</span> dashboard built for online education platforms. Features user information, KPIs and interactive ApexCharts for visualizing user engagement and course progress',
+          price: "£399",
         },
         {
           name: "Logistics",

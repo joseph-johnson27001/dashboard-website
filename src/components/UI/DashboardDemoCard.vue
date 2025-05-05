@@ -106,7 +106,7 @@ export default {
   font-weight: 500;
   font-family: "Unica One", cursive;
   color: rgb(24, 24, 24);
-  letter-spacing: -1px;
+  letter-spacing: -0.8px;
 }
 
 .tag {
