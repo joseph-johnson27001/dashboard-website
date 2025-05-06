@@ -30,6 +30,11 @@ body {
   color: rgb(34, 34, 34);
 }
 
+/* ALWAYS HAVING SCROLLBAR */
+#app {
+  min-height: 101dvh;
+}
+
 .content {
   display: flex;
   justify-content: center;
