@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- Show TopNavigation and layout only if it's NOT a dashboard route -->
     <TopNavigation />
 
     <div class="content">
