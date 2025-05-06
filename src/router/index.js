@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/HomePage.vue";
 import Contact from "../views/ContactPage.vue";
-import HowItWorks from "../views/HowItWorksPage.vue";
+// import HowItWorks from "../views/HowItWorksPage.vue";
 import Resources from "../views/ResourcesPage.vue";
 import PostPage from "../views/PostPage.vue";
 import Dashboards from "../views/DashboardsPage.vue";
@@ -45,15 +45,15 @@ const routes = [
         "Contact Template Dashboards for support, inquiries, or to learn more about our prebuilt dashboard templates. We're here to help!",
     },
   },
-  {
-    path: "/how-it-works",
-    component: HowItWorks,
-    meta: {
-      title: "How It Works",
-      description:
-        "Learn how Template Dashboards can help you quickly implement customizable dashboards for your web application. Simple steps to get started.",
-    },
-  },
+  // {
+  //   path: "/how-it-works",
+  //   component: HowItWorks,
+  //   meta: {
+  //     title: "How It Works",
+  //     description:
+  //       "Learn how Template Dashboards can help you quickly implement customizable dashboards for your web application. Simple steps to get started.",
+  //   },
+  // },
   {
     path: "/dashboards",
     component: Dashboards,
@@ -62,6 +62,10 @@ const routes = [
       description:
         "Browse a wide range of professional dashboard templates for your business or project. Customize and implement prebuilt dashboards for your web app with ease.",
     },
+  },
+  {
+    path: "/:catchAll(.*)", // catch-all route for undefined paths
+    redirect: "/", // redirect to home page
   },
 ];
 
