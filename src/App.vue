@@ -1,9 +1,9 @@
 <template>
-  <div id="app" v-bind:class="{ 'app-not-dashboard': !isDashboardRoute }">
+  <div id="app">
     <!-- Show TopNavigation and layout only if it's NOT a dashboard route -->
-    <TopNavigation v-if="!isDashboardRoute" />
+    <TopNavigation />
 
-    <div v-if="!isDashboardRoute" class="content">
+    <div class="content">
       <div class="main">
         <router-view />
       </div>
@@ -23,11 +23,6 @@ export default {
 </script>
 
 <style>
-/* Hacky fix to stop scroller disappearing - delete when no longer needed */
-.app-not-dashboard {
-  min-height: 101vh;
-}
-
 body {
   margin: 0;
   background-color: #f8f8f8;
