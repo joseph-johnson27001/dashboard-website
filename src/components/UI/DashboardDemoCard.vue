@@ -5,7 +5,14 @@
     @click="openModal"
   >
     <div class="image-container">
-      <img :src="image" :alt="name" class="dashboard-image" loading="lazy" />
+      <img
+        :src="image"
+        :alt="name"
+        class="dashboard-image"
+        loading="lazy"
+        height="450px"
+        width="350px"
+      />
       <div class="overlay">
         <i class="fas fa-arrow-right overlay-arrow"></i>
       </div>
@@ -53,9 +60,9 @@ export default {
 
 .dashboard-image {
   width: 100%;
-  max-width: 100%;
+  max-width: 450px;
   height: 100%;
-  aspect-ratio: 16 / 12;
+  max-height: 350px;
   transition: opacity 0.6s ease;
   display: block;
   border-radius: 4px;
