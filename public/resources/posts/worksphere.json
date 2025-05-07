@@ -3,7 +3,7 @@
   "title": "Worksphere Dashboard",
   "url": "/dashboard-template/worksphere",
   "description": "A multi-page HR dashboard built with Vue and Chart.js. Includes login/logout flow, team performance views, and space for your branding.",
-  "image": "/Dashboard_Images/Worksphere.png",
+  "image": "/Dashboard_Images/Worksphere.webp",
   "content": [
     "The Worksphere Dashboard is a modern HR dashboard designed for workplace visibility and team management. It’s built with Vue and Chart.js, and comes ready with a multi-page layout tailored for tracking productivity, employee data, and team activity.",
     "This template includes a functional login/logout flow (no backend needed — any valid email format will work for demo purposes), making it easy to prototype authentication workflows or demo a gated UI experience.",

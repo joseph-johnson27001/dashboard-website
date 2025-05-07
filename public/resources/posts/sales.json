@@ -3,7 +3,7 @@
   "title": "Sales Dashboard",
   "url": "/dashboard-template/sales",
   "description": "A single-page sales dashboard built with Vue and Chart.js. Track KPIs, orders, and product performance with responsive tables and dynamic charts.",
-  "image": "/Dashboard_Images/Sales.png",
+  "image": "/Dashboard_Images/Sales.webp",
   "content": [
     "The Sales Dashboard is a streamlined, single-page template built for tracking sales performance, customer activity, and product trends — perfect for ecommerce platforms, sales teams, or internal business tools.",
     "Built with Vue and Chart.js, it features top-level KPIs to highlight key metrics, interactive charts for trend analysis, and tables to display recent orders and most sold products.",

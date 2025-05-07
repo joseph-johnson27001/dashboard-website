@@ -3,7 +3,7 @@
   "title": "HR Dashboard",
   "url": "/dashboard-template/hr-dashboard",
   "description": "A multi-page, API-ready HR dashboard built with Vue and Chart.js. Designed for quick integration — just swap the mock data calls with your real endpoints.",
-  "image": "/Dashboard_Images/HR-Dashboard.png",
+  "image": "/Dashboard_Images/HR-Dashboard.webp",
   "content": [
     "The HR Dashboard is a clean, multi-page dashboard built with Vue and Chart.js — designed specifically for developers who want to move fast with minimal setup.",
     "What sets this one apart is that it's API-ready from the start. It comes with a pre-structured `/data` folder and simulated API calls throughout the dashboard. This means you can easily swap out those calls for your real database endpoints, delete the mock data, and you’re live.",

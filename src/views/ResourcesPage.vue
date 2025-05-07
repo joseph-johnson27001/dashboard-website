@@ -61,56 +61,56 @@ export default {
           slug: "logistics",
           excerpt:
             "A single-page logistics dashboard built with Vue and Chart.js. Track orders, shipments, and delivery performance with real-time visual insights.",
-          image: "/Dashboard_Images/logistics.png",
+          image: "/Dashboard_Images/logistics.webp",
         },
         {
           title: "Healthcare Dashboard",
           slug: "healthcare",
           excerpt:
             "A multi-page, light-themed dashboard designed for a healthcare system. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
-          image: "/Dashboard_Images/Healthcare.png",
+          image: "/Dashboard_Images/Healthcare.webp",
         },
         {
           title: "Code Camp Dashboard",
           slug: "code-camp",
           excerpt:
             "A dark-themed, single-page dashboard designed for online learning platforms. Built with ApexCharts, it's sleek, modern, and adaptable for a variety of use cases.",
-          image: "/Dashboard_Images/Code_Camp.png",
+          image: "/Dashboard_Images/Code_Camp.webp",
         },
         {
           title: "Finance Dashboard",
           slug: "finance",
           excerpt:
             "A clean, single-page financial dashboard built with Vue and ApexCharts. Includes KPIs and interactive graphs — perfect for finance teams or product inspiration.",
-          image: "/Dashboard_Images/finance.png",
+          image: "/Dashboard_Images/finance.webp",
         },
         {
           title: "HR Dashboard",
           slug: "hr-dashboard",
           excerpt:
             "A multi-page, API-ready HR dashboard built with Vue and Chart.js. Designed for quick integration — just swap the mock data calls with your real endpoints.",
-          image: "/Dashboard_Images/hr-dashboard.png",
+          image: "/Dashboard_Images/hr-dashboard.webp",
         },
         {
           title: "Worksphere Dashboard",
           slug: "worksphere",
           excerpt:
             "A multi-page HR dashboard built with Vue and Chart.js. Includes login/logout flow, team performance views, and space for your branding.",
-          image: "/Dashboard_Images/Worksphere.png",
+          image: "/Dashboard_Images/Worksphere.webp",
         },
         {
           title: "Sales Dashboard",
           slug: "sales",
           excerpt:
             "A single-page sales dashboard built with Vue and Chart.js. Track KPIs, orders, and product performance with responsive tables and dynamic charts.",
-          image: "/Dashboard_Images/sales.png",
+          image: "/Dashboard_Images/sales.webp",
         },
         {
           title: "Introducing Template Dashboards",
           slug: "introducing-template-dashboards",
           excerpt:
             "Get to know Template Dashboards — a growing collection of prebuilt, responsive dashboard templates for modern web apps. Learn what we offer, who it's for, and how to get started.",
-          image: "/Dashboard_Images/Logistics.png",
+          image: "/Dashboard_Images/Logistics.webp",
         },
       ],
       currentPage: 1,
