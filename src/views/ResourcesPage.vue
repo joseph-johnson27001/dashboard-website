@@ -19,6 +19,9 @@
           :alt="article.title"
           class="article-img"
           loading="lazy"
+          width="320"
+          height="240"
+          :fetchpriority="index === 0 ? 'high' : undefined"
         />
         <div class="article-content">
           <div>
@@ -150,16 +153,15 @@ export default {
 
     // Preload images for articles beyond the initial paginated set
     setTimeout(() => {
-      const initialArticles = this.paginatedArticles.map((a) => a.slug);
-      const remainingArticles = this.allArticles.filter(
-        (article) => !initialArticles.includes(article.slug)
+      const initialSlugs = this.paginatedArticles.map((a) => a.slug);
+      const remaining = this.allArticles.filter(
+        (a) => !initialSlugs.includes(a.slug)
       );
-
-      remainingArticles.forEach((article) => {
+      remaining.forEach((a) => {
         const img = new Image();
-        img.src = article.image;
+        img.src = a.image;
       });
-    }, 1000); // Delay to ensure initial images are prioritized
+    }, 1000);
   },
 };
 </script>
