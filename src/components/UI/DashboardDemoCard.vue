@@ -5,15 +5,7 @@
     @click="openModal"
   >
     <div class="image-container">
-      <img
-        :src="image"
-        :alt="name"
-        class="dashboard-image"
-        loading="lazy"
-        width="400"
-        height="300"
-        :fetchpriority="index === 0 ? 'high' : 'low'"
-      />
+      <img :src="image" :alt="name" class="dashboard-image" loading="lazy" />
       <div class="overlay">
         <i class="fas fa-arrow-right overlay-arrow"></i>
       </div>
