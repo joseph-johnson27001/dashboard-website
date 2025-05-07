@@ -209,10 +209,10 @@ export default {
 .hero-section h1 {
   font-family: "Unica One", cursive;
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   font-weight: 500;
   color: #006ba6;
-  margin-top: 10px;
+  margin-top: 0px;
   letter-spacing: -1px;
 }
 
@@ -230,6 +230,8 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .info-icon {
