@@ -12,6 +12,7 @@
         loading="lazy"
         width="400"
         height="300"
+        :fetchpriority="index === 0 ? 'high' : 'low'"
       />
       <div class="overlay">
         <i class="fas fa-arrow-right overlay-arrow"></i>
