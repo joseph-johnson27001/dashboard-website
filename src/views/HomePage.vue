@@ -265,7 +265,8 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: -15px;
+  margin-top: -5px;
+  margin-bottom: 15px;
 }
 
 /* Section Headers */
@@ -273,7 +274,8 @@ export default {
   font-size: 22px;
   font-weight: 500;
   color: #006ba6;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   font-family: "Unica One", cursive;
   letter-spacing: -1px;
 }
