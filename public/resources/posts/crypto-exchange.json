@@ -1,0 +1,13 @@
+{
+  "slug": "crypto-exchange",
+  "title": "Crypto Exchange Dashboard",
+  "description": "A dark-themed, single-page dashboard built for crypto portfolio tracking and market insights. Developed with Vue and ApexCharts.",
+  "image": "/Dashboard_Images/Crypto_Exchange.webp",
+  "content": [
+    "Introducing the Crypto Exchange Dashboard — a dark-themed, single-page dashboard designed specifically for cryptocurrency traders and investors.",
+    "This dashboard offers an elegant, modern UI for tracking coin values, portfolio performance, and market trends in real time. Built with Vue and powered by ApexCharts, it delivers interactive charts and responsive data visualizations right out of the box.",
+    "Whether you're building a crypto analytics tool, a portfolio management app, or simply want a sleek front-end to monitor digital assets, this template is a great foundation. The layout emphasizes clarity and speed — so you can focus on the metrics that matter.",
+    "Like all our dashboards, it's fully customizable: change the assets, swap the data source, or adjust the theme to fit your brand or project.",
+    "Use it as a launchpad for your next fintech idea — and stay tuned for more dashboard templates coming soon."
+  ]
+}

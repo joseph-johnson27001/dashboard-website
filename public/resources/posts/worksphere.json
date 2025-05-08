@@ -1,7 +1,6 @@
 {
   "slug": "worksphere",
   "title": "Worksphere Dashboard",
-  "url": "/dashboard-template/worksphere",
   "description": "A multi-page HR dashboard built with Vue and Chart.js. Includes login/logout flow, team performance views, and space for your branding.",
   "image": "/Dashboard_Images/Worksphere.webp",
   "content": [

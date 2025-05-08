@@ -1,7 +1,6 @@
 {
   "slug": "sales",
   "title": "Sales Dashboard",
-  "url": "/dashboard-template/sales",
   "description": "A single-page sales dashboard built with Vue and Chart.js. Track KPIs, orders, and product performance with responsive tables and dynamic charts.",
   "image": "/Dashboard_Images/Sales.webp",
   "content": [

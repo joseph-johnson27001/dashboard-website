@@ -57,6 +57,13 @@ export default {
     return {
       allArticles: [
         {
+          title: "Crypto Exchange Dashboard",
+          slug: "crypto-exchange",
+          excerpt:
+            "A dark-themed, single-page dashboard built for crypto portfolio tracking and market insights. Developed with Vue and ApexCharts.",
+          image: "/Dashboard_Images/Crypto_Exchange.webp",
+        },
+        {
           title: "Logistics Dashboard",
           slug: "logistics",
           excerpt:

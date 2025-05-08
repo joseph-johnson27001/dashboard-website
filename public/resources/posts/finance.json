@@ -1,7 +1,6 @@
 {
   "slug": "finance",
   "title": "Finance Dashboard",
-  "url": "/dashboard-template/finance",
   "description": "A clean, single-page financial dashboard built with Vue and ApexCharts. Includes KPIs and interactive graphs — perfect for finance teams or product inspiration.",
   "image": "/Dashboard_Images/Finance.webp",
   "content": [
