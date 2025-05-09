@@ -83,7 +83,7 @@ export default {
           slug: "crypto-exchange",
           image: "/Dashboard_Images/Crypto_Exchange.webp",
           type: "SP / Vue / ApexCharts",
-          description: `A dark-themed <span class="highlight-blue">single-page</span> crypto dashboard built with Vue and FontAwesome. Features intuitive sidebar and mobile navigation, a clean layout for tracking markets, portfolios, and activities.`,
+          description: `A dark-themed <span class="highlight-blue">single-page</span> crypto dashboard built with Vue and ApexCharts. Features intuitive sidebar and mobile navigation, a clean layout for tracking coins, portfolios, and activities.`,
           price: "£399",
         },
 
