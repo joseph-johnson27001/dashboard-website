@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/HomePage.vue";
 import Contact from "../views/ContactPage.vue";
-// import HowItWorks from "../views/HowItWorksPage.vue";
 import Resources from "../views/ResourcesPage.vue";
 import PostPage from "../views/PostPage.vue";
 import Dashboards from "../views/DashboardsPage.vue";
+import ServicesPage from "@/views/ServicesPage.vue";
 
 const routes = [
   {
@@ -45,15 +45,15 @@ const routes = [
         "Contact Template Dashboards for support, inquiries, or to learn more about our prebuilt dashboard templates. We're here to help!",
     },
   },
-  // {
-  //   path: "/how-it-works",
-  //   component: HowItWorks,
-  //   meta: {
-  //     title: "How It Works",
-  //     description:
-  //       "Learn how Template Dashboards can help you quickly implement customizable dashboards for your web application. Simple steps to get started.",
-  //   },
-  // },
+  {
+    path: "/services",
+    component: ServicesPage,
+    meta: {
+      title: "Services",
+      description:
+        "Learn how Template Dashboards can help you quickly implement customizable dashboards for your web application.",
+    },
+  },
   {
     path: "/dashboards",
     component: Dashboards,
