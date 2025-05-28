@@ -25,14 +25,6 @@
         </router-link>
 
         <router-link
-          to="/services"
-          active-class="active-link"
-          @click="isMenuOpen = false"
-        >
-          Services
-        </router-link>
-
-        <router-link
           to="/resources"
           active-class="active-link"
           @click="isMenuOpen = false"
