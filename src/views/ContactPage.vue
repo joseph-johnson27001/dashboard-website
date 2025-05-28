@@ -124,7 +124,7 @@ export default {
 .hero-section h1 {
   font-family: "Unica One", cursive;
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 500;
   color: #006ba6;
   margin-top: 10px;

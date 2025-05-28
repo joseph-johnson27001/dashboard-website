@@ -186,7 +186,7 @@ export default {
 h1 {
   font-family: "Unica One", cursive;
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #006ba6;
   margin-top: 10px;
   letter-spacing: -1px;
