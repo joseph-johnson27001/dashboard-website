@@ -232,7 +232,7 @@ export default {
 
 .hero p {
   font-size: 17px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 15px;
   color: #222;
   font-weight: 300;
