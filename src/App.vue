@@ -49,17 +49,5 @@ body {
   font-weight: 500 !important;
 }
 
-/* Global style file — NOT scoped */
-@-moz-document url-prefix() {
-  .hero h1 {
-    letter-spacing: -3px !important;
-  }
-}
 
-/* Safari-specific override */
-@supports (-webkit-touch-callout: none) {
-  .hero h1 {
-    letter-spacing: -3px !important;
-  }
-}
 </style>

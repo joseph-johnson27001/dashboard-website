@@ -224,7 +224,7 @@ export default {
   font-size: 38px;
   font-family: "Unica One", cursive;
   color: #333;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   margin-bottom: 0px;
   padding-bottom: 0;
   margin-top: 10px;
@@ -321,6 +321,15 @@ export default {
     width: 100%;
   }
 }
+
+/* Global style file — NOT scoped */
+@-moz-document url-prefix() {
+  .hero h1 {
+    letter-spacing: -2px !important;
+  }
+}
+
+
 
 /* Fade-in Animation */
 @keyframes fadeIn {
