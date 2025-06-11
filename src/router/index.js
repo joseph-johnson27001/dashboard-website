@@ -4,6 +4,7 @@ import Contact from "../views/ContactPage.vue";
 import Resources from "../views/ResourcesPage.vue";
 import PostPage from "../views/PostPage.vue";
 import Dashboards from "../views/DashboardsPage.vue";
+import Services from "../views/ServicesPage.vue";
 
 const routes = [
   {
@@ -15,7 +16,15 @@ const routes = [
         "Explore prebuilt, fully responsive dashboard templates for web applications. Get customizable and ready-to-use solutions for your data visualization and business needs.",
     },
   },
-
+  {
+    path: "/services",
+    component: Services,
+    meta: {
+      title: "Services",
+      description:
+        "Discover the range of services we offer, including custom dashboard design, integration support, and UI/UX enhancements for web applications.",
+    },
+  },
   {
     path: "/resources",
     component: Resources,
