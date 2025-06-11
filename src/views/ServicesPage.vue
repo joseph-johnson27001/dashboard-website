@@ -8,6 +8,13 @@
           tailored to your project needs, to purchasing ready-made dashboard
           templates built for fast deployment and modern design.
         </p>
+        <p>
+          If you're purchasing a dashboard, you'll receive the full source code
+          after purchasing. If you'd like to discuss a custom build or have any
+          questions, feel free to
+          <a href="/contact">get in touch</a> and we’ll arrange a meeting to
+          talk through your needs.
+        </p>
       </div>
     </div>
 
@@ -103,7 +110,7 @@ const services = [
 .hero-section p {
   font-size: 17px;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: #222;
   font-weight: 300;
   line-height: 1.4;
