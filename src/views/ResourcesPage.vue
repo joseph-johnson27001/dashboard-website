@@ -250,10 +250,10 @@ h1 {
 }
 
 .article-content p {
-  font-size: 17px;
+  font-size: 15px;
   margin-top: 10px;
   margin-bottom: 15px;
-  color: #222;
+  color: #333;
   font-weight: 300;
   line-height: 1.4;
   font-family: "Assistant";
