@@ -24,6 +24,14 @@
         <p>{{ service.description }}</p>
       </div>
     </div>
+
+    <!-- Call to Action Section -->
+    <div class="cta-section">
+      <a href="/dashboards" class="cta-button explore-button"
+        >Explore Dashboards</a
+      >
+      <a href="/contact" class="cta-button contact-button">Contact</a>
+    </div>
   </div>
 </template>
 
@@ -105,15 +113,10 @@ const services = [
   background: #f9f9f9;
   border-radius: 9px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
   border: 1px solid #ddd;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
   opacity: 0;
   animation: fadeIn 0.8s ease-in forwards;
-}
-
-.service-card:hover {
-  transform: translateY(-4px);
 }
 
 .service-image {
@@ -149,18 +152,66 @@ const services = [
   color: #555;
 }
 
+/* CTA Section */
+.cta-section {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cta-button {
+  font-family: "Inter Tight", sans-serif;
+  background-color: #006ba6;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+  border: none;
+  max-width: 150px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1.5s 0.25s forwards;
+}
+
+.cta-button:hover {
+  background-color: #004f7c;
+}
+
+/* Responsive Grid */
 @media (max-width: 1100px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 550px) {
   .services-grid {
     grid-template-columns: 1fr;
   }
 }
 
+@media (max-width: 400px) {
+  .cta-section {
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: none;
+
+    box-sizing: border-box;
+  }
+}
+
+/* Fade-in Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
