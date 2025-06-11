@@ -34,21 +34,21 @@ const services = [
     price: "<s>£199</s> <strong>£99</strong>",
     description:
       "Get a fast one-page dashboard demo in 1 day. Includes layout, static navigation, KPI area, and up to 4 sample graphs. Perfect for inspiration and internal pitches.",
-    image: "/images/one-page-demo.jpg",
+    image: "/Dashboard_Images/Code_Camp.webp",
   },
   {
     title: "Pre-made Dashboards",
     price: "From <strong>£99</strong> to <strong>£499</strong>",
     description:
       "Purchase professional dashboards ready to plug into your backend. Includes simulated API calls and modular components for seamless integration.",
-    image: "/images/pre-made-dashboards.jpg",
+    image: "/Dashboard_Images/Healthcare.webp",
   },
   {
     title: "Contract Work",
     price: "<s>£400/day</s> <strong>£200/day</strong>",
     description:
       "Hire me for frontend dashboard and UI development. Ideal for product teams that need quick turnarounds and clean, scalable interfaces.",
-    image: "/images/contract-work.jpg",
+    image: "/Dashboard_Images/Logistics.webp",
   },
 ];
 </script>
@@ -91,9 +91,7 @@ const services = [
 .service-card {
   background: #f9f9f9;
   border-radius: 12px;
-  padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  transform: translateY(10px);
   opacity: 0;
   animation: fadeIn 0.4s ease forwards;
 }
@@ -111,7 +109,6 @@ const services = [
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-top: 30px;
 }
 
 @media (max-width: 960px) {
@@ -129,7 +126,6 @@ const services = [
 .service-card {
   background: #f9f9f9;
   border-radius: 12px;
-  padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
 }
@@ -140,7 +136,6 @@ const services = [
 
 .service-image {
   width: 100%;
-  height: 160px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 12px;
@@ -149,6 +144,7 @@ const services = [
 .service-card h2 {
   font-size: 18px;
   margin-top: 10px;
+  padding: 0 20px;
   margin-bottom: 8px;
   color: #006ba6;
   font-weight: 600;
@@ -156,6 +152,7 @@ const services = [
 
 .service-card p {
   font-size: 15px;
+  padding: 0 20px;
   line-height: 1.4;
   color: #333;
   font-family: "Assistant";
