@@ -174,6 +174,8 @@ const services = [
   padding-right: 5px;
   font-weight: 500;
   margin-bottom: -4px;
+  opacity: 0;
+  animation: fadeIn 1.5s 0.25s forwards;
 }
 
 /* CTA Section */
