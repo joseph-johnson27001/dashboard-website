@@ -3,6 +3,11 @@
     <div class="hero-section">
       <div class="hero-header">
         <h1>Services</h1>
+        <p>
+          Learn more about our available services—from custom contract work
+          tailored to your project needs, to purchasing ready-made dashboard
+          templates built for fast deployment and modern design.
+        </p>
       </div>
     </div>
   </div>
@@ -39,9 +44,6 @@
 }
 
 .hero-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 10px;
   margin-bottom: 5px;
 }
