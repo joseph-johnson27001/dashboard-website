@@ -61,13 +61,11 @@ const services = [
 </script>
 
 <style scoped>
-/* Page Container */
 .services-page {
   opacity: 0;
   animation: fadeIn 0.5s forwards;
 }
 
-/* Hero Section */
 .hero-section {
   margin-bottom: 20px;
 }
@@ -97,14 +95,12 @@ const services = [
   font-family: "Assistant";
 }
 
-/* Grid Layout */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-/* Service Card */
 .service-card {
   background: #f9f9f9;
   border-radius: 9px;
@@ -113,7 +109,7 @@ const services = [
   border: 1px solid #ddd;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
   opacity: 0;
-  animation: fadeIn 0.4s ease forwards;
+  animation: fadeIn 0.8s ease-in forwards;
 }
 
 .service-card:hover {
@@ -153,7 +149,6 @@ const services = [
   color: #555;
 }
 
-/* Responsive Grid */
 @media (max-width: 1100px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -166,7 +161,6 @@ const services = [
   }
 }
 
-/* Fade-in Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;

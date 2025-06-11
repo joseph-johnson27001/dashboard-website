@@ -223,7 +223,7 @@ h1 {
   transition: background-color 0.2s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
   opacity: 0;
-  animation: fadeIn 0.8s forwards;
+  animation: fadeIn 0.8s ease-in forwards;
 }
 
 .article-img {
