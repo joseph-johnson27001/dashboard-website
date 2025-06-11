@@ -41,10 +41,14 @@
 
     <!-- Call to Action Section -->
     <div class="cta-section">
-      <a href="/dashboards" class="cta-button explore-button"
-        >Explore Dashboards</a
-      >
-      <a href="/contact" class="cta-button contact-button">Contact</a>
+      <div class="cta-section">
+        <router-link to="/dashboards" class="cta-button explore-button"
+          >Explore Dashboards</router-link
+        >
+        <router-link to="/contact" class="cta-button contact-button"
+          >Contact</router-link
+        >
+      </div>
     </div>
   </div>
 </template>
