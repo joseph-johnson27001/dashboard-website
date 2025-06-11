@@ -128,6 +128,9 @@ const services = [
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
+  border: 1px solid #ddd;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+  opacity: 0;
 }
 
 .service-card:hover {
