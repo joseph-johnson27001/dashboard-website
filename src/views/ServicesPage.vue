@@ -38,7 +38,7 @@
 <script setup>
 const services = [
   {
-    title: "One-Page Demo",
+    title: "Custom Single Page Demo",
     price: "<s>£199</s> <strong>£99</strong>",
     description:
       "Get a fast one-page dashboard demo in 1 day. Includes layout, static navigation, KPI area, and up to 4 sample graphs. Perfect for inspiration and internal pitches.",
