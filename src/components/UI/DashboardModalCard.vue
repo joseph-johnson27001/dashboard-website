@@ -128,14 +128,17 @@ export default {
 
 .modal {
   background: #fff;
-  padding: 30px;
-  margin: 0 10px;
+  padding: 20px 30px;
+  margin: 10px 10px;
   border-radius: 10px;
-  width: 90%;
+  max-width: 90%;
+  overflow-y: scroll;
+  max-height: 90vh;
   max-width: 700px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
   animation: slideIn 0.3s ease-out;
+  z-index: 1001;
 }
 
 .close-btn-container {

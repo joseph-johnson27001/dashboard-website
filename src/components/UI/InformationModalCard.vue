@@ -70,39 +70,6 @@ export default {
     closeModal() {
       this.$emit("close-modal");
     },
-    preventScroll(event) {
-      event.preventDefault();
-    },
-    preventKeyDown(event) {
-      if (
-        event.key === "ArrowDown" ||
-        event.key === "ArrowUp" ||
-        event.key === " " ||
-        event.key === "PageDown" ||
-        event.key === "PageUp"
-      ) {
-        event.preventDefault();
-      }
-    },
-  },
-  watch: {
-    isOpen(newVal) {
-      if (newVal) {
-        window.addEventListener("wheel", this.preventScroll, {
-          passive: false,
-        });
-        window.addEventListener("touchmove", this.preventScroll, {
-          passive: false,
-        });
-        window.addEventListener("keydown", this.preventKeyDown, {
-          passive: false,
-        });
-      } else {
-        window.removeEventListener("wheel", this.preventScroll);
-        window.removeEventListener("touchmove", this.preventScroll);
-        window.removeEventListener("keydown", this.preventKeyDown);
-      }
-    },
   },
 };
 </script>
@@ -133,7 +100,8 @@ export default {
   animation: slideIn 0.3s ease-out;
   max-height: 80vh;
   margin: 10px;
-  overflow-y: auto;
+  overflow-y: scroll;
+  z-index: 1001;
 }
 
 .close-btn-container {

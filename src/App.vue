@@ -28,7 +28,6 @@ body {
   color: rgb(34, 34, 34);
 }
 
-/* ALWAYS HAVING SCROLLBAR */
 #app {
   min-height: 101dvh;
 }
@@ -48,6 +47,4 @@ body {
   color: #006ba6 !important;
   font-weight: 500 !important;
 }
-
-
 </style>
