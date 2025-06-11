@@ -20,10 +20,17 @@
       >
         <img :src="service.image" :alt="service.title" class="service-image" />
         <h2>{{ service.title }}</h2>
-        <p class="price" v-html="service.price"></p>
+        <p class="price">
+          <span v-html="service.price"></span>
+          <span v-if="service.discountNote">*</span>
+        </p>
         <p>{{ service.description }}</p>
       </div>
     </div>
+
+    <p class="launch-pricing-note">
+      * Launch pricing available for all services until August 31, 2025.
+    </p>
 
     <!-- Call to Action Section -->
     <div class="cta-section">
@@ -39,28 +46,28 @@
 const services = [
   {
     title: "Custom Single Page Demo",
-    price: "<s>£199</s> <strong>£99</strong>",
+    price: "<s>£199</s>  <strong>*£99</strong>",
     description:
       "Get a fast one-page dashboard demo in 1 day. Includes layout, static navigation, KPI area, and up to 4 sample graphs. Perfect for inspiration and internal pitches.",
     image: "/Dashboard_Images/Logistics.webp",
   },
   {
     title: "Single-Page Dashboard",
-    price: "<strong>£99</strong>",
+    price: "<s>£199</s>  <strong>*£99</strong>",
     description:
       "Pre-built single-page dashboard, ideal for simpler projects. Comes with simulated API calls and clean modular components.",
     image: "/Dashboard_Images/Finance.webp",
   },
   {
     title: "Multi-Page Dashboard",
-    price: "<strong>£499</strong>",
+    price: "<s>£899</s>  <strong>*£499</strong>",
     description:
       "Comprehensive multi-page dashboard designed for complex apps. Built with backend devs in mind and fully modular.",
     image: "/Dashboard_Images/Healthcare.webp",
   },
   {
     title: "Contract Work",
-    price: "<s>£400/day</s> <strong>£200/day</strong>",
+    price: "<s>£400/day</s>  <strong>*£200/day</strong>",
     description:
       "Hire me for frontend dashboard and UI development. Ideal for product teams that need quick turnarounds and clean, scalable interfaces.",
     image: "/Dashboard_Images/Code_Camp.webp",
@@ -152,9 +159,19 @@ const services = [
   color: #555;
 }
 
+.launch-pricing-note {
+  font-size: 14px;
+  color: #c0392b;
+  font-style: italic;
+  text-align: right;
+  padding-right: 5px;
+  font-weight: 500;
+  margin-bottom: -4px;
+}
+
 /* CTA Section */
 .cta-section {
-  margin-top: 10px;
+  margin-top: 0px;
   display: flex;
   justify-content: flex-end;
   gap: 10px;
@@ -206,7 +223,6 @@ const services = [
   .cta-button {
     width: 100%;
     max-width: none;
-
     box-sizing: border-box;
   }
 }
