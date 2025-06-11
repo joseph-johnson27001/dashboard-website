@@ -117,7 +117,7 @@ const services = [
 }
 
 .service-card {
-  background: #f9f9f9;
+  background: #fff;
   border-radius: 9px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   border: 1px solid #ddd;
