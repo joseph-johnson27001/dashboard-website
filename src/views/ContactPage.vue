@@ -13,6 +13,13 @@
         smoothly with your existing systems. Get in touch to discuss how we can
         bring your dashboard vision to life!
       </p>
+      <p>
+        You can fill in the form below to get in contact with us, or reach out
+        directly via email at
+        <a href="mailto:joe@templatedashboards.com"
+          >joe@templatedashboards.com</a
+        >.
+      </p>
     </section>
 
     <section class="contact-form">
