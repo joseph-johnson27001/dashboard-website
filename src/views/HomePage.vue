@@ -79,6 +79,15 @@ export default {
       showInfo: false,
       demos: [
         {
+          name: "ChessDash",
+          slug: "chess-dash",
+          image: "/Dashboard_Images/Chess-Dashboard-Screenshot.webp",
+          type: "SP / Vue",
+          description:
+            "A landing page and navigation for a chess dashboard, built with Vue.js. Features a clean, modern design with a responsive layout, ideal for showcasing chess statistics and player profiles.",
+          price: "£399",
+        },
+        {
           name: "Crypto Exchange",
           slug: "crypto-exchange",
           image: "/Dashboard_Images/Crypto_Exchange.webp",
@@ -131,15 +140,6 @@ export default {
           description:
             'A fully <span class="highlight-blue">API-ready</span>, <span class="highlight-blue">multi-page</span> HR dashboard built with Chart.js. Simulated API calls and a structured data folder make it easy to plug in real endpoints—just swap the calls, remove the mock data, and you’re live. Includes working navigation and a clean layout for tracking headcount, performance, and employee satisfaction.',
           price: "£999",
-        },
-        {
-          name: "Sales",
-          slug: "sales",
-          image: "/Dashboard_Images/Sales.webp",
-          type: "SP / Vue / Chart.js",
-          description:
-            'A <span class="highlight-blue">single-page</span> sales dashboard built with Chart.js. Designed for tracking sales, purchases, and customer activity, it includes a styled sidebar for layout structure and future expansion.',
-          price: "£399",
         },
         {
           name: "Worksphere",
