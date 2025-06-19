@@ -66,6 +66,15 @@ export default {
     return {
       demos: [
         {
+          name: "ChessDash",
+          slug: "chess-dash",
+          image: "/Dashboard_Images/Chess-Dashboard-Screenshot.webp",
+          type: "SP / Vue",
+          description:
+            "A landing page and navigation for a chess dashboard, built with Vue.js. Features a clean, modern design with a responsive layout, ideal for showcasing chess statistics and player profiles.",
+          price: "£399",
+        },
+        {
           name: "Crypto Exchange",
           slug: "crypto-exchange",
           image: "/Dashboard_Images/Crypto_Exchange.webp",
@@ -73,7 +82,6 @@ export default {
           description: `A dark-themed <span class="highlight-blue">single-page</span> crypto dashboard built with Vue and ApexCharts. Features intuitive sidebar and mobile navigation, a clean layout for tracking coins, portfolios, and activities.`,
           price: "£399",
         },
-
         {
           name: "Healthcare",
           slug: "healthcare",
