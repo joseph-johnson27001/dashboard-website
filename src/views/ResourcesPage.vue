@@ -57,6 +57,13 @@ export default {
     return {
       allArticles: [
         {
+          title: "Chess Dashboard",
+          slug: "chess-dash",
+          excerpt:
+            "Explore a sleek, single-page chess dashboard built with Vue. This interactive demo lets you view your ratings, start new games, revisit your game history, and connect with friends—all in one place.",
+          image: "/Dashboard_Images/Chess-Dashboard-Screenshot.webp",
+        },
+        {
           title: "Crypto Exchange Dashboard",
           slug: "crypto-exchange",
           excerpt:

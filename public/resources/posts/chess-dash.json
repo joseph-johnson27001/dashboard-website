@@ -1,0 +1,13 @@
+{
+  "slug": "chess-dash",
+  "title": "Chess Dashboard Demo",
+  "description": "A dark-themed, single-page chess dashboard built with Vue. Track ratings, explore games, and connect with friends in this interactive demo experience.",
+  "image": "/Dashboard_Images/Chess-Dashboard-Screenshot.webp",
+  "content": [
+    "Introducing the Chess Dashboard Demo — a modern, dark-themed single-page interface built with Vue, designed to showcase a complete chess platform experience.",
+    "This demo features dynamic rating tracking, quick access to various chess games, an interactive learning section with embedded boards, and a social panel to view your friends list.",
+    "Ideal for anyone designing chess platforms, gaming dashboards, or Vue-based UI systems, this template offers a strong foundation for further development. While fully functional as a concept, it's meant to be a springboard for your own ideas and custom integrations.",
+    "Whether you're experimenting with user dashboards, building an educational chess tool, or just exploring what's possible with Vue, this single page dashboard gives you a strong visual and structural starting point.",
+    "Check it out, remix it, and stay tuned for future updates and feature expansions."
+  ]
+}
